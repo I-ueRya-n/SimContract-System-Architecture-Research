@@ -107,7 +107,9 @@ ResolutionReport:
   sources:    {slot: source_tag}            # final provenance (SC-I5)
   completion_reasons: {slot: str}
 
-RejectionInfo: {stage: "engine_syntactic"|"adapter_semantic", code: str, detail: str}
+RejectionInfo: {stage: str, code: str, detail: str}
+  canonical stages: engine_syntactic | adapter_semantic
+  reserved for later phases: state_stale | role_unauthorized | resource_infeasible
 ```
 
 ### 5.5 Validation authority (two tiers, non-overlapping)
@@ -125,6 +127,25 @@ branches, system_metrics, resolution), `DecisionRecord` (SC-I6 fields),
 `FailureRecord` (stage, reason, role_slot, round_no), `InvocationRecord`
 (model_id, prompt_version, prompt_digest, temperature, tokens, latency_ms,
 retry_index, response_digest, status).
+
+### 5.7 DomainManifest
+
+Every adapter exposes a machine-readable manifest so the platform can discover a
+domain without importing its internals:
+
+```python
+DomainManifest:
+  domain_id, domain_version, contract_version, origin   # self_implemented | third_party_open_source
+  roles: list[RoleSpec]; stage_order: list[int]
+  action_schema_ids: dict[role, str]
+  metric_catalog_id: str; observation_policy_id: str
+  scenario_ids: list[str]
+  upstream: UpstreamModelProvenance | None   # for external adapters (later phase)
+```
+
+`UpstreamModelProvenance` records project, repository, release/commit, license,
+citation, integration mode, and whether upstream source was modified. Controlled
+self-implemented domains set `upstream = None`.
 
 ## 6. Engine
 
@@ -168,6 +189,17 @@ must reproduce a bit-identical bundle content hash.
   two-tier validation; never available in interactive play.
 
 ## 7. Domains
+
+### 7.0 `reference_stub` — Layer-1 contract testbed (not a research model)
+
+A minimal deterministic domain used exclusively for contract, engine, evidence,
+and replay testing. One role (`agent`, one slot, stage 1); action `{delta: int in
+[-5, 5]}`; state `{value: int}`; transition `value += delta + exogenous.drift`
+where `drift` is the round's single exogenous draw in [-1, 1]; metric
+`value_abs = |value|`; semantic rule: `delta` may not move `value` outside
+[-100, 100]. Emits both branches, completes missing actions with `delta = 0`,
+and returns a full ResolutionReport. Expected outputs are small enough to be
+asserted literally in tests. It is never presented as a research model.
 
 ### 7.1 `energy_market_v1` — merit-order electricity auction
 
@@ -237,7 +269,10 @@ metric equality (LLM-off runs: bit-identical).
 
 ## 9. Analysis
 
-`Analyzer` protocol over `BundleView`s only: `timeseries` (KPI trajectories; branch
+`Analyzer` protocol over `BundleView`s only, each carrying an `AnalyzerSpec`
+(`analysis_id`, `version`, `supported_domains` — `"*"` or an explicit list —
+and `requires_records`); generic analyzers declare `"*"`, domain analyzers
+declare their domain ids. Built-ins: `timeseries` (KPI trajectories; branch
 divergence), `groups` (cohorts by condition/persona/source-mix; mean±sd, paired-seed
 deltas), `events` (degradation taxonomy, event-aligned windows). Results carry
 lineage: analyzer id/version, input bundle hashes, parameter digest.
