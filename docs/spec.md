@@ -40,21 +40,36 @@ and LLM-assisted decisions remain valid, attributable, comparable, and reproduci
 `step(state, actions, ctx) -> Outcome` · `branches.authoritative / branches.applied` ·
 `action_schema.yaml` · `metric_catalog.yaml` · `observation_policy.yaml` ·
 domain aliases `energy_market_v1`, `epidemic_policy_v1` · controller conditions
-`rule / random_valid / top_score / free_llm / bounded_llm` · resilience adapter
+`rule / random_valid / top_score / human_script / free_llm / bounded_llm`
+(plus interactive `human` in CLI play) · resilience adapter
 `reference_stub` (not a research model).
 
 ## 4. Dependency rules (enforced by tests)
 
+Final Phase-1 layer set (consolidated spec; see ADR 0003):
+
 ```text
-contracts   → imports nothing internal
-domains     → contracts only
-engine      → contracts only  (never concrete domain packages)
-evidence    → contracts only
-analysis    → contracts only  (the evidence schema; never writer internals)
-composition → the single wiring exception: imports engine + concrete domains,
-              registers alias → adapter factory; imported only by entry points
-experiments/cli → public orchestration APIs only
+contracts    → imports nothing internal
+domains      → contracts only (never engine, another domain, writers, analysis)
+engine       → contracts only  (never concrete domains or controllers;
+               depends on RoleController + EvidenceSink protocols)
+controllers  → contracts + llm port only (never domains, engine internals)
+plugins      → contracts only (registry/discovery know factories + manifests,
+               never concrete domain classes)
+evidence     → contracts only (implements EvidenceSink; owns hashing/writers)
+analysis     → contracts only  (the evidence schema; never writer internals)
+llm          → contracts only (provider adapter behind the port)
+application  → public engine/plugins/evidence/analysis interfaces (use-case
+               facade for entry points; no concrete domain classes)
+composition  → the single wiring exception: imports everything concrete,
+               registers alias → adapter factory; imported only by entry points
+experiments/cli → application facade or composition entry points only
 ```
+
+Machine enforcement: an AST audit classifies every import in every module and
+fails the build on a forbidden edge; a token-leakage test asserts that core
+layers contain no domain-specific vocabulary (a new domain must never require
+an engine change).
 
 ## 5. Contracts
 
@@ -261,15 +276,37 @@ Personas: authority `health_first`, `economy_balanced`; manager `equity_first`,
 
 ## 8. Evidence
 
-Replay re-execution is an engine-level utility (`engine/replay.py`): it consumes a
-`BundleView` (contracts) and re-runs the session; the evidence writer itself imports
-contracts only.
+Evidence is a versioned public interface (`EVIDENCE_SCHEMA_VERSION`), not
+incidental logging. The engine depends on the `EvidenceSink` protocol
+(contracts); the concrete `BundleEvidenceWriter` is injected by the
+composition root (ADR 0004). Replay re-execution is an engine-level utility
+(`engine/replay_executor.py`): it consumes a `BundleView` (contracts) and
+re-runs the session; the evidence implementation itself imports contracts only.
 
-Bundle = one directory: `manifest.json` (versions, seeds, config digest, content hash
-computed over canonical JSON with the hash field excluded; file hashes listed
-separately), `rounds.json`, `decisions.json`, `events.json`, `register.json`.
-Replay executes the engine path from recorded accepted actions + seeds and asserts
-metric equality (LLM-off runs: bit-identical).
+Bundle = one directory:
+
+```text
+manifest.json              versions, seeds, conditions, config digest,
+                           canonical content hash (volatile fields excluded),
+                           per-file hashes listed separately
+config.snapshot.json       resolved run configuration
+domain_manifest.json       serialized DomainManifest of the active domain
+rounds.json                per-round records (metrics, branches, resolution,
+                           resolved actions, exogenous digest)
+decisions.jsonl            one DecisionRecord per line (SC-I6)
+fallback_events.jsonl      one FailureRecord per line (SC-I3)
+llm_invocations.jsonl      one InvocationRecord per line
+register.json              failure register with denominators (SC-I7)
+metrics.csv                long-form metrics (round, branch, metric, value)
+report.html                human-readable bundle summary
+```
+
+Four replay modes are distinguished (consolidated spec §18.3): **rerun**
+(same configuration + seed), **decision replay** (re-execute recorded
+resolved actions through the model and assert metric/branch equality),
+**bundle verification** (hash check without execution), and **analysis
+replay** (analyzers over frozen bundles). LLM-off runs are bit-identical
+under rerun.
 
 ## 9. Analysis
 
@@ -286,4 +323,43 @@ lineage: analyzer id/version, input bundle hashes, parameter digest.
 E1 dependency audit · E2 rerun identity + replay equivalence · E3 cross-domain
 contract portability (same config on both domains + compliance suite) ·
 E4 five-condition controller study · E5 invariant suite over bundles ·
-E6 analysis-interface extensibility/consistency.
+E6 analysis-interface extensibility/consistency. Each has a standalone script
+under `experiments/` reading configs from `experiments/configs/`.
+
+## 11. Final Phase-1 structure (consolidation)
+
+The consolidated architecture/packaging specification (kept with the private
+planning documents) fixes the final Phase-1 shape adopted here:
+
+- `contracts/` gains `controllers.py` (`RoleController` protocol,
+  `ControllerResult`), `plugins.py` (`AdapterFactory`, `DomainRegistry`
+  protocol, `PluginLoadError`), `ActionEnvelope`, and the `EvidenceSink`
+  protocol. Contracts remain import-free of every other layer.
+- Concrete controllers move to a dedicated `controllers/` package (one module
+  per condition: `rule`, `random_valid`, `top_score`, `human_script`,
+  `bounded_llm`, `free_llm`, plus interactive `human` for CLI play). The
+  engine invokes controllers only through the protocol.
+- The runtime registry moves to `plugins/registry.py` (plugin discovery is
+  not session orchestration); `plugins/discovery.py` defines entry-point
+  discovery for future external adapters but composition uses manual
+  registration in Phase 1. The registry rejects duplicate ids, checks
+  contract-version compatibility, guards against domain substitution, and
+  lists deterministically.
+- The evidence implementation splits into `hashing`, `bundle_writer`
+  (implements `EvidenceSink`), `manifest_writer`, `trace_writer`,
+  `failure_register`, and `replay_bundle` modules.
+- `application.py` exposes the stable use-case facade (`list_domains`,
+  `run_session`, `replay_run`, `verify_bundle`, `analyse_bundles`) consumed
+  by the CLI, experiments, and any future API. Entry points do not import
+  engine internals.
+- Each domain package carries `manifest.py`, split `state`/`actions` typing
+  modules where warranted, and a `scenarios/` directory with at least two
+  scenario families per research domain.
+- One installable distribution (`pip install simcontract`) contains all
+  layers; logical boundaries stay machine-enforced inside the single wheel.
+  Multi-package splitting is deferred until contracts v1 is stable and an
+  external adapter exists.
+
+Deviations from the consolidated spec's illustrative layout are recorded in
+ADR 0003 (ADR numbering is append-only; `metrics.csv` stands in for parquet;
+interactive `human` is kept beside `human_script`).
