@@ -6,12 +6,8 @@ import pytest
 
 from simcontract.composition import create_registry, domain_assets
 from simcontract.contracts import SimulationAdapter
-from simcontract.engine import (
-    RandomValidController,
-    RuleController,
-    SessionRunner,
-    rng_for,
-)
+from simcontract.controllers import RandomValidController, RuleController
+from simcontract.engine import SessionRunner, rng_for
 
 ALIASES = ["reference_stub", "energy_market_v1", "epidemic_policy_v1"]
 

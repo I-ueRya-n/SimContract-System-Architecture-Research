@@ -1,6 +1,6 @@
 [project]
 name = "simcontract"
-version = "0.1.0"
+version = "0.2.0"
 description = "Contract-bounded, validation-aware multi-agent simulation framework"
 authors = [{ name = "Ryan Lin" }]
 license = { text = "MIT" }
@@ -22,3 +22,4 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]

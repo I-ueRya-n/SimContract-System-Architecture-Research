@@ -3,11 +3,8 @@ from __future__ import annotations
 
 from simcontract.composition import create_registry, domain_assets
 from simcontract.contracts import Action
-from simcontract.engine import (
-    RandomValidController,
-    RuleController,
-    SessionRunner,
-)
+from simcontract.controllers import RandomValidController, RuleController
+from simcontract.engine import SessionRunner
 
 
 def _runner():
@@ -47,7 +44,7 @@ class _NoneController:
     condition = "rule"
 
     def act(self, view, slot, candidates, previews, ctx):
-        from simcontract.engine.controllers import ControllerResult
+        from simcontract.contracts import ControllerResult
         return ControllerResult(action=None, fallback_reason="human_absent")
 
 
@@ -66,7 +63,7 @@ class _InvalidController:
     condition = "rule"
 
     def act(self, view, slot, candidates, previews, ctx):
-        from simcontract.engine.controllers import ControllerResult
+        from simcontract.contracts import ControllerResult
         return ControllerResult(action=Action("agent", slot, {"delta": 99}))
 
 

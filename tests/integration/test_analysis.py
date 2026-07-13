@@ -9,7 +9,8 @@ from simcontract.analysis import (
 )
 from simcontract.composition import create_registry, domain_assets
 from simcontract.contracts import BundleView
-from simcontract.engine import RuleController, SessionRunner
+from simcontract.controllers import RuleController
+from simcontract.engine import SessionRunner
 from simcontract.evidence import write_bundle
 
 
