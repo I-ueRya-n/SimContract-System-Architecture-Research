@@ -261,6 +261,10 @@ Personas: authority `health_first`, `economy_balanced`; manager `equity_first`,
 
 ## 8. Evidence
 
+Replay re-execution is an engine-level utility (`engine/replay.py`): it consumes a
+`BundleView` (contracts) and re-runs the session; the evidence writer itself imports
+contracts only.
+
 Bundle = one directory: `manifest.json` (versions, seeds, config digest, content hash
 computed over canonical JSON with the hash field excluded; file hashes listed
 separately), `rounds.json`, `decisions.json`, `events.json`, `register.json`.
