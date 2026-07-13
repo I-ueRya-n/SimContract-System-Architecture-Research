@@ -1,0 +1,18 @@
+# E4 controller-condition comparison matrix.
+# LLM conditions execute against the configured endpoint; when llm_base_url is
+# null they still run and their observable degradation (fallback events with
+# reasons and denominators) is recorded — that measures failure containment,
+# not LLM decision behaviour. Fill the endpoint before the full study.
+domains:
+  - energy_market_v1
+  - epidemic_policy_v1
+conditions:
+  - rule
+  - random_valid
+  - top_score
+  - free_llm
+  - bounded_llm
+seeds: [11, 12, 13, 14, 15]
+rounds: 6
+llm_base_url: null
+llm_model: null

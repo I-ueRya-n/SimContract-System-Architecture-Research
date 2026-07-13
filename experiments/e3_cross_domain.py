@@ -11,7 +11,8 @@ from pathlib import Path
 from simcontract.analysis import default_registry, write_report
 from simcontract.composition import create_registry, domain_assets
 from simcontract.contracts import BundleView
-from simcontract.engine import RuleController, SessionRunner
+from simcontract.controllers import RuleController
+from simcontract.engine import SessionRunner
 from simcontract.evidence import write_bundle
 
 CONFIG = {"rounds": 4, "seed": 42}   # ONE config; the domain alias is the only change

@@ -11,7 +11,8 @@ from pathlib import Path
 
 from simcontract.composition import create_registry, domain_assets
 from simcontract.contracts import BundleView
-from simcontract.engine import RandomValidController, SessionRunner, replay_bundle
+from simcontract.controllers import RandomValidController
+from simcontract.engine import SessionRunner, replay_bundle
 from simcontract.evidence import write_bundle
 
 
