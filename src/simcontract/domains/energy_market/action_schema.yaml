@@ -1,0 +1,11 @@
+regulator:
+  carbon_price:      { type: float, min: 0,   max: 100 }
+  price_cap:         { type: float, min: 60,  max: 400 }
+  renewable_subsidy: { type: float, min: 0,   max: 30 }
+generator:
+  price_bid:         { type: float, min: 10,  max: 350 }
+  capacity_offered:  { type: float, min: 0,   max: 400 }
+  maintenance:       { type: bool }
+retailer:
+  demand_bid:        { type: float, min: 50,  max: 400 }
+  max_price:         { type: float, min: 60,  max: 400 }

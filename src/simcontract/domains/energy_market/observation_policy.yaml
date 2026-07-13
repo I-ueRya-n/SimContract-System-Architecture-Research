@@ -1,0 +1,3 @@
+regulator: ["round", "policy", "market", "generators"]
+generator: ["round", "policy", "market", "generators"]
+retailer:  ["round", "policy", "market"]

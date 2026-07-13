@@ -1,0 +1,2 @@
+health_authority: ["round", "policy", "summary", "regions"]
+region_manager:   ["round", "policy", "summary", "regions"]

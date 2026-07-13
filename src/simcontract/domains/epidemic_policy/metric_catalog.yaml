@@ -1,0 +1,6 @@
+- { key: new_infections,        unit: persons,   direction: min }
+- { key: cumulative_deaths,     unit: persons,   direction: min }
+- { key: overflow_days,         unit: days,      direction: min }
+- { key: econ_cost,             unit: currency,  direction: min }
+- { key: vaccination_coverage,  unit: fraction,  direction: max }
+- { key: equity_gap,            unit: fraction,  direction: min }

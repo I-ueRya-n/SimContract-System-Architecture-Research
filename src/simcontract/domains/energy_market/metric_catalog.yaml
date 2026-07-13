@@ -1,0 +1,6 @@
+- { key: clearing_price,         unit: currency_per_mwh, direction: min }
+- { key: total_emissions,        unit: t_co2e,           direction: min }
+- { key: renewable_share,        unit: fraction,         direction: max }
+- { key: unserved_energy,        unit: mwh,              direction: min }
+- { key: consumer_cost,          unit: currency,         direction: min }
+- { key: generator_profit_total, unit: currency,         direction: max }

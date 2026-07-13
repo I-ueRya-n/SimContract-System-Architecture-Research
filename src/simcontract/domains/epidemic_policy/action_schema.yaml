@@ -1,0 +1,8 @@
+health_authority:
+  restriction:     { type: int,   min: 0, max: 3 }
+  mask_level:      { type: int,   min: 0, max: 2 }
+  vaccine_budget:  { type: float, min: 0, max: 900 }
+region_manager:
+  share_testing:      { type: float, min: 0, max: 1 }
+  share_vaccination:  { type: float, min: 0, max: 1 }
+  share_capacity:     { type: float, min: 0, max: 1 }
