@@ -1,4 +1,8 @@
-"""Session runner: the round loop of spec 6.1."""
+"""Session runner: the normative lifecycle (spec 6.1 / consolidated spec 11).
+
+The engine depends on the ``RoleController`` and ``EvidenceSink`` protocols
+only; concrete controllers and writers are injected by the composition root.
+"""
 from __future__ import annotations
 
 import datetime as _dt
@@ -8,19 +12,26 @@ from typing import Any
 from simcontract.contracts import (
     Action,
     ActionSchema,
+    ControllerResult,
     DecisionRecord,
+    EvidenceSink,
     FailureRecord,
     InvocationRecord,
     MetricCatalog,
+    NullEvidenceSink,
     ObservationPolicy,
+    RoleController,
     RoundRecord,
     RunManifest,
     SimulationAdapter,
+    StepContext,
     digest,
 )
+from simcontract.contracts.versioning import EVIDENCE_SCHEMA_VERSION
 
-from .controllers import ControllerResult, state_digest_of
 from .seeding import derive_seed, rng_for
+from .preview import candidates_and_previews
+from .validation import build_envelope, validate_intake
 
 
 @dataclass
@@ -36,25 +47,25 @@ class SessionResult:
 class SessionRunner:
     def __init__(self, adapter: SimulationAdapter, schema: ActionSchema,
                  observation: ObservationPolicy, catalog: MetricCatalog,
-                 candidate_count: int = 8):
+                 candidate_count: int = 8, sink: EvidenceSink | None = None):
         self.adapter = adapter
         self.schema = schema
         self.observation = observation
         self.catalog = catalog
         self.candidate_count = candidate_count
+        self.sink = sink if sink is not None else NullEvidenceSink()
 
     # ------------------------------------------------------------------
     def run(self, *, scenario_id: str, run_seed: int, rounds: int,
-            controllers: dict[str, Any], personas: dict[str, str | None],
+            controllers: dict[str, RoleController], personas: dict[str, str | None],
             run_id: str | None = None,
             preset_actions: dict[int, dict[str, dict[str, Any]]] | None = None,
             on_round=None) -> SessionResult:
         """Execute a session.
 
-        ``controllers`` maps role slot -> controller object (spec 6.3).
-        ``preset_actions`` (replay): {round_no: {slot: fields}} submitted as-is
-        with source tag ``human`` semantics bypassed — used by replay to
-        re-execute recorded resolutions.
+        ``controllers`` maps role slot -> controller (protocol, spec 6.3).
+        ``preset_actions`` (decision replay): {round_no: {slot: fields}}
+        submitted as-is with source tag ``preset``.
         """
         adapter = self.adapter
         manifest = RunManifest(
@@ -68,6 +79,7 @@ class SessionRunner:
             conditions={s: getattr(c, "condition", "preset") for s, c in controllers.items()},
             personas=dict(personas),
             config_digest=digest({"candidates": self.candidate_count}),
+            evidence_schema_version=EVIDENCE_SCHEMA_VERSION,
             created_at=_dt.datetime.now(_dt.timezone.utc).isoformat(),
         )
         result = SessionResult(manifest=manifest)
@@ -78,8 +90,6 @@ class SessionRunner:
         for round_no in range(1, rounds + 1):
             round_seed = derive_seed(run_seed, round_no)
             exogenous = adapter.sample_exogenous(state, rng_for(round_seed, "exogenous"))
-            from simcontract.contracts import StepContext  # local import keeps module top light
-
             ctx = StepContext(round_no=round_no, round_seed=round_seed,
                               exogenous=exogenous, scenario_id=scenario_id)
 
@@ -92,7 +102,8 @@ class SessionRunner:
                 for spec_role in [r for r in adapter.roles if r.stage == stage]:
                     for slot in spec_role.slots():
                         self._resolve_slot(
-                            slot=slot, role=spec_role.role, state=state, ctx=ctx,
+                            slot=slot, role=spec_role.role, stage=stage,
+                            state=state, ctx=ctx,
                             controllers=controllers, personas=personas,
                             preset=(preset_actions or {}).get(round_no, {}).get(slot),
                             accepted=accepted, intake_submitted=intake_submitted,
@@ -115,7 +126,7 @@ class SessionRunner:
                 slot: {"role": a.role, "fields": a.fields}
                 for slot, a in outcome.meta.get("resolved_actions", {}).items()
             }
-            result.rounds.append(RoundRecord(
+            record = RoundRecord(
                 round_no=round_no,
                 round_seed=round_seed,
                 exogenous_digest=digest(exogenous),
@@ -123,25 +134,45 @@ class SessionRunner:
                 branches=outcome.branches,
                 resolution=outcome.resolution.to_dict(),
                 resolved_actions=resolved_actions,
-            ))
+            )
+            result.rounds.append(record)
+            self.sink.record_round(record)
             state = outcome.state_next
             if on_round is not None:
                 on_round(round_no, outcome)
 
         result.final_state = state
+        self.sink.finalise(manifest, {
+            "domain_manifest": adapter.manifest.to_dict(),
+            "config_snapshot": {
+                "scenario_id": scenario_id, "run_seed": run_seed, "rounds": rounds,
+                "conditions": manifest.conditions, "personas": dict(personas),
+                "candidate_count": self.candidate_count,
+            },
+            "final_state_digest": digest(state),
+        })
         return result
 
     # ------------------------------------------------------------------
-    def _resolve_slot(self, *, slot, role, state, ctx, controllers, personas,
+    def _record_decision(self, result: SessionResult, record: DecisionRecord) -> None:
+        result.decisions.append(record)
+        self.sink.record_decision(record)
+
+    def _record_event(self, result: SessionResult, record: FailureRecord) -> None:
+        result.events.append(record)
+        self.sink.record_event(record)
+
+    # ------------------------------------------------------------------
+    def _resolve_slot(self, *, slot, role, stage, state, ctx, controllers, personas,
                       preset, accepted, intake_submitted, intake_rejected,
                       intake_sources, result: SessionResult) -> None:
         view = self.observation.view(state, role)
 
-        if preset is not None:  # replay path
+        if preset is not None:  # decision replay path
             action = Action(role=role, slot=slot, fields=dict(preset))
             accepted[slot] = action
             intake_submitted[slot] = action.digest()
-            intake_sources[slot] = "human"
+            intake_sources[slot] = "preset"
             return
 
         controller = controllers.get(slot)
@@ -149,23 +180,24 @@ class SessionRunner:
             return
 
         rng_c = rng_for(ctx.round_seed, slot, "candidates")
-        candidates = self.adapter.action_space(state, slot, rng_c, self.candidate_count)
-        previews = [self.adapter.preview(state, a, ctx) for a in candidates]
+        candidates, previews = candidates_and_previews(
+            self.adapter, state, slot, rng_c, self.candidate_count, ctx)
 
         cres: ControllerResult = controller.act(view, slot, candidates, previews, ctx)
         if cres.llm_record is not None:
-            result.invocations.append(InvocationRecord(
-                round_no=ctx.round_no, slot=slot, **cres.llm_record))
+            record = InvocationRecord(round_no=ctx.round_no, slot=slot, **cres.llm_record)
+            result.invocations.append(record)
+            self.sink.record_invocation(record)
 
         condition = getattr(controller, "condition", "unknown")
-        state_dig = state_digest_of(view)
+        state_dig = digest(view)
 
         if cres.action is None:
-            result.events.append(FailureRecord(
+            self._record_event(result, FailureRecord(
                 round_no=ctx.round_no, slot=slot, stage="select",
                 family="llm" if "llm" in condition else "controller",
                 reason=cres.fallback_reason or "controller_absent"))
-            result.decisions.append(DecisionRecord(
+            self._record_decision(result, DecisionRecord(
                 round_no=ctx.round_no, role=role, slot=slot, condition=condition,
                 persona=personas.get(slot), candidate_digests=[a.digest() for a in candidates],
                 scores=cres.scores, selected_digest=None, source_tag=condition,
@@ -173,28 +205,34 @@ class SessionRunner:
             return
 
         action = cres.action
+        envelope = build_envelope(self.adapter.manifest,
+                                  getattr(self.adapter, "adapter_version", "0"),
+                                  str(stage), action)
         intake_submitted[slot] = action.digest()
 
-        rejection = self.schema.validate_syntactic(action)          # engine tier
+        rejection = validate_intake(envelope, action, self.adapter.manifest,
+                                    self.schema)                     # engine tier
         if rejection is None:
             rejection = self.adapter.validate_semantic(state, action)  # adapter tier
         if rejection is not None:
             intake_rejected[slot] = rejection.to_dict()
-            result.events.append(FailureRecord(
+            self._record_event(result, FailureRecord(
                 round_no=ctx.round_no, slot=slot, stage="validate",
                 family="adapter" if rejection.stage == "adapter_semantic" else "controller",
                 reason=rejection.code, detail=rejection.detail))
-            result.decisions.append(DecisionRecord(
+            self._record_decision(result, DecisionRecord(
                 round_no=ctx.round_no, role=role, slot=slot, condition=condition,
                 persona=personas.get(slot), candidate_digests=[a.digest() for a in candidates],
                 scores=cres.scores, selected_digest=action.digest(), source_tag=condition,
-                rationale=cres.rationale, state_digest=state_dig))
+                rationale=cres.rationale, state_digest=state_dig,
+                config={"envelope_digest": envelope.digest()}))
             return
 
         accepted[slot] = action
         intake_sources[slot] = condition
-        result.decisions.append(DecisionRecord(
+        self._record_decision(result, DecisionRecord(
             round_no=ctx.round_no, role=role, slot=slot, condition=condition,
             persona=personas.get(slot), candidate_digests=[a.digest() for a in candidates],
             scores=cres.scores, selected_digest=action.digest(), source_tag=condition,
-            rationale=cres.rationale, state_digest=state_dig))
+            rationale=cres.rationale, state_digest=state_dig,
+            config={"envelope_digest": envelope.digest()}))

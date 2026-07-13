@@ -1,0 +1,13 @@
+scenario_id: seed_outbreak_v1
+description: Outbreak seeded predominantly in the largest region; no prior immunity.
+initial_policy:
+  restriction: 1
+  mask_level: 1
+  vaccine_budget: 600.0
+initial_infection_rates:
+  region_manager_1: 0.002
+  region_manager_2: 0.0005
+  region_manager_3: 0.0005
+prior_immunity: 0.0
+exogenous:
+  shock_sigma: 0.15

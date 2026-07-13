@@ -23,14 +23,17 @@ RESTRICTION_COST = 1500.0
 ILLNESS_COST = 0.9
 
 
-def initial_regions() -> dict:
+def initial_regions(infection_rates: dict[str, float] | None = None,
+                    prior_immunity: float = 0.0) -> dict:
+    rates = infection_rates or {slot: 0.001 for slot in REGION_PARAMS}
     regions = {}
     for slot, params in REGION_PARAMS.items():
         pop = params["pop"]
-        infected = int(pop * 0.001)
+        infected = int(pop * float(rates[slot]))
+        recovered = pop * float(prior_immunity)
         regions[slot] = {
-            "S": float(pop - infected), "E": float(infected * 2),
-            "I": float(infected), "R": 0.0, "D": 0.0,
+            "S": float(pop - infected - recovered), "E": float(infected * 2),
+            "I": float(infected), "R": float(recovered), "D": 0.0,
             "vaccinated": 0.0,
         }
     return regions
@@ -66,10 +69,7 @@ def step_week(*, regions: dict, policy: dict, allocations: dict[str, dict],
             infections = beta * s * i / pop
             incubations = SIGMA * e
             recoveries = GAMMA * i
-            deaths = recoveries * IFR / GAMMA * GAMMA  # deaths as share of leaving I
-            deaths = i * GAMMA * IFR / max(GAMMA, 1e-9)
-            deaths = i * IFR * GAMMA * 7 / 7  # simple: IFR applied to resolution flow
-            deaths = GAMMA * i * IFR
+            deaths = GAMMA * i * IFR   # IFR applied to the resolution flow
             vaccinations = min(doses_per_day * VACCINE_EFFICACY, s)
 
             r["S"] = max(0.0, s - infections - vaccinations)

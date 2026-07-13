@@ -14,37 +14,17 @@ from simcontract.contracts import (
     Preview,
     RejectionInfo,
     ResolutionReport,
-    RoleSpec,
     StepContext,
 )
 from simcontract.contracts.domain_manifest import DomainManifest
 
+from .actions import RegionalAllocation
 from .defaults import EpidemicDefaults
-from .model import REGION_PARAMS, initial_regions, step_week
+from .manifest import ADAPTER_VERSION, DOMAIN_ID, MANIFEST, ROLES
+from .model import REGION_PARAMS, step_week
+from .state import initial_state as build_initial_state
 
 _HERE = Path(__file__).parent
-
-DOMAIN_ID = "epidemic_policy_v1"
-ADAPTER_VERSION = "0.1.0"
-
-ROLES = [
-    RoleSpec("health_authority", 1, stage=1),
-    RoleSpec("region_manager", 3, stage=2),
-]
-
-_MANIFEST = DomainManifest(
-    domain_id=DOMAIN_ID,
-    domain_version=ADAPTER_VERSION,
-    contract_version=CONTRACT_VERSION,
-    origin="self_implemented",
-    roles=tuple(ROLES),
-    stage_order=(1, 2),
-    action_schema_ids={"health_authority": "health_policy_v1",
-                       "region_manager": "regional_allocation_v1"},
-    metric_catalog_id="epidemic_metrics_v1",
-    observation_policy_id="epidemic_observation_v1",
-    scenario_ids=("three_regions_v1",),
-)
 
 
 def schema() -> ActionSchema:
@@ -71,23 +51,15 @@ class EpidemicPolicyAdapter:
 
     @property
     def manifest(self) -> DomainManifest:
-        return _MANIFEST
+        return MANIFEST
 
     # ------------------------------------------------------------------
     def initial_state(self, scenario_id: str, seed: int) -> dict:
-        if scenario_id != "three_regions_v1":
-            raise KeyError(f"unknown scenario {scenario_id!r}")
-        regions = initial_regions()
-        return {
-            "round": 0,
-            "scenario_id": scenario_id,
-            "policy": {"restriction": 1, "mask_level": 1, "vaccine_budget": 600.0},
-            "regions": regions,
-            "summary": self._summary(regions),
-        }
+        return build_initial_state(scenario_id, self._summary)
 
     def sample_exogenous(self, state: dict, rng: random.Random) -> dict:
-        return {f"shock_{slot}": round(rng.lognormvariate(0.0, 0.15), 6)
+        sigma = float(state["exogenous_params"]["shock_sigma"])
+        return {f"shock_{slot}": round(rng.lognormvariate(0.0, sigma), 6)
                 for slot in REGION_PARAMS}
 
     # ------------------------------------------------------------------
@@ -121,11 +93,11 @@ class EpidemicPolicyAdapter:
 
     def validate_semantic(self, state, action: Action) -> RejectionInfo | None:
         if action.role == "region_manager":
-            total = sum(float(action.fields[k]) for k in
-                        ("share_testing", "share_vaccination", "share_capacity"))
-            if abs(total - 1.0) > 0.01:
+            allocation = RegionalAllocation.from_fields(action.fields)
+            if abs(allocation.total - 1.0) > 0.01:
                 return RejectionInfo("adapter_semantic", "shares_not_normalised",
-                                     f"allocation shares sum to {total:.4f}, expected 1.0")
+                                     f"allocation shares sum to {allocation.total:.4f}, "
+                                     "expected 1.0")
         return None
 
     # ------------------------------------------------------------------
@@ -162,6 +134,7 @@ class EpidemicPolicyAdapter:
             "policy": dict(applied["health_authority_1"].fields),
             "regions": regions_applied,
             "summary": self._summary(regions_applied),
+            "exogenous_params": state["exogenous_params"],
         }
         return Outcome(
             role_outcomes={s: {"action": a.fields} for s, a in applied.items()},

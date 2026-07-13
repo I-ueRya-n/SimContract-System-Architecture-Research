@@ -23,20 +23,6 @@ class AnalysisResult:
     lineage: dict[str, Any] = field(default_factory=dict)
 
 
-class AnalyzerRegistry:
-    def __init__(self) -> None:
-        self._analyzers: dict[str, Any] = {}
-
-    def register(self, analyzer: Any) -> None:
-        self._analyzers[analyzer.spec.analysis_id] = analyzer
-
-    def get(self, analysis_id: str) -> Any:
-        return self._analyzers[analysis_id]
-
-    def ids(self) -> list[str]:
-        return sorted(self._analyzers)
-
-
 def supports(spec: AnalyzerSpec, domain_id: str) -> bool:
     return spec.supported_domains == "*" or domain_id in spec.supported_domains
 

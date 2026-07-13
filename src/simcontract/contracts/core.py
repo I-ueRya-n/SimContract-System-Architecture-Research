@@ -7,13 +7,13 @@ from dataclasses import asdict, dataclass, field
 from typing import Any, Literal
 
 SourceTag = Literal[
-    "human", "rule", "random_valid", "top_score",
-    "bounded_llm", "free_llm", "domain_default",
+    "human", "human_script", "rule", "random_valid", "top_score",
+    "bounded_llm", "free_llm", "domain_default", "preset",
 ]
 
 SOURCE_TAGS: tuple[str, ...] = (
-    "human", "rule", "random_valid", "top_score",
-    "bounded_llm", "free_llm", "domain_default",
+    "human", "human_script", "rule", "random_valid", "top_score",
+    "bounded_llm", "free_llm", "domain_default", "preset",
 )
 
 
@@ -43,6 +43,35 @@ class Action:
 
     def digest(self) -> str:
         return digest({"role": self.role, "slot": self.slot, "fields": self.fields})
+
+
+@dataclass(frozen=True)
+class ActionEnvelope:
+    """Platform context around a domain payload (consolidated spec 9.1).
+
+    The envelope names the addressed domain/schema without embedding domain
+    fields; the payload is validated against the declared schema (engine
+    tier) and converted to typed objects inside the domain (adapter tier).
+    """
+
+    domain_id: str
+    domain_version: str
+    schema_id: str
+    role_id: str
+    stage_id: str
+    action_type: str
+    payload: dict[str, Any]
+
+    def to_action(self, slot: str) -> "Action":
+        return Action(role=self.role_id, slot=slot, fields=dict(self.payload))
+
+    def digest(self) -> str:
+        return digest({
+            "domain_id": self.domain_id, "domain_version": self.domain_version,
+            "schema_id": self.schema_id, "role_id": self.role_id,
+            "stage_id": self.stage_id, "action_type": self.action_type,
+            "payload": self.payload,
+        })
 
 
 @dataclass

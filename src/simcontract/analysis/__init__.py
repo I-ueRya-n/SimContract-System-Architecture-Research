@@ -1,6 +1,7 @@
 """Offline analysis layer. Depends on the stable evidence schema only."""
-from .base import AnalysisResult, AnalyzerRegistry, AnalyzerSpec, make_lineage, supports
+from .base import AnalysisResult, AnalyzerSpec, make_lineage, supports
 from .events import EventAnalyzer
+from .registry import AnalyzerRegistry
 from .groups import GroupComparisonAnalyzer
 from .report import write_report
 from .timeseries import TimeSeriesAnalyzer

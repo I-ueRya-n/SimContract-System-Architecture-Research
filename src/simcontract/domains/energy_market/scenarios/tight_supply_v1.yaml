@@ -1,0 +1,11 @@
+scenario_id: tight_supply_v1
+description: Volatile demand and depressed wind availability; scarcity pricing.
+initial_policy:
+  carbon_price: 30.0
+  price_cap: 250.0
+  renewable_subsidy: 10.0
+exogenous:
+  demand_ar1: 0.6
+  demand_sigma: 40.0
+  wind_min: 0.2
+  wind_max: 0.75

@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Protocol
 
 
 @dataclass
@@ -79,6 +79,7 @@ class RunManifest:
     conditions: dict[str, str]           # slot -> condition
     personas: dict[str, str | None]
     config_digest: str
+    evidence_schema_version: str = "1.0.0"
     content_hash: str | None = None      # canonical hash, computed pre-embed
     file_hashes: dict[str, str] = field(default_factory=dict)
     claim_boundary: str = (
@@ -86,6 +87,39 @@ class RunManifest:
         "external behavioural validity for either domain model."
     )
     created_at: str = ""
+
+
+class EvidenceSink(Protocol):
+    """The engine's only view of evidence persistence (ADR 0004).
+
+    Composition injects a concrete writer; the engine never instantiates one.
+    """
+
+    def record_round(self, record: RoundRecord) -> None: ...
+
+    def record_decision(self, record: DecisionRecord) -> None: ...
+
+    def record_event(self, record: FailureRecord) -> None: ...
+
+    def record_invocation(self, record: InvocationRecord) -> None: ...
+
+    def finalise(self, manifest: RunManifest,
+                 extra: dict[str, Any] | None = None) -> None: ...
+
+
+class NullEvidenceSink:
+    """No-op sink for in-memory runs (tests, previews)."""
+
+    def record_round(self, record: RoundRecord) -> None: ...
+
+    def record_decision(self, record: DecisionRecord) -> None: ...
+
+    def record_event(self, record: FailureRecord) -> None: ...
+
+    def record_invocation(self, record: InvocationRecord) -> None: ...
+
+    def finalise(self, manifest: RunManifest,
+                 extra: dict[str, Any] | None = None) -> None: ...
 
 
 @dataclass
@@ -107,11 +141,18 @@ class BundleView:
             with open(d / name, "r", encoding="utf-8") as fh:
                 return json.load(fh)
 
+        def _read_jsonl(name: str) -> list[dict]:
+            path = d / name
+            if not path.exists():
+                return []
+            with open(path, "r", encoding="utf-8") as fh:
+                return [json.loads(line) for line in fh if line.strip()]
+
         manifest = RunManifest(**_read("manifest.json"))
         rounds = [RoundRecord(**r) for r in _read("rounds.json")]
-        decisions = [DecisionRecord(**r) for r in _read("decisions.json")]
-        events = [FailureRecord(**r) for r in _read("events.json")]
-        invocations = [InvocationRecord(**r) for r in _read("invocations.json")]
+        decisions = [DecisionRecord(**r) for r in _read_jsonl("decisions.jsonl")]
+        events = [FailureRecord(**r) for r in _read_jsonl("fallback_events.jsonl")]
+        invocations = [InvocationRecord(**r) for r in _read_jsonl("llm_invocations.jsonl")]
         register = _read("register.json")
         return cls(manifest, rounds, decisions, events, invocations, register)
 

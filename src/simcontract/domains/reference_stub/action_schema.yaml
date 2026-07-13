@@ -1,0 +1,2 @@
+agent:
+  delta: { type: int, min: -5, max: 5 }

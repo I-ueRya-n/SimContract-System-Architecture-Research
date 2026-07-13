@@ -1,4 +1,8 @@
-"""Replay: re-execute the engine path from a recorded bundle (spec 8, SC-I1/I5)."""
+"""Decision replay: re-execute the engine path from a recorded bundle
+(spec 8, SC-I1/I5). Bundle verification without execution lives in the
+evidence layer (``evidence/replay_bundle.py``); rerun is ``run`` with the
+recorded configuration.
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

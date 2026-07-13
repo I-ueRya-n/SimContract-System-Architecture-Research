@@ -14,41 +14,17 @@ from simcontract.contracts import (
     Preview,
     RejectionInfo,
     ResolutionReport,
-    RoleSpec,
     StepContext,
 )
-
 from simcontract.contracts.domain_manifest import DomainManifest
 
+from .actions import GeneratorBid
 from .defaults import EnergyDefaults
-from .model import GENERATOR_PARAMS, clear_market
+from .manifest import ADAPTER_VERSION, DOMAIN_ID, MANIFEST, ROLES
+from .model import clear_market
+from .state import initial_state as build_initial_state
 
 _HERE = Path(__file__).parent
-
-DOMAIN_ID = "energy_market_v1"
-ADAPTER_VERSION = "0.1.0"
-
-ROLES = [
-    RoleSpec("regulator", 1, stage=1),
-    RoleSpec("generator", 3, stage=2),
-    RoleSpec("retailer", 2, stage=3),
-]
-
-
-_MANIFEST = DomainManifest(
-    domain_id=DOMAIN_ID,
-    domain_version=ADAPTER_VERSION,
-    contract_version=CONTRACT_VERSION,
-    origin="self_implemented",
-    roles=tuple(ROLES),
-    stage_order=(1, 2, 3),
-    action_schema_ids={"regulator": "regulator_policy_v1",
-                       "generator": "generator_bid_v1",
-                       "retailer": "retailer_demand_v1"},
-    metric_catalog_id="energy_metrics_v1",
-    observation_policy_id="energy_observation_v1",
-    scenario_ids=("baseline_v1",),
-)
 
 
 def schema() -> ActionSchema:
@@ -75,25 +51,20 @@ class EnergyMarketAdapter:
 
     @property
     def manifest(self) -> DomainManifest:
-        return _MANIFEST
+        return MANIFEST
 
     # ------------------------------------------------------------------
     def initial_state(self, scenario_id: str, seed: int) -> dict:
-        if scenario_id not in ("baseline_v1",):
-            raise KeyError(f"unknown scenario {scenario_id!r}")
-        return {
-            "round": 0,
-            "scenario_id": scenario_id,
-            "policy": {"carbon_price": 30.0, "price_cap": 250.0, "renewable_subsidy": 10.0},
-            "market": {"last_clearing_price": 0.0, "last_demand": 0.0, "eps": 0.0},
-            "generators": {s: dict(p) for s, p in GENERATOR_PARAMS.items()},
-        }
+        return build_initial_state(scenario_id)
 
     def sample_exogenous(self, state: dict, rng: random.Random) -> dict:
-        eps = 0.6 * float(state["market"]["eps"]) + rng.gauss(0.0, 25.0)
+        params = state["exogenous_params"]
+        eps = (float(params["demand_ar1"]) * float(state["market"]["eps"])
+               + rng.gauss(0.0, float(params["demand_sigma"])))
         return {
             "demand_shock": round(eps, 6),
-            "wind_availability": round(rng.uniform(0.4, 1.0), 6),
+            "wind_availability": round(
+                rng.uniform(float(params["wind_min"]), float(params["wind_max"])), 6),
         }
 
     # ------------------------------------------------------------------
@@ -122,12 +93,12 @@ class EnergyMarketAdapter:
 
     def validate_semantic(self, state: dict, action: Action) -> RejectionInfo | None:
         if action.role == "generator":
+            bid = GeneratorBid.from_fields(action.fields)
             cap = state["generators"][action.slot]["cap"]
-            offered = float(action.fields["capacity_offered"])
-            if offered > cap + 1e-9:
+            if bid.capacity_offered > cap + 1e-9:
                 return RejectionInfo("adapter_semantic", "capacity_exceeded",
-                                     f"{action.slot} offered {offered} > cap {cap}")
-            if action.fields.get("maintenance") and offered > 1e-9:
+                                     f"{action.slot} offered {bid.capacity_offered} > cap {cap}")
+            if bid.maintenance and bid.capacity_offered > 1e-9:
                 return RejectionInfo("adapter_semantic", "maintenance_conflict",
                                      "maintenance unit cannot offer capacity")
         return None
@@ -166,6 +137,7 @@ class EnergyMarketAdapter:
                 "eps": ctx.exogenous["demand_shock"],
             },
             "generators": state["generators"],
+            "exogenous_params": state["exogenous_params"],
         }
 
         report = ResolutionReport(
