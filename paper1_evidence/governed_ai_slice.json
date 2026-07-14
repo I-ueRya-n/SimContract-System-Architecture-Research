@@ -1,0 +1,31 @@
+{
+  "live_governed_participation": {
+    "ran": true,
+    "endpoint_reached": true,
+    "model_id": "gemma-4-e4b-it",
+    "invocations": 18,
+    "all_ok": true,
+    "latency_ms_median": 893,
+    "latency_ms_p95": 1172,
+    "latency_ms_max": 1172,
+    "resolved_action_sources": {
+      "bounded_llm": 18
+    },
+    "fallbacks": 0,
+    "replay_rounds": 3,
+    "replay_equal": 3,
+    "replay_equivalent": true
+  },
+  "deterministic_containment": {
+    "bounded_unparseable": {
+      "invalid_actions_emitted": 0,
+      "all_slots_bounded_llm": true,
+      "run_completed": true
+    },
+    "free_malformed": {
+      "fallback_reason": "response_unparsable",
+      "completed_by_default": true,
+      "run_completed": true
+    }
+  }
+}
