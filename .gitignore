@@ -10,3 +10,9 @@ build/
 
 # evidence-pack scratch bundles (tables themselves ARE committed)
 paper1_evidence/_*/
+
+# local LLM secrets — never commit
+.env
+.env.local
+.env.*
+!.env.example

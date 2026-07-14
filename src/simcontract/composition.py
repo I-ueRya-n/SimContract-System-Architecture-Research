@@ -6,10 +6,35 @@ experiments).
 """
 from __future__ import annotations
 
+import os
+from pathlib import Path
+
 from simcontract.analysis import default_registry as _default_analyzers
 from simcontract.application import Application
 from simcontract.llm import LlmClient
 from simcontract.plugins import AdapterRegistry
+
+
+def load_dotenv(path: str | Path = ".env") -> None:
+    """Load ``KEY=VALUE`` lines from a ``.env`` file into the environment.
+
+    Entry-point convenience only (no third-party dependency): existing
+    environment variables always win, so a value already exported is never
+    overwritten. The ``.env`` file is git-ignored; secrets never enter the
+    repository. Missing file is a no-op.
+    """
+    p = Path(path)
+    if not p.exists():
+        return
+    for line in p.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key:
+            os.environ.setdefault(key, value)
 
 
 def create_registry() -> AdapterRegistry:
@@ -49,10 +74,16 @@ def domain_assets(alias: str):
     raise KeyError(f"unknown domain alias {alias!r}")
 
 
-def create_application() -> Application:
+def create_application(load_env: bool = True) -> Application:
+    # Entry points may enable an OpenAI-compatible endpoint via SIMCONTRACT_LLM_*
+    # (a git-ignored .env, see .env.example). Explicit CLI flags still override
+    # the environment. When nothing is configured the LLM client stays disabled
+    # and LLM controllers degrade observably (SC-I3).
+    if load_env:
+        load_dotenv()
     return Application(
         registry=create_registry(),
         assets_for=domain_assets,
         analyzers=_default_analyzers(),
-        llm_factory=lambda base_url=None, model=None: LlmClient(base_url, model),
+        llm_factory=lambda base_url=None, model=None: LlmClient.from_env(base_url, model),
     )

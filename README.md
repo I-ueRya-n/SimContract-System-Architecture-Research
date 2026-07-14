@@ -57,9 +57,25 @@ PYTHONPATH=src python3 experiments/e6_analysis_extensibility.py
 ```
 
 LLM-assisted controllers (`bounded_llm`, `free_llm`) are optional and disabled
-by default; point `--llm-base-url/--llm-model` (or the E4 config) at any
-OpenAI-compatible endpoint to enable them. All degradation is recorded as
-structured events with explicit denominators.
+by default. Configure an OpenAI-compatible endpoint (local LM Studio / Ollama
+/ llama.cpp, or a hosted provider) in one of two ways:
+
+```bash
+# 1. env / .env file (copy .env.example -> .env; .env is git-ignored)
+cp .env.example .env    # then set SIMCONTRACT_LLM_BASE_URL / _MODEL / _API_KEY
+python -m simcontract.cli run --domain energy_market_v1 --scenario baseline_v1 \
+    --controllers all=bounded_llm --out results/llm_demo
+
+# 2. explicit flags (override the environment)
+python -m simcontract.cli run --domain energy_market_v1 --scenario baseline_v1 \
+    --controllers all=bounded_llm --llm-base-url http://localhost:1234/v1 \
+    --llm-model your-model-id --out results/llm_demo
+```
+
+API keys are read from the environment only and never committed. When no
+endpoint is configured the LLM controllers degrade observably
+(`llm_disabled`); when configured but unreachable they degrade with
+`endpoint_unreachable` — all recorded as structured events with denominators.
 
 ## Architecture (docs/spec.md is the source of truth)
 

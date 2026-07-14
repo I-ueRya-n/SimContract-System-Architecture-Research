@@ -7,9 +7,17 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import time
 import urllib.error
 import urllib.request
+
+# Environment variables that configure an OpenAI-compatible endpoint. Values
+# live in a git-ignored .env (see .env.example); keys are never committed.
+ENV_BASE_URL = "SIMCONTRACT_LLM_BASE_URL"
+ENV_MODEL = "SIMCONTRACT_LLM_MODEL"
+ENV_API_KEY = "SIMCONTRACT_LLM_API_KEY"
+ENV_MAX_TOKENS = "SIMCONTRACT_LLM_MAX_TOKENS"
 
 
 class LlmUnavailable(RuntimeError):
@@ -25,19 +33,40 @@ def _digest(text: str) -> str:
 class LlmClient:
     def __init__(self, base_url: str | None = None, model: str | None = None,
                  api_key: str | None = None, timeout_s: float = 30.0,
-                 max_retries: int = 1):
+                 max_retries: int = 1, max_tokens: int = 256):
         self.base_url = base_url.rstrip("/") if base_url else None
         self.model = model
         self._api_key = api_key
         self.timeout_s = timeout_s
         self.max_retries = max_retries
+        self.max_tokens = max_tokens
+
+    @classmethod
+    def from_env(cls, base_url: str | None = None, model: str | None = None,
+                 **kwargs) -> "LlmClient":
+        """Build a client from SIMCONTRACT_LLM_* env vars.
+
+        Explicit ``base_url``/``model`` (e.g. CLI flags) override the
+        environment; the API key is read from the environment only and is
+        never taken from a committed file. The client stays disabled when the
+        endpoint is not configured.
+        """
+        max_tokens = os.environ.get(ENV_MAX_TOKENS)
+        return cls(
+            base_url=base_url or os.environ.get(ENV_BASE_URL),
+            model=model or os.environ.get(ENV_MODEL),
+            api_key=os.environ.get(ENV_API_KEY),
+            max_tokens=int(max_tokens) if max_tokens else 256,
+            **kwargs,
+        )
 
     @property
     def enabled(self) -> bool:
         return bool(self.base_url and self.model)
 
     def complete(self, prompt: str, *, temperature: float, round_no: int,
-                 slot: str, prompt_version: str, max_tokens: int = 200):
+                 slot: str, prompt_version: str, max_tokens: int | None = None):
+        max_tokens = max_tokens if max_tokens is not None else self.max_tokens
         if not self.enabled:
             raise LlmUnavailable("llm_disabled", "no base_url/model configured")
         body = json.dumps({
