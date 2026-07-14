@@ -1,0 +1,18 @@
+[
+  {
+    "domain": "energy_market_v1",
+    "rounds_compared": 5,
+    "equal_rounds": 5,
+    "replay_equivalent": "Yes",
+    "hash_verified": "Yes",
+    "files_verified": "Yes"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "rounds_compared": 5,
+    "equal_rounds": 5,
+    "replay_equivalent": "Yes",
+    "hash_verified": "Yes",
+    "files_verified": "Yes"
+  }
+]

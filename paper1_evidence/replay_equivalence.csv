@@ -1,0 +1,3 @@
+domain,rounds_compared,equal_rounds,replay_equivalent,hash_verified,files_verified
+energy_market_v1,5,5,Yes,Yes,Yes
+epidemic_policy_v1,5,5,Yes,Yes,Yes

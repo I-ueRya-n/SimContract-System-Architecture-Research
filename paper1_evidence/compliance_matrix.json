@@ -1,0 +1,38 @@
+[
+  {
+    "domain": "reference_stub",
+    "protocol_satisfied": "Pass",
+    "manifest_valid": "Pass",
+    "candidates_syntactic_valid": "Pass",
+    "candidates_semantic_valid": "Pass",
+    "both_branches_emitted": "Pass",
+    "resolution_report_complete": "Pass",
+    "metrics_in_catalog": "Pass",
+    "replay_equivalent": "Pass",
+    "default_action_completion": "Pass"
+  },
+  {
+    "domain": "energy_market_v1",
+    "protocol_satisfied": "Pass",
+    "manifest_valid": "Pass",
+    "candidates_syntactic_valid": "Pass",
+    "candidates_semantic_valid": "Pass",
+    "both_branches_emitted": "Pass",
+    "resolution_report_complete": "Pass",
+    "metrics_in_catalog": "Pass",
+    "replay_equivalent": "Pass",
+    "default_action_completion": "Pass"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "protocol_satisfied": "Pass",
+    "manifest_valid": "Pass",
+    "candidates_syntactic_valid": "Pass",
+    "candidates_semantic_valid": "Pass",
+    "both_branches_emitted": "Pass",
+    "resolution_report_complete": "Pass",
+    "metrics_in_catalog": "Pass",
+    "replay_equivalent": "Pass",
+    "default_action_completion": "Pass"
+  }
+]

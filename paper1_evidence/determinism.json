@@ -1,0 +1,72 @@
+[
+  {
+    "domain": "energy_market_v1",
+    "item": "content_hash",
+    "run_A": "a94da2108f80470c",
+    "run_B": "a94da2108f80470c",
+    "identical": "Yes"
+  },
+  {
+    "domain": "energy_market_v1",
+    "item": "candidate_pool_digest",
+    "run_A": "8c7f57d3b0e0f32e",
+    "run_B": "8c7f57d3b0e0f32e",
+    "identical": "Yes"
+  },
+  {
+    "domain": "energy_market_v1",
+    "item": "exogenous_digest",
+    "run_A": "a002f37cf1727a87",
+    "run_B": "a002f37cf1727a87",
+    "identical": "Yes"
+  },
+  {
+    "domain": "energy_market_v1",
+    "item": "metrics_digest",
+    "run_A": "a440d82397c1da1b",
+    "run_B": "a440d82397c1da1b",
+    "identical": "Yes"
+  },
+  {
+    "domain": "energy_market_v1",
+    "item": "branches_digest",
+    "run_A": "a62080d3fbe7acf6",
+    "run_B": "a62080d3fbe7acf6",
+    "identical": "Yes"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "item": "content_hash",
+    "run_A": "828a50e73d4de617",
+    "run_B": "828a50e73d4de617",
+    "identical": "Yes"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "item": "candidate_pool_digest",
+    "run_A": "dfb1494ddd0722fc",
+    "run_B": "dfb1494ddd0722fc",
+    "identical": "Yes"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "item": "exogenous_digest",
+    "run_A": "45b3604cc30b7c24",
+    "run_B": "45b3604cc30b7c24",
+    "identical": "Yes"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "item": "metrics_digest",
+    "run_A": "1b915aa0257eec4e",
+    "run_B": "1b915aa0257eec4e",
+    "identical": "Yes"
+  },
+  {
+    "domain": "epidemic_policy_v1",
+    "item": "branches_digest",
+    "run_A": "8f42cf01a7b629f8",
+    "run_B": "8f42cf01a7b629f8",
+    "identical": "Yes"
+  }
+]

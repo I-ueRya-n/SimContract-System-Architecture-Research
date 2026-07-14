@@ -7,3 +7,6 @@ results/*
 *.egg-info/
 dist/
 build/
+
+# evidence-pack scratch bundles (tables themselves ARE committed)
+paper1_evidence/_*/

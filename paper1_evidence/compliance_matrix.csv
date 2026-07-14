@@ -1,0 +1,4 @@
+domain,protocol_satisfied,manifest_valid,candidates_syntactic_valid,candidates_semantic_valid,both_branches_emitted,resolution_report_complete,metrics_in_catalog,replay_equivalent,default_action_completion
+reference_stub,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+energy_market_v1,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+epidemic_policy_v1,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass,Pass

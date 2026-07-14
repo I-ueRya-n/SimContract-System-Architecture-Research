@@ -1,0 +1,23 @@
+[
+  {
+    "case": "invalid_action (out of range)",
+    "rejected": "Yes",
+    "rejection_tier": "engine_syntactic",
+    "completed_by_default": "Yes",
+    "run_completed": "Yes"
+  },
+  {
+    "case": "semantic_invalid (shares!=1)",
+    "rejected": "Yes",
+    "rejection_tier": "adapter_semantic",
+    "completed_by_default": "Yes",
+    "run_completed": "Yes"
+  },
+  {
+    "case": "missing_controller (unassigned)",
+    "rejected": "n/a",
+    "rejection_tier": "n/a",
+    "completed_by_default": "Yes",
+    "run_completed": "Yes"
+  }
+]

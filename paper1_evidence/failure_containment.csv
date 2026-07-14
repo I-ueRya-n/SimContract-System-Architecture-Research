@@ -1,0 +1,4 @@
+case,rejected,rejection_tier,completed_by_default,run_completed
+invalid_action (out of range),Yes,engine_syntactic,Yes,Yes
+semantic_invalid (shares!=1),Yes,adapter_semantic,Yes,Yes
+missing_controller (unassigned),n/a,n/a,Yes,Yes

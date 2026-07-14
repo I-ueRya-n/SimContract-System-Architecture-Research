@@ -1,0 +1,42 @@
+[
+  {
+    "round": 1,
+    "authoritative_clearing_price": 84.0,
+    "applied_clearing_price": 92.938,
+    "renewable_share_auth": 0.4148,
+    "renewable_share_applied": 0.4148,
+    "regulator_source": "top_score"
+  },
+  {
+    "round": 2,
+    "authoritative_clearing_price": 84.0,
+    "applied_clearing_price": 110.197,
+    "renewable_share_auth": 0.2394,
+    "renewable_share_applied": 0.2394,
+    "regulator_source": "top_score"
+  },
+  {
+    "round": 3,
+    "authoritative_clearing_price": 84.0,
+    "applied_clearing_price": 95.032,
+    "renewable_share_auth": 0.4408,
+    "renewable_share_applied": 0.4408,
+    "regulator_source": "top_score"
+  },
+  {
+    "round": 4,
+    "authoritative_clearing_price": 84.0,
+    "applied_clearing_price": 92.675,
+    "renewable_share_auth": 0.4039,
+    "renewable_share_applied": 0.4039,
+    "regulator_source": "top_score"
+  },
+  {
+    "round": 5,
+    "authoritative_clearing_price": 84.0,
+    "applied_clearing_price": 104.869,
+    "renewable_share_auth": 0.4994,
+    "renewable_share_applied": 0.4994,
+    "regulator_source": "top_score"
+  }
+]
