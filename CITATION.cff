@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "SimContract: a contract-bounded, validation-aware multi-agent simulation framework"
+title: "SimContract: A Validation-Aware and Simulator-Authoritative Framework for Reproducible, Model-Replaceable Multi-Stakeholder Simulation with Governed AI Participation"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
@@ -7,5 +7,20 @@ authors:
     given-names: Ryan
     orcid: "https://orcid.org/0009-0001-9698-6999"
 license: MIT
-version: 0.1.0
-date-released: 2026-07-13
+version: 0.3.0
+date-released: 2026-07-14
+doi: 10.5281/zenodo.21358450
+repository-code: "https://github.com/I-ueRya-n/SimContract-System-Architecture-Research"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21358450
+    description: "Archived software artifact, version 0.3.0"
+keywords:
+  - research software
+  - software architecture
+  - simulation
+  - reproducibility
+  - large language model agents
+  - provenance
+  - replay
+  - validation

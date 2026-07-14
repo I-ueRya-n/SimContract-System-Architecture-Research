@@ -1,7 +1,7 @@
 [project]
 name = "simcontract"
-version = "0.2.0"
-description = "Contract-bounded, validation-aware multi-agent simulation framework"
+version = "0.3.0"
+description = "Validation-aware, simulator-authoritative framework for reproducible, model-replaceable multi-stakeholder simulation with governed AI participation"
 authors = [{ name = "Ryan Lin" }]
 license = { text = "MIT" }
 requires-python = ">=3.10"
