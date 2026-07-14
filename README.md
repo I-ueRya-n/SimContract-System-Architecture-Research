@@ -23,7 +23,7 @@ for contract testing and is not a research model. See
 
 ```bash
 pip install -e .              # or: PYTHONPATH=src with PyYAML installed
-python -m pytest -q           # 59 tests: contracts, invariants, compliance,
+python -m pytest -q           # 60 tests: contracts, invariants, compliance,
                               # dependency + token-leakage audit, rejection
                               # paths, replay, verification, analysis
 
