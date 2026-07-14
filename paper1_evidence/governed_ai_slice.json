@@ -1,20 +1,46 @@
 {
   "live_governed_participation": {
     "ran": true,
-    "endpoint_reached": true,
-    "model_id": "gemma-4-e4b-it",
-    "invocations": 18,
-    "all_ok": true,
-    "latency_ms_median": 893,
-    "latency_ms_p95": 1172,
-    "latency_ms_max": 1172,
-    "resolved_action_sources": {
-      "bounded_llm": 18
-    },
-    "fallbacks": 0,
-    "replay_rounds": 3,
-    "replay_equal": 3,
-    "replay_equivalent": true
+    "domains": [
+      {
+        "domain": "energy_market_v1",
+        "scenario": "baseline_v1",
+        "rounds": 3,
+        "endpoint_reached": true,
+        "model_id": "gemma-4-e4b-it",
+        "governed_selections": 18,
+        "all_ok": true,
+        "invalid_applied": 0,
+        "latency_ms_median": 643,
+        "latency_ms_max": 1089,
+        "resolved_action_sources": {
+          "bounded_llm": 18
+        },
+        "fallbacks": 0,
+        "replay_rounds": 3,
+        "replay_equal": 3,
+        "replay_equivalent": true
+      },
+      {
+        "domain": "epidemic_policy_v1",
+        "scenario": "seed_outbreak_v1",
+        "rounds": 3,
+        "endpoint_reached": true,
+        "model_id": "gemma-4-e4b-it",
+        "governed_selections": 12,
+        "all_ok": true,
+        "invalid_applied": 0,
+        "latency_ms_median": 907,
+        "latency_ms_max": 1415,
+        "resolved_action_sources": {
+          "bounded_llm": 12
+        },
+        "fallbacks": 0,
+        "replay_rounds": 3,
+        "replay_equal": 3,
+        "replay_equivalent": true
+      }
+    ]
   },
   "deterministic_containment": {
     "bounded_unparseable": {

@@ -39,7 +39,14 @@ from simcontract.llm import LlmClient
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "paper1_evidence"
-DOMAIN, SCENARIO = "energy_market_v1", "baseline_v1"
+DOMAIN, SCENARIO = "energy_market_v1", "baseline_v1"   # used by the containment demo
+
+# Live governed-participation slice runs on both research domains to show that
+# governance survives domain substitution (same protocol, same served model).
+LIVE_DOMAINS = [
+    ("energy_market_v1", "baseline_v1", 73, {"regulator_1": "decarb_first"}),
+    ("epidemic_policy_v1", "seed_outbreak_v1", 21, {"health_authority_1": "health_first"}),
+]
 
 
 class _MockLlm:
@@ -58,36 +65,31 @@ class _MockLlm:
 
 
 # ---- A. live governed participation -----------------------------------------
-def live_slice() -> dict:
-    load_dotenv()
-    app = create_application()
-    probe = LlmClient.from_env()
-    if not probe.enabled:
-        return {"ran": False, "reason": "no endpoint configured (SIMCONTRACT_LLM_*)"}
-
+def _one_live(app, domain, scenario, seed, personas, rounds=3) -> dict:
     run = app.run_session(
-        domain=DOMAIN, scenario=SCENARIO, seed=73, rounds=3,
-        conditions={"all": "bounded_llm"}, personas={"regulator_1": "decarb_first"},
-        out_dir=OUT / "_live" / DOMAIN)
+        domain=domain, scenario=scenario, seed=seed, rounds=rounds,
+        conditions={"all": "bounded_llm"}, personas=personas,
+        out_dir=OUT / "_live" / domain)
     result = run["result"]
     inv = result.invocations
     if not inv:
-        return {"ran": True, "endpoint_reached": False,
+        return {"domain": domain, "endpoint_reached": False,
                 "note": "endpoint configured but produced no ok invocations"}
-
     lat = sorted(i.latency_ms for i in inv)
     sources: dict[str, int] = {}
+    invalid = 0
     for r in result.rounds:
         for tag in r.resolution["sources"].values():
             sources[tag] = sources.get(tag, 0) + 1
+        invalid += len(r.resolution["rejected"])
     replay = app.replay_run(run["bundle"])
     return {
-        "ran": True, "endpoint_reached": True,
-        "model_id": inv[0].model_id,
-        "invocations": len(inv),
+        "domain": domain, "scenario": scenario, "rounds": rounds,
+        "endpoint_reached": True, "model_id": inv[0].model_id,
+        "governed_selections": len(inv),
         "all_ok": all(i.status == "ok" for i in inv),
+        "invalid_applied": invalid,
         "latency_ms_median": lat[len(lat) // 2],
-        "latency_ms_p95": lat[min(len(lat) - 1, int(0.95 * len(lat)))],
         "latency_ms_max": lat[-1],
         "resolved_action_sources": sources,
         "fallbacks": len(result.events),
@@ -95,6 +97,15 @@ def live_slice() -> dict:
         "replay_equal": replay.equal_rounds,
         "replay_equivalent": replay.equivalent,
     }
+
+
+def live_slice() -> dict:
+    load_dotenv()
+    app = create_application()
+    if not LlmClient.from_env().enabled:
+        return {"ran": False, "reason": "no endpoint configured (SIMCONTRACT_LLM_*)"}
+    domains = [_one_live(app, d, s, seed, p) for d, s, seed, p in LIVE_DOMAINS]
+    return {"ran": True, "domains": domains}
 
 
 # ---- B. deterministic containment -------------------------------------------
@@ -150,15 +161,22 @@ def main() -> int:
 
     live = summary["live_governed_participation"]
     cont = summary["deterministic_containment"]
-    if live.get("endpoint_reached"):
-        print(f"[E7-live] {live['model_id']}: {live['invocations']} selections, "
-              f"all_ok={live['all_ok']}, sources={live['resolved_action_sources']}, "
-              f"fallbacks={live['fallbacks']}, latency md/p95/max="
-              f"{live['latency_ms_median']}/{live['latency_ms_p95']}/{live['latency_ms_max']}ms, "
-              f"replay {live['replay_equal']}/{live['replay_rounds']} "
-              f"{'EQUIVALENT' if live['replay_equivalent'] else 'MISMATCH'}")
+    live_ok = False
+    if live.get("ran"):
+        live_ok = True
+        for d in live["domains"]:
+            if not d.get("endpoint_reached"):
+                print(f"[E7-live] {d['domain']}: {d.get('note')}"); live_ok = False; continue
+            print(f"[E7-live] {d['domain']:20s} {d['model_id']}: "
+                  f"{d['governed_selections']} governed selections, all_ok={d['all_ok']}, "
+                  f"invalid={d['invalid_applied']}, fallbacks={d['fallbacks']}, "
+                  f"latency md/max={d['latency_ms_median']}/{d['latency_ms_max']}ms, "
+                  f"replay {d['replay_equal']}/{d['replay_rounds']} "
+                  f"{'EQUIVALENT' if d['replay_equivalent'] else 'MISMATCH'}")
+            live_ok &= (d["invalid_applied"] == 0 and d["replay_equivalent"]
+                        and set(d["resolved_action_sources"]) == {"bounded_llm"})
     else:
-        print(f"[E7-live] skipped: {live.get('reason') or live.get('note')}")
+        print(f"[E7-live] skipped: {live.get('reason')}")
     print(f"[E7-containment] bounded/unparseable -> invalid actions="
           f"{cont['bounded_unparseable']['invalid_actions_emitted']} "
           f"(all slots bounded_llm={cont['bounded_unparseable']['all_slots_bounded_llm']}); "
@@ -166,9 +184,9 @@ def main() -> int:
           f"default completion={cont['free_malformed']['completed_by_default']}")
     print(f"[E7] summary -> {OUT/'governed_ai_slice.json'}")
 
-    ok = (cont["bounded_unparseable"]["invalid_actions_emitted"] == 0
-          and cont["free_malformed"]["completed_by_default"])
-    return 0 if ok else 1
+    cont_ok = (cont["bounded_unparseable"]["invalid_actions_emitted"] == 0
+               and cont["free_malformed"]["completed_by_default"])
+    return 0 if cont_ok and (live_ok or not live.get("ran")) else 1
 
 
 if __name__ == "__main__":
