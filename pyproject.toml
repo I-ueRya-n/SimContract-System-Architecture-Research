@@ -20,6 +20,16 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+# Domain adapters load their declarative surface (action schema, metric
+# catalog, observation policy) and scenario families from YAML at runtime;
+# these files MUST ship in the wheel or a non-editable install crashes at
+# adapter load. See docs/packaging_and_plugins.md.
+[tool.setuptools.package-data]
+simcontract = [
+    "domains/*/*.yaml",
+    "domains/*/scenarios/*.yaml",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
