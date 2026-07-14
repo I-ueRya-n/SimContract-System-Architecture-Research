@@ -1,0 +1,33 @@
+{
+  "adapter_version": "0.2.0",
+  "claim_boundary": "Architecture, traceability, and reproducibility evidence only; no claim of external behavioural validity for either domain model.",
+  "conditions": {
+    "generator_1": "rule",
+    "generator_2": "rule",
+    "generator_3": "rule",
+    "regulator_1": "rule",
+    "retailer_1": "rule",
+    "retailer_2": "rule"
+  },
+  "config_digest": "736ec411621a8eff1d9fe0d028abf4411bb08550778b654850425ded73f532e2",
+  "content_hash": "dd73a35091a5fb609cea12fb8b84fa4858d7cbf87d0c4469765d672a3b0be7bc",
+  "contract_version": "1.0.0",
+  "created_at": "2026-07-14T13:40:17.081670+00:00",
+  "domain_id": "energy_market_v1",
+  "evidence_schema_version": "1.0.0",
+  "file_hashes": {
+    "config.snapshot.json": "06c33cf159b62ff8ebcfa431099c582c366b1d56056133aad6c8eecf2bd3a1f4",
+    "decisions.jsonl": "874b5eeee0c0b4a886254edbb1342fa51e2d493d153d0173067542271ce2ccaf",
+    "domain_manifest.json": "796f54239d2ad21cfbe547ab1f3797fd6c6be458243379a9693c6968f9cd1f59",
+    "fallback_events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "llm_invocations.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metrics.csv": "ff5f25af03f53dcdbee1b5cc96d4bc7cf79bfc1c69c3268fa71ce8179a25b126",
+    "register.json": "53ea4819b21c3c67c7e7697ed16ba82a5a5e930a042d412dd79897f391b4b905",
+    "rounds.json": "27cde8342317f1ffe2beafea742baca406458a57bed8001dc020a5bd9edc058f"
+  },
+  "personas": {},
+  "rounds": 5,
+  "run_id": "energy_market_v1-73",
+  "run_seed": 73,
+  "scenario_id": "baseline_v1"
+}

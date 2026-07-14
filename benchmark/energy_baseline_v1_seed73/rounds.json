@@ -1,0 +1,542 @@
+[
+  {
+    "branches": {
+      "applied": {
+        "clearing_price": 84.0,
+        "consumer_cost": 34303.4345,
+        "generator_profit_total": 16251.1449,
+        "renewable_share": 0.4148,
+        "total_emissions": 215.0653,
+        "unserved_energy": 0.0
+      },
+      "authoritative": {
+        "clearing_price": 84.0,
+        "consumer_cost": 34303.4345,
+        "generator_profit_total": 16251.1449,
+        "renewable_share": 0.4148,
+        "total_emissions": 215.0653,
+        "unserved_energy": 0.0
+      }
+    },
+    "exogenous_digest": "c609a3a0ed47a0ab46e58cefafda0f45e2afc1fa34b5851df6a0bffbaa294e9b",
+    "resolution": {
+      "accepted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "generator_1": "rule",
+        "generator_2": "rule",
+        "generator_3": "rule",
+        "regulator_1": "rule",
+        "retailer_1": "rule",
+        "retailer_2": "rule"
+      },
+      "submitted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      }
+    },
+    "resolved_actions": {
+      "generator_1": {
+        "fields": {
+          "capacity_offered": 400.0,
+          "maintenance": false,
+          "price_bid": 57.0
+        },
+        "role": "generator"
+      },
+      "generator_2": {
+        "fields": {
+          "capacity_offered": 300.0,
+          "maintenance": false,
+          "price_bid": 72.0
+        },
+        "role": "generator"
+      },
+      "generator_3": {
+        "fields": {
+          "capacity_offered": 250.0,
+          "maintenance": false,
+          "price_bid": 27.0
+        },
+        "role": "generator"
+      },
+      "regulator_1": {
+        "fields": {
+          "carbon_price": 30.0,
+          "price_cap": 250.0,
+          "renewable_subsidy": 10.0
+        },
+        "role": "regulator"
+      },
+      "retailer_1": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      },
+      "retailer_2": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      }
+    },
+    "round_no": 1,
+    "round_seed": 7851176339432029371,
+    "system_metrics": {
+      "clearing_price": 84.0,
+      "consumer_cost": 34303.4345,
+      "generator_profit_total": 16251.1449,
+      "renewable_share": 0.4148,
+      "total_emissions": 215.0653,
+      "unserved_energy": 0.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "clearing_price": 84.0,
+        "consumer_cost": 37234.1461,
+        "generator_profit_total": 12429.254,
+        "renewable_share": 0.2394,
+        "total_emissions": 303.4286,
+        "unserved_energy": 0.0
+      },
+      "authoritative": {
+        "clearing_price": 84.0,
+        "consumer_cost": 37234.1461,
+        "generator_profit_total": 12429.254,
+        "renewable_share": 0.2394,
+        "total_emissions": 303.4286,
+        "unserved_energy": 0.0
+      }
+    },
+    "exogenous_digest": "092741579ef7af77754b09744ea4e4d3f5f00fd97e9ea7e71965f0c9619f3c21",
+    "resolution": {
+      "accepted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "generator_1": "rule",
+        "generator_2": "rule",
+        "generator_3": "rule",
+        "regulator_1": "rule",
+        "retailer_1": "rule",
+        "retailer_2": "rule"
+      },
+      "submitted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      }
+    },
+    "resolved_actions": {
+      "generator_1": {
+        "fields": {
+          "capacity_offered": 400.0,
+          "maintenance": false,
+          "price_bid": 57.0
+        },
+        "role": "generator"
+      },
+      "generator_2": {
+        "fields": {
+          "capacity_offered": 300.0,
+          "maintenance": false,
+          "price_bid": 72.0
+        },
+        "role": "generator"
+      },
+      "generator_3": {
+        "fields": {
+          "capacity_offered": 250.0,
+          "maintenance": false,
+          "price_bid": 27.0
+        },
+        "role": "generator"
+      },
+      "regulator_1": {
+        "fields": {
+          "carbon_price": 30.0,
+          "price_cap": 250.0,
+          "renewable_subsidy": 10.0
+        },
+        "role": "regulator"
+      },
+      "retailer_1": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      },
+      "retailer_2": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      }
+    },
+    "round_no": 2,
+    "round_seed": 13781387928878457160,
+    "system_metrics": {
+      "clearing_price": 84.0,
+      "consumer_cost": 37234.1461,
+      "generator_profit_total": 12429.254,
+      "renewable_share": 0.2394,
+      "total_emissions": 303.4286,
+      "unserved_energy": 0.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "clearing_price": 84.0,
+        "consumer_cost": 35599.2223,
+        "generator_profit_total": 17602.0239,
+        "renewable_share": 0.4408,
+        "total_emissions": 213.2892,
+        "unserved_energy": 0.0
+      },
+      "authoritative": {
+        "clearing_price": 84.0,
+        "consumer_cost": 35599.2223,
+        "generator_profit_total": 17602.0239,
+        "renewable_share": 0.4408,
+        "total_emissions": 213.2892,
+        "unserved_energy": 0.0
+      }
+    },
+    "exogenous_digest": "2db7619cedad4268fbe916418757559ffc821b13d1fa9afc28d3544f10a37c03",
+    "resolution": {
+      "accepted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "generator_1": "rule",
+        "generator_2": "rule",
+        "generator_3": "rule",
+        "regulator_1": "rule",
+        "retailer_1": "rule",
+        "retailer_2": "rule"
+      },
+      "submitted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      }
+    },
+    "resolved_actions": {
+      "generator_1": {
+        "fields": {
+          "capacity_offered": 400.0,
+          "maintenance": false,
+          "price_bid": 57.0
+        },
+        "role": "generator"
+      },
+      "generator_2": {
+        "fields": {
+          "capacity_offered": 300.0,
+          "maintenance": false,
+          "price_bid": 72.0
+        },
+        "role": "generator"
+      },
+      "generator_3": {
+        "fields": {
+          "capacity_offered": 250.0,
+          "maintenance": false,
+          "price_bid": 27.0
+        },
+        "role": "generator"
+      },
+      "regulator_1": {
+        "fields": {
+          "carbon_price": 30.0,
+          "price_cap": 250.0,
+          "renewable_subsidy": 10.0
+        },
+        "role": "regulator"
+      },
+      "retailer_1": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      },
+      "retailer_2": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      }
+    },
+    "round_no": 3,
+    "round_seed": 6576474304143417511,
+    "system_metrics": {
+      "clearing_price": 84.0,
+      "consumer_cost": 35599.2223,
+      "generator_profit_total": 17602.0239,
+      "renewable_share": 0.4408,
+      "total_emissions": 213.2892,
+      "unserved_energy": 0.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "clearing_price": 84.0,
+        "consumer_cost": 34017.0748,
+        "generator_profit_total": 15818.1691,
+        "renewable_share": 0.4039,
+        "total_emissions": 217.2638,
+        "unserved_energy": 0.0
+      },
+      "authoritative": {
+        "clearing_price": 84.0,
+        "consumer_cost": 34017.0748,
+        "generator_profit_total": 15818.1691,
+        "renewable_share": 0.4039,
+        "total_emissions": 217.2638,
+        "unserved_energy": 0.0
+      }
+    },
+    "exogenous_digest": "f3da31271de8d9093cdeedb1408ef67f909ace31d97c8d35d9d523052571756d",
+    "resolution": {
+      "accepted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "generator_1": "rule",
+        "generator_2": "rule",
+        "generator_3": "rule",
+        "regulator_1": "rule",
+        "retailer_1": "rule",
+        "retailer_2": "rule"
+      },
+      "submitted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      }
+    },
+    "resolved_actions": {
+      "generator_1": {
+        "fields": {
+          "capacity_offered": 400.0,
+          "maintenance": false,
+          "price_bid": 57.0
+        },
+        "role": "generator"
+      },
+      "generator_2": {
+        "fields": {
+          "capacity_offered": 300.0,
+          "maintenance": false,
+          "price_bid": 72.0
+        },
+        "role": "generator"
+      },
+      "generator_3": {
+        "fields": {
+          "capacity_offered": 250.0,
+          "maintenance": false,
+          "price_bid": 27.0
+        },
+        "role": "generator"
+      },
+      "regulator_1": {
+        "fields": {
+          "carbon_price": 30.0,
+          "price_cap": 250.0,
+          "renewable_subsidy": 10.0
+        },
+        "role": "regulator"
+      },
+      "retailer_1": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      },
+      "retailer_2": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      }
+    },
+    "round_no": 4,
+    "round_seed": 1373363099575461055,
+    "system_metrics": {
+      "clearing_price": 84.0,
+      "consumer_cost": 34017.0748,
+      "generator_profit_total": 15818.1691,
+      "renewable_share": 0.4039,
+      "total_emissions": 217.2638,
+      "unserved_energy": 0.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "clearing_price": 84.0,
+        "consumer_cost": 33064.495,
+        "generator_profit_total": 17893.974,
+        "renewable_share": 0.4994,
+        "total_emissions": 177.3456,
+        "unserved_energy": 0.0
+      },
+      "authoritative": {
+        "clearing_price": 84.0,
+        "consumer_cost": 33064.495,
+        "generator_profit_total": 17893.974,
+        "renewable_share": 0.4994,
+        "total_emissions": 177.3456,
+        "unserved_energy": 0.0
+      }
+    },
+    "exogenous_digest": "09f518606f9d934b49e1128ba8a7baf0d1958357a3ef74ee4047009e2a975d73",
+    "resolution": {
+      "accepted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "generator_1": "rule",
+        "generator_2": "rule",
+        "generator_3": "rule",
+        "regulator_1": "rule",
+        "retailer_1": "rule",
+        "retailer_2": "rule"
+      },
+      "submitted": {
+        "generator_1": "f77f7a3f20e319ff836636e4e3622756357ca83831678d0f005bca0b70e5bf42",
+        "generator_2": "1a112972fd9320d4619e454d5c253e748e43ea770d80239087e775fa76fa4b38",
+        "generator_3": "86a098e006bf89a5a63a52d6245893d8267d39c3092c387911e12166773cfb41",
+        "regulator_1": "e54625d0de977382b1cfe078b570a34b071ecddd15f3607185d32e4e69c5d0cf",
+        "retailer_1": "55665ce8f53da3f4092edb2ef4497f14a85e3e01de380870c19f278893717a39",
+        "retailer_2": "56b848313e2f9839bbe5f4ce2e53ec37ac82132eeefb5d7bfb332e758fe7a2b5"
+      }
+    },
+    "resolved_actions": {
+      "generator_1": {
+        "fields": {
+          "capacity_offered": 400.0,
+          "maintenance": false,
+          "price_bid": 57.0
+        },
+        "role": "generator"
+      },
+      "generator_2": {
+        "fields": {
+          "capacity_offered": 300.0,
+          "maintenance": false,
+          "price_bid": 72.0
+        },
+        "role": "generator"
+      },
+      "generator_3": {
+        "fields": {
+          "capacity_offered": 250.0,
+          "maintenance": false,
+          "price_bid": 27.0
+        },
+        "role": "generator"
+      },
+      "regulator_1": {
+        "fields": {
+          "carbon_price": 30.0,
+          "price_cap": 250.0,
+          "renewable_subsidy": 10.0
+        },
+        "role": "regulator"
+      },
+      "retailer_1": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      },
+      "retailer_2": {
+        "fields": {
+          "demand_bid": 200.0,
+          "max_price": 200.0
+        },
+        "role": "retailer"
+      }
+    },
+    "round_no": 5,
+    "round_seed": 1162343154371913106,
+    "system_metrics": {
+      "clearing_price": 84.0,
+      "consumer_cost": 33064.495,
+      "generator_profit_total": 17893.974,
+      "renewable_share": 0.4994,
+      "total_emissions": 177.3456,
+      "unserved_energy": 0.0
+    }
+  }
+]

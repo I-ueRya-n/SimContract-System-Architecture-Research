@@ -1,0 +1,40 @@
+{
+  "action_schema_ids": {
+    "generator": "generator_bid_v1",
+    "regulator": "regulator_policy_v1",
+    "retailer": "retailer_demand_v1"
+  },
+  "contract_version": "1.0.0",
+  "domain_id": "energy_market_v1",
+  "domain_version": "0.2.0",
+  "metric_catalog_id": "energy_metrics_v1",
+  "observation_policy_id": "energy_observation_v1",
+  "origin": "self_implemented",
+  "roles": [
+    {
+      "count": 1,
+      "role": "regulator",
+      "stage": 1
+    },
+    {
+      "count": 3,
+      "role": "generator",
+      "stage": 2
+    },
+    {
+      "count": 2,
+      "role": "retailer",
+      "stage": 3
+    }
+  ],
+  "scenario_ids": [
+    "baseline_v1",
+    "tight_supply_v1"
+  ],
+  "stage_order": [
+    1,
+    2,
+    3
+  ],
+  "upstream": null
+}

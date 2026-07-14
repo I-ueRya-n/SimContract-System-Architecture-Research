@@ -1,0 +1,15 @@
+{
+  "candidate_count": 8,
+  "conditions": {
+    "generator_1": "rule",
+    "generator_2": "rule",
+    "generator_3": "rule",
+    "regulator_1": "rule",
+    "retailer_1": "rule",
+    "retailer_2": "rule"
+  },
+  "personas": {},
+  "rounds": 5,
+  "run_seed": 73,
+  "scenario_id": "baseline_v1"
+}
