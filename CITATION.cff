@@ -4,7 +4,7 @@ message: "If you use this software, please cite it as below."
 type: software
 authors:
   - family-names: Lin
-    given-names: Ryan
+    given-names: Yu-Wei Ryan
     orcid: "https://orcid.org/0009-0001-9698-6999"
 license: MIT
 version: 0.3.0
