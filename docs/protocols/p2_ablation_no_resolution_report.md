@@ -1,6 +1,6 @@
 # Paper 2 Architecture Ablation A1 — Withholding the Adapter-Returned ResolutionReport
 
-**Protocol version:** 1.0 (frozen 2026-07-16; pilot on energy seeds 1-3 required no changes)
+**Protocol version:** 1.0.1 (frozen 2026-07-16; pilot on energy seeds 1-3 required no changes; v1.0.1 relocates the output directory only)
 **Experiment type:** Controlled architecture ablation (paired, within-run)
 **Primary paper:** Paper 2 — Cross-Domain Contract Portability
 **Implementation:** `experiments/ablations/no_resolution_report.py` (explicit wrapper; no production code is modified)
@@ -95,7 +95,7 @@ percentage-point differences from the intact reference. No NHST.
 
 ## 7. Outputs
 
-`results/p2_ablation_no_resolution_report/`: `protocol.sha256`,
+`paper2_evidence/p2_ablation_no_resolution_report/` (v1.0.1: relocated from the gitignored results/ scratch dir to the committed evidence path, matching the paper1_evidence convention; no design change): `protocol.sha256`,
 `experiment_config.yaml` + `.sha256`, `environment.json`,
 `per_slot_results.jsonl`, `aggregate_results.json`,
 `source_tag_confusion.csv`, `case_breakdown.csv`, `domain_breakdown.csv`,

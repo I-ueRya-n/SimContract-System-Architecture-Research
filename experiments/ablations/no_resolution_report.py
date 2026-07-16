@@ -27,7 +27,7 @@ from simcontract.contracts import Action, ControllerResult
 from simcontract.engine.session import SessionRunner
 from simcontract.composition import create_registry, domain_assets
 
-RESULTS_DIR = Path(__file__).resolve().parents[2] / "results" / "p2_ablation_no_resolution_report"
+RESULTS_DIR = Path(__file__).resolve().parents[2] / "paper2_evidence" / "p2_ablation_no_resolution_report"
 UNRESOLVED = "__unresolved__"
 
 # Injected cases per role capability (protocol section 4).
