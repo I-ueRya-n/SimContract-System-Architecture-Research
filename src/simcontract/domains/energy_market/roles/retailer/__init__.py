@@ -1,0 +1,1 @@
+"""Retailer role policies."""

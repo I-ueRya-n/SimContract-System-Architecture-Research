@@ -28,15 +28,15 @@ _HERE = Path(__file__).parent
 
 
 def schema() -> ActionSchema:
-    return ActionSchema.from_file(_HERE / "action_schema.yaml")
+    return ActionSchema.from_file(_HERE / "contract" / "action_schema.yaml")
 
 
 def catalog() -> MetricCatalog:
-    return MetricCatalog.from_file(_HERE / "metric_catalog.yaml")
+    return MetricCatalog.from_file(_HERE / "contract" / "metric_catalog.yaml")
 
 
 def observation() -> ObservationPolicy:
-    return ObservationPolicy.from_file(_HERE / "observation_policy.yaml")
+    return ObservationPolicy.from_file(_HERE / "contract" / "observation_policy.yaml")
 
 
 class EnergyMarketAdapter:

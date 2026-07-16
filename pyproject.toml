@@ -27,6 +27,7 @@ where = ["src"]
 [tool.setuptools.package-data]
 simcontract = [
     "domains/*/*.yaml",
+    "domains/*/contract/*.yaml",
     "domains/*/scenarios/*.yaml",
 ]
 
