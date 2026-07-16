@@ -2,9 +2,11 @@
 
 ## 1. Reproducer declaration
 
-**Name or identifier:**  
+> This report is intended to be published (see the protocol section *How your report will be used*). You may use a pseudonym, initials, or a handle as your identifier, and you may leave optional fields blank.
+
+**Name or identifier** (a pseudonym, initials, or handle is acceptable)**:**  
 **Date:**  
-**Country/time zone:**  
+**Country/time zone** (optional)**:**  
 **Relationship to the author:**  
 **I know the author personally:** Yes / No  
 **I contributed to SimContract before this check:** Yes / No  
@@ -15,9 +17,9 @@ I confirm that I did not modify SimContract source files, configuration files, b
 
 ## 2. Environment
 
-**Operating system and version:**  
-**Computer/hardware:**  
-**Python version:**  
+**Operating system and version** (required — evidences portability)**:**  
+**Computer/hardware** (optional)**:**  
+**Python version** (required)**:**  
 **Terminal used:**  
 **Installation start time:**  
 **Protocol completion time:**  
@@ -67,3 +69,4 @@ The documented SimContract v0.3.0 deterministic workflow was reproduced:
 - [ ] `terminal-session.txt`
 - [ ] complete `benchmark-reproduction/` directory
 - [ ] screenshots, if needed
+- [ ] I have read *How your report will be used* in the protocol and consent to publication of this report as described there

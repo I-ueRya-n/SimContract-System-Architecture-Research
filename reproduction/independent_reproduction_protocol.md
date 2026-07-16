@@ -45,6 +45,20 @@ The reproducer should:
 
 No GPU, API key, Docker, external dataset, or machine-learning expertise is required.
 
+## How your report will be used (please read before you start)
+
+Your completed report and logs are **intended to be published** as part of the reproduction evidence for SimContract v0.3.0. They may appear in a public GitHub issue, in an archived evidence package (Zenodo), and/or as supplementary material accompanying a research paper.
+
+Before you begin, please note:
+
+- **You may use a pseudonym.** In the report, the identifier can be your initials, a GitHub handle, or any identifier you choose. Your legal name is not required, and withholding it does not weaken the evidence — what matters is that you are not a contributor.
+- **Optional fields.** Country/time zone and computer/hardware are optional and may be left blank. Operating system and Python version are the only environment details actually needed, because they evidence portability.
+- **Relationship disclosure is required and will be public.** Whether you know the author personally, and whether you contributed to SimContract, must be answered honestly. Disclosing a personal connection is expected and does not invalidate the check; concealing one would.
+- **Private transit is fine.** If you send the ZIP to the author before publication, you may password-protect or encrypt it, or use any private channel you prefer. The final evidence is nevertheless intended to be public.
+- **You may withdraw or request redaction** at any time before the evidence is archived or published.
+
+By returning a completed report you consent to its publication as described above.
+
 ## What must be returned
 
 Return one ZIP containing only:
