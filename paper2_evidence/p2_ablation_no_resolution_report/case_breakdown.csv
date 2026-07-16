@@ -1,0 +1,7 @@
+group,slots,exact_match,exact_rate,final_action_match,final_action_rate
+controller_failure,624,0,0.0000,0,0.0000
+domain_completion,720,0,0.0000,0,0.0000
+missing_submission,770,0,0.0000,0,0.0000
+semantic_rejection,284,0,0.0000,0,0.0000
+syntactic_rejection,576,0,0.0000,0,0.0000
+valid_action,626,626,1.0000,626,1.0000

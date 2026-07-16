@@ -1,0 +1,3 @@
+group,slots,exact_match,exact_rate,final_action_match,final_action_rate
+energy_market_v1,2160,400,0.1852,400,0.1852
+epidemic_policy_v1,1440,226,0.1569,226,0.1569

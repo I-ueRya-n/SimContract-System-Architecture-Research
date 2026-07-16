@@ -1,0 +1,114 @@
+{
+  "by_case": {
+    "controller_failure": {
+      "exact_match": 0,
+      "exact_rate": 0.0,
+      "final_action_match": 0,
+      "final_action_rate": 0.0,
+      "slots": 624
+    },
+    "domain_completion": {
+      "exact_match": 0,
+      "exact_rate": 0.0,
+      "final_action_match": 0,
+      "final_action_rate": 0.0,
+      "slots": 720
+    },
+    "missing_submission": {
+      "exact_match": 0,
+      "exact_rate": 0.0,
+      "final_action_match": 0,
+      "final_action_rate": 0.0,
+      "slots": 770
+    },
+    "semantic_rejection": {
+      "exact_match": 0,
+      "exact_rate": 0.0,
+      "final_action_match": 0,
+      "final_action_rate": 0.0,
+      "slots": 284
+    },
+    "syntactic_rejection": {
+      "exact_match": 0,
+      "exact_rate": 0.0,
+      "final_action_match": 0,
+      "final_action_rate": 0.0,
+      "slots": 576
+    },
+    "valid_action": {
+      "exact_match": 626,
+      "exact_rate": 1.0,
+      "final_action_match": 626,
+      "final_action_rate": 1.0,
+      "slots": 626
+    }
+  },
+  "by_domain": {
+    "energy_market_v1": {
+      "exact_match": 400,
+      "exact_rate": 0.18518518518518517,
+      "final_action_match": 400,
+      "final_action_rate": 0.18518518518518517,
+      "slots": 2160
+    },
+    "epidemic_policy_v1": {
+      "exact_match": 226,
+      "exact_rate": 0.15694444444444444,
+      "final_action_match": 226,
+      "final_action_rate": 0.15694444444444444,
+      "slots": 1440
+    }
+  },
+  "complete_exact_match": {
+    "count": 626,
+    "rate": 0.1738888888888889,
+    "wilson95": [
+      0.16185732718650656,
+      0.18661567674833748
+    ]
+  },
+  "field_accuracy": {
+    "completed": {
+      "count": 3600,
+      "rate": 1.0,
+      "wilson95": [
+        0.9989340655172748,
+        0.9999999999999999
+      ]
+    },
+    "completion_reason": {
+      "count": 3600,
+      "rate": 1.0,
+      "wilson95": [
+        0.9989340655172748,
+        0.9999999999999999
+      ]
+    },
+    "final_action": {
+      "count": 626,
+      "rate": 0.1738888888888889,
+      "wilson95": [
+        0.16185732718650656,
+        0.18661567674833748
+      ]
+    },
+    "rejection_stage": {
+      "count": 3600,
+      "rate": 1.0,
+      "wilson95": [
+        0.9989340655172748,
+        0.9999999999999999
+      ]
+    },
+    "source_tag": {
+      "count": 3600,
+      "rate": 1.0,
+      "wilson95": [
+        0.9989340655172748,
+        0.9999999999999999
+      ]
+    }
+  },
+  "total_slots": 3600,
+  "unresolved_final_action_rate": 0.8261111111111111
+}
