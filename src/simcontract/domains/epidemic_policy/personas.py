@@ -1,20 +1,21 @@
-"""Persona weight profiles for preview scoring (spec 7.2)."""
+"""Persona weight profiles for preview scoring (spec 7.2).
+
+Per-role archetypes live in ``roles/<role>/archetypes.py``. This module
+assembles them and keeps the domain-level ``weights_for`` contract stable.
+"""
+from __future__ import annotations
+
+from .roles.health_authority import archetypes as _authority
+from .roles.region_manager import archetypes as _manager
 
 PERSONA_WEIGHTS: dict[str, dict[str, dict[str, float]]] = {
-    "health_authority": {
-        "health_first":     {"new_infections": -1.0, "cumulative_deaths": -2.0,
-                             "overflow_days": -0.5},
-        "economy_balanced": {"econ_cost": -1.0, "cumulative_deaths": -0.8},
-    },
-    "region_manager": {
-        "equity_first":     {"equity_gap": -1.0, "vaccination_coverage": 0.5},
-        "efficiency_first": {"new_infections": -1.0, "overflow_days": -0.5},
-    },
+    "health_authority": _authority.WEIGHTS,
+    "region_manager": _manager.WEIGHTS,
 }
 
 DEFAULT_PERSONA = {
-    "health_authority": "health_first",
-    "region_manager": "efficiency_first",
+    "health_authority": _authority.DEFAULT,
+    "region_manager": _manager.DEFAULT,
 }
 
 
