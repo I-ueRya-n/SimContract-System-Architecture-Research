@@ -1,0 +1,17 @@
+# Frozen confirmatory configuration for Paper 2 ablation A1.
+protocol: docs/protocols/p2_ablation_no_resolution_report.md
+protocol_version: "1.0"
+domains: [energy_market_v1, epidemic_policy_v1]
+scenarios: all-declared            # 2 per domain, from each domain manifest
+seeds: {from: 1, to: 30}
+rounds_per_run: 6
+candidate_count: 8
+llm: disabled
+cases:
+  all_roles: [valid_action, missing_submission, controller_failure, syntactic_rejection]
+  semantic_roles: {generator: maintenance_conflict, region_manager: shares_not_normalised}
+  domain_completion: one deterministic unassigned slot per run (slots[seed % len(slots)])
+schedule: case = cases_for_role[(slot_index + round_no - 1) % len(cases_for_role)]
+unit_of_analysis: resolved role-decision slot
+pilot: {domains: [energy_market_v1], seeds: [1, 2, 3], excluded_from_confirmatory: true,
+        outcome: no protocol changes required}
