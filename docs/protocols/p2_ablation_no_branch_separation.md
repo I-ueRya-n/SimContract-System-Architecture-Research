@@ -1,9 +1,9 @@
 # Paper 2 Architecture Ablation A2 — Replacing Same-Resolution Branch Separation with a Separate Default Trajectory
 
-**Protocol version:** 0.1 (draft; to be frozen as 1.0 after an exploratory pilot)
-**Experiment type:** Controlled architecture ablation (paired, cross-run)
+**Protocol version:** 1.0 (frozen 2026-07-17 after a two-domain exploratory pilot; see §6.1 for the resulting revision)
+**Experiment type:** Controlled architecture ablation (paired, cross-run, **offline analysis** — no runtime modification)
 **Primary paper:** Paper 2 — Cross-Domain Contract Portability
-**Implementation (planned):** `experiments/ablations/no_branch_separation.py` (explicit wrapper; no production code modified). No experiment code is written before this draft exists; the pilot may revise it; v1.0 is hashed before the confirmatory run.
+**Implementation:** `experiments/ablations/analyze_branch_separation.py`. This is an offline ablation-analysis script, not a wrapper: it generates paired runs through the existing, unmodified public API (`Application.run_session`, using the pre-existing `on_round` hook) and computes every divergence from the resulting bundles. No production code is touched and no runtime behaviour is altered by the ablation.
 
 ## 1. Objective and proposition
 
@@ -89,9 +89,52 @@ not asserted.
 
 Metrics are heterogeneous in scale. Each metric is normalized by the
 interquartile range of its per-round values across the 120 default (`rule`)
-runs of the same domain and scenario; metrics with zero IQR in the default
-population are reported unnormalized and flagged. The normalization
-population is fixed before the confirmatory run.
+runs of the same domain and scenario; if the IQR is zero, fall back to
+(max−min); if that is also zero, use scale 1.0 and flag the metric
+`constant_unnormalized`. The normalization population is fixed before the
+confirmatory run.
+
+## 6.1 State-field vectors for `trajectory_history_distance` (revised after the pilot)
+
+A field belongs in a domain's vector only if the domain's own
+`step`/`_clear`/`_simulate` function **actually reads it back** — verified by
+source inspection, not assumed. The pilot's first pass included
+`state["policy"]` (both domains) and `state["market"]` (energy); manual
+review of the resulting normalization flags (`constant_unnormalized` on every
+`policy.*` field) triggered a source check that found:
+
+- `state["policy"]` is **never read** by either adapter (grep-verified) — it
+  is write-only bookkeeping, and it is trivially constant under `rule`
+  because `rule` always submits the same default action. **Dropped from
+  both domains.**
+- `energy_market_v1`'s `_clear()` reads only `actions`, `exogenous`, and the
+  per-run-constant `state["generators"]`; `state["market"]` is read nowhere
+  except inside `sample_exogenous`'s `eps` term, and that AR(1) recursion is
+  identical across trajectories by construction (it depends only on the
+  round-seeded RNG, never on submitted actions) — confirmed empirically by
+  the 100% `exogenous_match_rate`. **Energy therefore has no field that
+  mechanistically carries trajectory-distinguishing history; its vector is
+  intentionally empty**, and `trajectory_history_distance` is reported as
+  undefined (`None`), never a misleading `0.0`.
+- `epidemic_policy_v1`'s `_simulate()` reads `state["regions"]` (the SEIR
+  compartments) directly — genuine carried, trajectory-varying state. Its
+  vector uses the documented low-dimensional aggregate already in the state,
+  `summary.{total_infected, total_deaths, total_vaccinated}`, rather than the
+  full per-region vector.
+
+```text
+STATE_FIELDS = {
+  "energy_market_v1": {},   # no mechanistically carried state (see above)
+  "epidemic_policy_v1": {
+    "summary.total_infected", "summary.total_deaths", "summary.total_vaccinated"
+  },
+}
+```
+
+`state_distance()` returns `None` when the vector is empty; aggregates report
+`history_distance_defined` per domain and, where defined, a descriptive
+Pearson correlation between `trajectory_history_distance` and normalized
+attribution error (supporting analysis, not a causal test, per §7).
 
 ## 7. Outcome space (all results reportable)
 
@@ -117,9 +160,28 @@ validity of the domains.
 
 ## 9. Execution sequence
 
-Draft v0.1 (this document) → implement wrapper → one-domain exploratory
-pilot (excluded from confirmatory results) → record any protocol changes →
-freeze v1.0 → hash protocol + configuration → confirmatory matrix →
-verified machine-readable package under
-`paper2_evidence/p2_ablation_no_branch_separation/` → Paper 2 table and
-discussion.
+Draft v0.1 → implement analysis script → two-domain exploratory pilot
+(excluded from confirmatory results; findings and the §6.1 revision recorded
+in `paper2_evidence/p2_ablation_no_branch_separation/pilot_notes.md` and
+`manual_spot_checks.md`) → freeze v1.0 (this document) → hash protocol +
+configuration → confirmatory matrix (2 domains × 2 scenarios × 2 submitted
+conditions × 30 seeds × 6 rounds = 240 submitted + 120 shared default runs)
+→ verified machine-readable package under
+`paper2_evidence/p2_ablation_no_branch_separation/confirmatory/` → Paper 2
+table and discussion, reporting `overall` and `by_domain` results
+separately — pooling across domains would hide the exactly-explained
+asymmetry between the memoryless energy domain and the path-dependent
+epidemic domain that this protocol exists to distinguish.
+
+## 10. Pilot summary (informative; full detail in the evidence package)
+
+Energy: attribution error exactly 0.0 at every round (structural —
+source-verified memorylessness, not a null effect awaiting more data).
+Epidemic: 0.0 at round 1 (expected — shared initial state and exogenous),
+then monotonically increasing normalized attribution error across rounds
+2-6, with a Pearson correlation of 0.625 between `trajectory_history_distance`
+and attribution error. All 6 pre-registered pairing/validity gates passed;
+three metrics per domain (`unserved_energy`; `equity_gap`, `overflow_days`)
+showed zero variance in the pilot's rule population and are carried forward
+as `constant_unnormalized`, to be re-examined at the full 30-seed scale
+rather than treated as an error.

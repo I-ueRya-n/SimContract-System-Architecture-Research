@@ -1,0 +1,17 @@
+# Frozen confirmatory configuration for Paper 2 ablation A2.
+protocol: docs/protocols/p2_ablation_no_branch_separation.md
+protocol_version: "1.0"
+domains: [energy_market_v1, epidemic_policy_v1]
+scenarios: all-declared            # 2 per domain
+submitted_conditions: [random_valid, top_score]
+baseline_condition: rule
+seeds: {from: 1, to: 30}
+rounds_per_run: 6
+runs: {submitted: 240, shared_default: 120}
+state_fields:
+  energy_market_v1: []
+  epidemic_policy_v1: [summary.total_infected, summary.total_deaths, summary.total_vaccinated]
+normalization: preregistered IQR over the rule population per domain+scenario; fallback range, then 1.0 (flagged constant_unnormalized)
+pilot: {passes: 3, domains_tested: [energy_market_v1, epidemic_policy_v1],
+        outcome: "state-field vectors corrected (policy.* and energy market.* dropped, source-verified); no other protocol changes required",
+        excluded_from_confirmatory: true}

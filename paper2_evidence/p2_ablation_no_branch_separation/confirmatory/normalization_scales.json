@@ -1,0 +1,44 @@
+{
+  "energy_market_v1": {
+    "scales": {
+      "metric:clearing_price": 1.5,
+      "metric:consumer_cost": 3994.376400000001,
+      "metric:generator_profit_total": 4739.922825,
+      "metric:renewable_share": 0.18142499999999995,
+      "metric:total_emissions": 72.36489999999998,
+      "metric:unserved_energy": 1.0
+    },
+    "flags": {
+      "metric:clearing_price": "iqr_zero_fallback_range",
+      "metric:consumer_cost": "iqr",
+      "metric:generator_profit_total": "iqr",
+      "metric:renewable_share": "iqr",
+      "metric:total_emissions": "iqr",
+      "metric:unserved_energy": "constant_unnormalized"
+    }
+  },
+  "epidemic_policy_v1": {
+    "scales": {
+      "metric:cumulative_deaths": 147.7975,
+      "metric:econ_cost": 5310.827500000003,
+      "metric:equity_gap": 1.0,
+      "metric:new_infections": 5900.9175,
+      "metric:overflow_days": 1.0,
+      "metric:vaccination_coverage": 0.002678,
+      "state:summary.total_infected": 3483.925,
+      "state:summary.total_deaths": 124.52499999999998,
+      "state:summary.total_vaccinated": 4819.5
+    },
+    "flags": {
+      "metric:cumulative_deaths": "iqr",
+      "metric:econ_cost": "iqr",
+      "metric:equity_gap": "constant_unnormalized",
+      "metric:new_infections": "iqr",
+      "metric:overflow_days": "constant_unnormalized",
+      "metric:vaccination_coverage": "iqr",
+      "state:summary.total_infected": "iqr",
+      "state:summary.total_deaths": "iqr",
+      "state:summary.total_vaccinated": "iqr"
+    }
+  }
+}

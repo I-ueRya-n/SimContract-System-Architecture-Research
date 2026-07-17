@@ -1,0 +1,38 @@
+{
+  "pairing_keys": 120,
+  "submitted_runs": 240,
+  "rule_runs": 120,
+  "gates": [
+    {
+      "gate": "pairing_completeness",
+      "pass": true,
+      "detail": "0 missing pairs"
+    },
+    {
+      "gate": "rule_equivalence",
+      "pass": true,
+      "detail": "0 round/metric violations"
+    },
+    {
+      "gate": "exogenous_equality",
+      "pass": true,
+      "detail": "1440/1440 rounds match"
+    },
+    {
+      "gate": "metric_compatibility",
+      "pass": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "gate": "no_duplicate_keys",
+      "pass": true,
+      "detail": "120 unique keys"
+    },
+    {
+      "gate": "round_alignment",
+      "pass": true,
+      "detail": "0 misaligned pairs"
+    }
+  ],
+  "all_gates_pass": true
+}
