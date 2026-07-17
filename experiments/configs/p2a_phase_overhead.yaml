@@ -1,0 +1,15 @@
+protocol: docs/protocols/p2a_phase_overhead.md
+protocol_version: "1.0"
+domains: [energy_market_v1, epidemic_policy_v1]
+scenarios: all-declared
+conditions: [rule, random_valid, top_score]
+seeds: {from: 1, to: 30}
+rounds_per_run: 6
+runs: 360
+phases: [candidate_generation, observation, controller, validation_syntactic,
+         validation_semantic, resolution, evidence_collection, hashing, branch_recording_residual]
+instrumentation_tax_subsample: {domain: energy_market_v1, scenario: baseline_v1,
+  condition: rule, seed: 1, pairs: 20, warmup_per_pair: true}
+replay_verify_sample: one bundle per domain, seed 73, rule condition
+probe: {phases_added: [candidate_generation], reconciliation_residual: "57-61%",
+        outcome: "accepted as T_branch_recording, a named explicit bucket"}
