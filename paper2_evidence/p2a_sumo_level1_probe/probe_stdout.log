@@ -1,0 +1,14 @@
+num phases: 4
+
+=== Q1: continuous vs checkpoint+reload, same everything, per-second trail ===
+continuous_final=23.0  checkpoint_reload_final=26.0
+first differing second after split: 6 (None = never diverged)
+continuous_trail[:5]=[7.0, 9.0, 11.0, 13.0, 15.0]
+checkpoint_trail[:5]=[7.0, 9.0, 11.0, 13.0, 15.0]
+
+=== Q2: does forcing a different TLS phase at the checkpoint change the outcome? ===
+default_program=26.0  forced_phase0=110.0  forced_phase2=48.0  differs=True
+
+=== Q3: is checkpoint+reload itself deterministic across repeats? ===
+repeats=[26.0, 26.0, 26.0]  all_equal=True
+repeats_forced_phase1=[127.0, 127.0, 127.0]  all_equal=True

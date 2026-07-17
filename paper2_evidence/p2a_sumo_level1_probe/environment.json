@@ -1,0 +1,17 @@
+{
+  "software_commit": "1d069d4e172bb8eb800e5dd4a7b19c5179841ae9",
+  "branch": "experiment/p2a-sumo-level1",
+  "sumo_version": "1.27.1",
+  "sumo_packages": [
+    "eclipse-sumo==1.27.1",
+    "traci==1.27.1",
+    "sumolib==1.27.1",
+    "libsumo==1.27.1"
+  ],
+  "sumo_licence": "Eclipse Public License v2.0",
+  "network_generation_command": "netgenerate --grid --grid.number=3 --grid.length=100 --default.lanenumber=1 --tls.set=B1 -o net_tls.xml",
+  "demand_generation_command": "python randomTrips.py -n net_tls.xml -r routes.rou.xml -e 60 --seed 1 --period 3",
+  "probe_seed": 1,
+  "probe_split_t_seconds": 30,
+  "probe_horizon_seconds": 30
+}
