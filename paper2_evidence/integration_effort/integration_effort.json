@@ -1,0 +1,112 @@
+{
+  "method": "git-derived only; both research domains were introduced in a single commit, so per-domain shared-layer impact cannot be separated retrospectively, and no prospective effort diary exists, so no active-hours are reported",
+  "head_commit": "c98568ece3c55d8e3aea76a4943050377841fb30",
+  "per_domain_inventory": {
+    "energy_market": {
+      "core_python": {
+        "files": 7,
+        "loc": 420
+      },
+      "contract_yaml": {
+        "files": 3,
+        "loc": 20
+      },
+      "scenarios": {
+        "files": 2,
+        "loc": 22
+      },
+      "role_policies": {
+        "files": 10,
+        "loc": 76
+      },
+      "package_init": {
+        "files": 1,
+        "loc": 7
+      },
+      "total": {
+        "files": 23,
+        "loc": 545
+      }
+    },
+    "epidemic_policy": {
+      "core_python": {
+        "files": 7,
+        "loc": 427
+      },
+      "contract_yaml": {
+        "files": 3,
+        "loc": 16
+      },
+      "scenarios": {
+        "files": 2,
+        "loc": 26
+      },
+      "role_policies": {
+        "files": 7,
+        "loc": 51
+      },
+      "package_init": {
+        "files": 1,
+        "loc": 7
+      },
+      "total": {
+        "files": 20,
+        "loc": 527
+      }
+    },
+    "reference_stub": {
+      "core_python": {
+        "files": 4,
+        "loc": 167
+      },
+      "contract_yaml": {
+        "files": 2,
+        "loc": 4
+      },
+      "scenarios": {
+        "files": 0,
+        "loc": 0
+      },
+      "role_policies": {
+        "files": 0,
+        "loc": 0
+      },
+      "package_init": {
+        "files": 1,
+        "loc": 6
+      },
+      "total": {
+        "files": 7,
+        "loc": 177
+      }
+    }
+  },
+  "introducing_commit": {
+    "commit": "d362723",
+    "subject": "feat: two controlled research domains behind the same contract with cross-domain compliance suite",
+    "buckets": {
+      "domain_specific": {
+        "files": 16,
+        "loc_added": 759,
+        "loc_removed": 0
+      },
+      "shared_layers": {
+        "files": 0,
+        "loc_added": 0,
+        "loc_removed": 0
+      },
+      "tests": {
+        "files": 1,
+        "loc_added": 99,
+        "loc_removed": 0
+      },
+      "experiments_docs_other": {
+        "files": 0,
+        "loc_added": 0,
+        "loc_removed": 0
+      }
+    },
+    "shared_files_touched": []
+  },
+  "cross_reference": "Refactoring-invariance study: restructuring both domain interiors changed 0 files in engine/evidence/analysis/contracts with both fixed-seed hashes identical (see paper2_evidence and the manuscript)."
+}

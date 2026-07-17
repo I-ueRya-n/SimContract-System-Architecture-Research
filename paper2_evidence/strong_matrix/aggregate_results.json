@@ -1,0 +1,48 @@
+{
+  "by_condition": {
+    "random_valid": {
+      "fallbacks": 0,
+      "replay": 120,
+      "rerun": 120,
+      "runs": 120,
+      "sources_ok": 120
+    },
+    "rule": {
+      "fallbacks": 0,
+      "replay": 120,
+      "rerun": 120,
+      "runs": 120,
+      "sources_ok": 120
+    },
+    "top_score": {
+      "fallbacks": 0,
+      "replay": 120,
+      "rerun": 120,
+      "runs": 120,
+      "sources_ok": 120
+    }
+  },
+  "canonical_runs": 360,
+  "invariant_pass": {
+    "SC-I1": 360,
+    "SC-I2": 360,
+    "SC-I3": 360,
+    "SC-I4": 360,
+    "SC-I5": 360,
+    "SC-I6": 360,
+    "SC-I7": 360
+  },
+  "negative_controls": {
+    "config_change_detected": 12,
+    "configs": 12,
+    "tamper_detected": 12
+  },
+  "replay_equivalent_runs": 360,
+  "replay_rounds_equal": 2160,
+  "replay_rounds_total": 2160,
+  "rerun_hash_match": 360,
+  "rounds_completed_ok": 360,
+  "source_tags_match_condition": 360,
+  "total_decisions": 10800,
+  "total_fallback_events": 0
+}

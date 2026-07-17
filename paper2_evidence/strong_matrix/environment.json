@@ -1,0 +1,6 @@
+{
+  "python": "3.10.12",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "software_commit": "c98568ece3c55d8e3aea76a4943050377841fb30",
+  "matrix": "2 domains x all scenarios x ['rule', 'random_valid', 'top_score'] x 30 seeds x 6 rounds"
+}
