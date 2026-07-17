@@ -1,0 +1,15 @@
+{
+  "software_commit": "40c244a38ba94c1219eadd55a6d81c3047092954",
+  "config": {
+    "domain": "epidemic_policy_v1",
+    "scenario": "second_wave_v1",
+    "seed": 1,
+    "condition": "random_valid",
+    "rounds": 6,
+    "checkpoint_round": 3,
+    "continuation_rounds": [
+      4,
+      5
+    ]
+  }
+}

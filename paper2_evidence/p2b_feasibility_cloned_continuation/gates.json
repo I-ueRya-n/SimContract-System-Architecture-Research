@@ -1,0 +1,45 @@
+{
+  "domain": "epidemic_policy_v1",
+  "scenario": "second_wave_v1",
+  "seed": 1,
+  "condition": "random_valid",
+  "checkpoint_round": 3,
+  "continuation_rounds": [
+    4,
+    5
+  ],
+  "gates": [
+    {
+      "gate": "checkpoint_clone_identity",
+      "pass": true,
+      "detail": "checkpoint digest 17cdd9089570..."
+    },
+    {
+      "gate": "split_round_exogenous_shared",
+      "pass": true,
+      "detail": "clone A, clone B, and the original run all draw the identical exogenous vector at the split round"
+    },
+    {
+      "gate": "clone_a_reproduces_applied",
+      "pass": true,
+      "detail": "clone A (submitted action) vs. original run's applied branch"
+    },
+    {
+      "gate": "clone_b_reproduces_authoritative",
+      "pass": true,
+      "detail": "clone B (default action) vs. original run's authoritative branch"
+    },
+    {
+      "gate": "cloned_divergence_matches_a2_d_local",
+      "pass": true,
+      "detail": "round 3: {'cumulative_deaths': -0.75, 'econ_cost': -792.7000000000007, 'equity_gap': 6.799999999999992e-05, 'new_infections': -880.7699999999995, 'overflow_days': 0.0, 'vaccination_coverage': -0.00038000000000000013}"
+    },
+    {
+      "gate": "h3_exogenous_shared_despite_divergence",
+      "pass": true,
+      "detail": "rounds 4,5"
+    }
+  ],
+  "h1_pass": true,
+  "all_gates_pass": true
+}

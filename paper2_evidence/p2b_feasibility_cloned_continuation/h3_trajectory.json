@@ -1,0 +1,37 @@
+{
+  "split_round": 3,
+  "split_metric_diff": {
+    "cumulative_deaths": -0.75,
+    "econ_cost": -792.7000000000007,
+    "equity_gap": 6.799999999999992e-05,
+    "new_infections": -880.7699999999995,
+    "overflow_days": 0.0,
+    "vaccination_coverage": -0.00038000000000000013
+  },
+  "continuation": [
+    {
+      "round": 4,
+      "exogenous_match": true,
+      "metric_diff": {
+        "new_infections": -545.7200000000003,
+        "cumulative_deaths": -4.310000000000002,
+        "overflow_days": 0.0,
+        "econ_cost": -491.15999999999985,
+        "vaccination_coverage": -0.00038100000000000026,
+        "equity_gap": 6.799999999999992e-05
+      }
+    },
+    {
+      "round": 5,
+      "exogenous_match": true,
+      "metric_diff": {
+        "new_infections": -589.8699999999999,
+        "cumulative_deaths": -8.740000000000009,
+        "overflow_days": 0.0,
+        "econ_cost": -530.880000000001,
+        "vaccination_coverage": -0.00038000000000000013,
+        "equity_gap": 6.799999999999992e-05
+      }
+    }
+  ]
+}
