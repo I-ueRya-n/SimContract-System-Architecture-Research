@@ -205,5 +205,5 @@
   "mode": "confirmatory",
   "seeds": 40,
   "design": "2^(7-2)_resolution_IV_frac_factorial",
-  "software_commit": "6886ad574fbd21ad80b1b67567cf4e0933de9851"
+  "software_commit": "e30dd515274d85772a5cf13bcb36950aaa7edc50"
 }
