@@ -1,7 +1,7 @@
 # Paper 2B-E3 — structural boundary study
 
 Protocol: `docs/protocols/p2b_e3_structural_boundary.md` v1.0 (SHA-256
-prefix `91368cbb25041e17`). Script:
+prefix `4838bbb6d8c341d2`). Script:
 `experiments/paper2b/e3_structural_boundary.py`. Regression tests:
 `tests/unit/test_p2b_e3_structural.py` (6 tests). Pilot under `pilot/`,
 confirmatory under `confirmatory/`.
@@ -29,26 +29,36 @@ the factor definitions and the design choice (protocol §2).
 
 ## Result: a well-separated three-regime boundary map
 
-Regime prevalence: **exact 50%, approximate 15%, divergent 35%** — all three
-regimes located in factor space (the success criterion; a model where MT
-never or always diverged would be a failure to separate them). Sign
-disagreement 11.7%, ranking disagreement 1.2% (the strongest divergence
-form; rare, as expected).
+Regime prevalence — **exact 50%, approximate 15%, divergent 35%** — are cell
+proportions **under this frozen fractional-factorial design, factor levels,
+candidate set, and tolerance definition**, not a general claim about how
+often simulation studies diverge. All three regimes are located in factor
+space (the success criterion; a model where MT never or always diverged
+would be a failure to separate them). Sign disagreement 11.7%, ranking
+disagreement 1.2% (the strongest divergence form; rare, as expected).
 
 ### The boundary (headline)
 
-1. **Delayed cost is the master gate.** With `w_x = 0` (no delayed
-   consequence) every cell is exact (0% divergent), regardless of all other
-   factors — the E0/E2 structural fact. With `w_x` high, 70% of cells
-   diverge. This gating is why the *marginal* effects of the other factors
-   look flat: half the design (w_x=lo) is uniformly exact and dilutes them.
-2. **Given delayed cost, persistence is the dominant driver.** Conditional
-   on `w_x` high, divergent share rises from **43% at low persistence to 97%
-   at high persistence**. Feedback (66→74%), late timing (68→72%), and
-   magnitude (67→73%) add modest divergence; volatility (72→68%) and
-   lock-in irreversibility (74→66%) slightly *reduce* it (noise masks the
-   systematic bias; ceilings saturate it — the bounded-feedback nuance the
-   pilot flagged).
+1. **Delayed-cost activation is the necessary gate for non-zero attribution
+   error, within the evaluated micro-model family.** With `w_x = 0` (no
+   delayed consequence) every cell is exact (0% divergent), regardless of
+   all other factors — the E0/E2 structural fact — so this is a gate for
+   this model family, not a proven universal theorem. With `w_x` high, 70%
+   of cells diverge. The gating is why the *marginal* effects of the other
+   factors look flat: half the design (w_x=lo) is uniformly exact and
+   dilutes them.
+2. **Given delayed cost, persistence is the dominant driver** — a strong
+   main-effect finding in the evaluated design (divergent share rises from
+   **43% at low persistence to 97% at high persistence**, conditional on
+   `w_x` high). Feedback (66→74%), late timing (68→72%), and magnitude
+   (67→73%) add modest divergence; volatility (72→68%) and lock-in
+   irreversibility (74→66%) slightly *reduce* it. The design is
+   resolution IV: main effects are estimated clear of two-factor
+   interactions, but some two-factor interactions may alias each other, so
+   the small volatility/lock-in effects are reported as **conditional
+   observed effects** (noise masking; ceiling saturation — the
+   bounded-feedback nuance the pilot flagged), not as independently
+   identified causal mechanisms.
 
 This maps to the three regimes the roadmap called for:
 

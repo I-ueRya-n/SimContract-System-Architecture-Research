@@ -158,3 +158,16 @@ in a parameterized micro-model, with two real-domain corners anchored by
 2B-E2. Does not establish: the prevalence of each regime in any specific
 real model beyond the two anchors, whether the divergences change a
 scientific decision (2B-E4), or behavioural validity of any domain.
+
+Three wording boundaries are load-bearing and must be preserved wherever
+these numbers are cited: (i) the regime proportions
+(exact/approximate/divergent) are **cell proportions under this frozen
+design, factor levels, candidate set, and tolerance**, never a general rate
+for "simulation studies"; (ii) delayed-cost activation is the necessary
+gate for non-zero attribution error **within the evaluated micro-model
+family**, not a proven universal theorem; (iii) the design is resolution
+IV, so main effects (notably the strong persistence effect) are estimated
+clear of two-factor interactions, but some two-factor interactions may
+alias each other --- the small volatility and lock-in effects are therefore
+**conditional observed effects**, not independently identified causal
+mechanisms.
