@@ -49,17 +49,22 @@ scenarios × 30 seeds × 2 rounds × H∈{1,3,5} × 6 objectives × 4 candidates
    0.99. This is the "biased but conclusion-stable" regime (E3's approximate
    region) being common — a result that *bounds* the practical danger of MT
    rather than overstating it.
-2. **Decision impact concentrates at short horizons — the opposite of the
-   magnitude trend.** Top-1 flips occur almost entirely at H=1 (7.1%) and
-   vanish at H=3/H=5 (0%). E2 showed magnitude error *grows* with the
-   horizon; E4 shows decision error *shrinks* with it, because at longer
-   horizons the decision-local effect dominates and stabilises the ranking
-   while at H=1 the small one-step effect is easily flipped by the history
-   bias. Magnitude error and decision error move in opposite directions in
-   the horizon.
+2. **Effect-magnitude divergence and decision-ranking instability need not
+   move together (observed), with an explanatory hypothesis the design does
+   not identify.** Although attribution-error *magnitude* increased with the
+   horizon in E2, top-1 disagreement here was concentrated at H=1 (7.1%) and
+   disappeared at H=3/H=5 (0%) in the evaluated intervention sets — so
+   magnitude divergence and decision-ranking instability moved in opposite
+   directions across the horizon. A *plausible explanation* is that
+   longer-horizon candidate effects became sufficiently separated to
+   preserve their ordering, but E4's design does not independently identify
+   that mechanism (it did not compute or freeze the CL candidate-separation
+   margin, the MT perturbation relative to the top-1/top-2 gap, or ranking
+   stability as a function of effect margin).
 3. **When a flip happens, it is not a near-tie artefact.** All 27
-   confirmatory flips carry nonzero CL-evaluated selection regret (median
-   5262 infections) — the flips that occur cost real model-relative value.
+   confirmatory flips carry nonzero **CL-evaluated, model-relative regret**
+   among the 27 disagreement cases (median 5262 infections) — a
+   model-relative quantity, not a calibrated real-world health loss.
 4. **The structurally exact domain has zero decision impact.** Every energy
    decision set has τ = 1.0 and 0% top-1 disagreement, as the E2/E3
    state-independence predicts (a regression test locks τ = 1 for all energy
