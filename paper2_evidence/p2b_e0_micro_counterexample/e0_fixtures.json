@@ -1,0 +1,79 @@
+{
+  "fixtures": [
+    {
+      "regime": "R1_equivalence",
+      "candidate_index": 0,
+      "rho": 0.0,
+      "w_x": 0.5,
+      "H": 2,
+      "benefit": 3.0,
+      "load": 3.0,
+      "expected": {
+        "SR": 1.5,
+        "CL": 3.0,
+        "MT": 3.0,
+        "AE": 0.0
+      }
+    },
+    {
+      "regime": "R2_magnitude_error",
+      "candidate_index": 0,
+      "rho": 0.5,
+      "w_x": 0.5,
+      "H": 2,
+      "benefit": 3.0,
+      "load": 3.0,
+      "expected": {
+        "SR": 1.5,
+        "CL": 2.25,
+        "MT": 1.875,
+        "AE": 0.375
+      }
+    },
+    {
+      "regime": "R3_sign_reversal",
+      "candidate_index": 0,
+      "rho": 0.9,
+      "w_x": 1.0,
+      "H": 2,
+      "benefit": 3.0,
+      "load": 3.0,
+      "expected": {
+        "SR": 0.0,
+        "CL": 0.3,
+        "MT": -2.13,
+        "AE": 2.43
+      }
+    },
+    {
+      "regime": "R4_ranking_reversal",
+      "candidate_index": 0,
+      "rho": 0.8,
+      "w_x": 0.5,
+      "H": 2,
+      "benefit": 3.0,
+      "load": 3.0,
+      "expected": {
+        "SR": 1.5,
+        "CL": 1.8,
+        "MT": 0.84,
+        "AE": 0.96
+      }
+    },
+    {
+      "regime": "R4_ranking_reversal",
+      "candidate_index": 1,
+      "rho": 0.8,
+      "w_x": 0.5,
+      "H": 2,
+      "benefit": 2.0,
+      "load": 1.0,
+      "expected": {
+        "SR": 1.5,
+        "CL": 1.6,
+        "MT": 1.28,
+        "AE": 0.32
+      }
+    }
+  ]
+}

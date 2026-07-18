@@ -1,0 +1,8 @@
+{
+  "software_commit": "1d069d4e172bb8eb800e5dd4a7b19c5179841ae9",
+  "branch": "experiment/p2b-e0-microcounterexample",
+  "experiment": "paper2b_e0_micro_counterexample",
+  "python": "stdlib only, no deps",
+  "protocol": "docs/protocols/p2b_e0_micro_counterexample.md",
+  "protocol_sha256_prefix": "1454b252076cafcb"
+}
