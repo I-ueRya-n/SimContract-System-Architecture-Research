@@ -1,0 +1,49 @@
+{
+  "mode": "pilot",
+  "decision_sets": 360,
+  "eligible_decision_sets": 240,
+  "candidates_per_set": 4,
+  "PRIMARY_top1_disagreement_rate_eligible": 0.0083,
+  "top1_disagreement_rate_pooled": 0.0056,
+  "pairwise_inversion_rate_eligible": 0.0049,
+  "mean_kendall_tau_eligible": 0.9903,
+  "by_domain": {
+    "energy_market_v1": {
+      "decision_sets": 180,
+      "eligible_decision_sets": 120,
+      "degenerate_objectives": [
+        "renewable_share",
+        "unserved_energy"
+      ],
+      "top1_disagreement_rate_pooled": 0.0,
+      "top1_disagreement_rate_eligible": 0.0,
+      "pairwise_inversion_rate_eligible": 0.0,
+      "mean_kendall_tau_eligible": 1.0,
+      "top1_disagreement_eligible_by_horizon": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      }
+    },
+    "epidemic_policy_v1": {
+      "decision_sets": 180,
+      "eligible_decision_sets": 120,
+      "degenerate_objectives": [
+        "equity_gap",
+        "overflow_days"
+      ],
+      "top1_disagreement_rate_pooled": 0.0111,
+      "top1_disagreement_rate_eligible": 0.0167,
+      "pairwise_inversion_rate_eligible": 0.0097,
+      "mean_kendall_tau_eligible": 0.9806,
+      "top1_disagreement_eligible_by_horizon": {
+        "1": 0.05,
+        "3": 0.0,
+        "5": 0.0
+      }
+    }
+  },
+  "nonzero_regret_when_disagree_count": 2,
+  "median_regret_when_disagree": 7544.0,
+  "software_commit": "86a8141adc6a664f1a67a1f358b3d854b32b0470"
+}

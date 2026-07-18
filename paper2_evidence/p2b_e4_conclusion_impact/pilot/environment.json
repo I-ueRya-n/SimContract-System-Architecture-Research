@@ -1,0 +1,30 @@
+{
+  "software_commit": "86a8141adc6a664f1a67a1f358b3d854b32b0470",
+  "domains": [
+    "energy_market_v1",
+    "epidemic_policy_v1"
+  ],
+  "decision_slot": {
+    "energy_market_v1": "regulator_1",
+    "epidemic_policy_v1": "health_authority_1"
+  },
+  "scenarios_per_domain": 1,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "decision_rounds": [
+    3,
+    5
+  ],
+  "candidates_per_set": 4,
+  "session_rounds": 8
+}
