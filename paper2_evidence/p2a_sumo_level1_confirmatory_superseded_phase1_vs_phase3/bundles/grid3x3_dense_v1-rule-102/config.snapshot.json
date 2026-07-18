@@ -1,0 +1,10 @@
+{
+  "candidate_count": 8,
+  "conditions": {
+    "traffic_authority_1": "rule"
+  },
+  "personas": {},
+  "rounds": 10,
+  "run_seed": 102,
+  "scenario_id": "grid3x3_dense_v1"
+}

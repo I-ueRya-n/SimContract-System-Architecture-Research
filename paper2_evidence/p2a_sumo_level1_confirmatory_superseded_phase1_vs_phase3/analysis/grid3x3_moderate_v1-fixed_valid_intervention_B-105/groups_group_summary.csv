@@ -1,0 +1,2 @@
+domain,cohort,metric,n,mean,sd,min,max
+sumo_transfer_v1,fixed_valid_intervention_B,waiting_time,1,125.0,0.0,125.0,125.0

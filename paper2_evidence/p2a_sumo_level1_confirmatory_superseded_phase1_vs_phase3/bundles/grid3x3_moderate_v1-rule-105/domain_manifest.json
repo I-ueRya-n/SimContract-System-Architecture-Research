@@ -1,0 +1,36 @@
+{
+  "action_schema_ids": {
+    "traffic_authority": "sumo_phase_v1"
+  },
+  "contract_version": "1.0.0",
+  "domain_id": "sumo_transfer_v1",
+  "domain_version": "0.1.0",
+  "metric_catalog_id": "sumo_metrics_v1",
+  "observation_policy_id": "sumo_observation_v1",
+  "origin": "third_party_open_source",
+  "roles": [
+    {
+      "count": 1,
+      "role": "traffic_authority",
+      "stage": 1
+    }
+  ],
+  "scenario_ids": [
+    "grid3x3_moderate_v1",
+    "grid3x3_dense_v1"
+  ],
+  "stage_order": [
+    1
+  ],
+  "upstream": {
+    "citation": "Lopez, P.A. et al. (2018). Microscopic Traffic Simulation using SUMO. IEEE ITSC.",
+    "commit_hash": null,
+    "integration_mode": "dependency_wrapper",
+    "license_id": "EPL-2.0",
+    "modification_summary": null,
+    "project_name": "Eclipse SUMO",
+    "release": "1.27.1",
+    "repository_url": "https://github.com/eclipse-sumo/sumo",
+    "source_modified": false
+  }
+}

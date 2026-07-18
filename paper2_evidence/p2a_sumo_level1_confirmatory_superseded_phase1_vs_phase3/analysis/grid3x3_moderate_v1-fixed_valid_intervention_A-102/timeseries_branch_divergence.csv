@@ -1,0 +1,11 @@
+run_id,domain,round,metric,applied,authoritative,divergence
+sumo_transfer_v1-102,sumo_transfer_v1,1,waiting_time,0.0,0.0,0.0
+sumo_transfer_v1-102,sumo_transfer_v1,2,waiting_time,0.0,0.0,0.0
+sumo_transfer_v1-102,sumo_transfer_v1,3,waiting_time,0.0,0.0,0.0
+sumo_transfer_v1-102,sumo_transfer_v1,4,waiting_time,2.0,0.0,2.0
+sumo_transfer_v1-102,sumo_transfer_v1,5,waiting_time,10.0,3.0,7.0
+sumo_transfer_v1-102,sumo_transfer_v1,6,waiting_time,21.0,8.0,13.0
+sumo_transfer_v1-102,sumo_transfer_v1,7,waiting_time,39.0,17.0,22.0
+sumo_transfer_v1-102,sumo_transfer_v1,8,waiting_time,62.0,28.0,34.0
+sumo_transfer_v1-102,sumo_transfer_v1,9,waiting_time,90.0,46.0,44.0
+sumo_transfer_v1-102,sumo_transfer_v1,10,waiting_time,124.0,68.0,56.0

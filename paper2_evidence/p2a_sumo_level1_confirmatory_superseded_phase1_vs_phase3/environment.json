@@ -1,0 +1,25 @@
+{
+  "software_commit": "bdb5750678f9f48651f617f8b87e138aaf4859e3",
+  "scenarios": [
+    "grid3x3_moderate_v1",
+    "grid3x3_dense_v1"
+  ],
+  "conditions": [
+    "rule",
+    "fixed_valid_intervention_A",
+    "fixed_valid_intervention_B"
+  ],
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "rounds": 10
+}

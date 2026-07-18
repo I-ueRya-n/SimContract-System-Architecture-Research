@@ -49,7 +49,7 @@ def main() -> int:
         # authoritative every round by construction, same invariant A2
         # relies on for the other two domains -- not itself a divergence test) ----
         out_a = work / "run_a"
-        res_a = app.run_session(domain="sumo_transfer_v1", scenario="grid3x3_v1",
+        res_a = app.run_session(domain="sumo_transfer_v1", scenario="grid3x3_moderate_v1",
                                 seed=1, rounds=3, conditions={"all": "rule"},
                                 personas={}, out_dir=out_a)
         bundle_a = res_a["result"]
@@ -61,7 +61,7 @@ def main() -> int:
         # actually diverge from the default (rule cannot, by construction),
         # and enough simulated time for congestion to build at the junction ----
         out_b = work / "run_b"
-        res_b = app.run_session(domain="sumo_transfer_v1", scenario="grid3x3_v1",
+        res_b = app.run_session(domain="sumo_transfer_v1", scenario="grid3x3_moderate_v1",
                                 seed=2, rounds=10, conditions={"all": "random_valid"},
                                 personas={}, out_dir=out_b)
         bundle_b = res_b["result"]

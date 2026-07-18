@@ -1,0 +1,28 @@
+{
+  "adapter_version": "0.1.0",
+  "claim_boundary": "Architecture, traceability, and reproducibility evidence only; no claim of external behavioural validity for either domain model.",
+  "conditions": {
+    "traffic_authority_1": "fixed_valid_intervention_B"
+  },
+  "config_digest": "736ec411621a8eff1d9fe0d028abf4411bb08550778b654850425ded73f532e2",
+  "content_hash": "995249fee2529e1fae231b87d9e5a8d3dd28c024e05f639aef75b3299924ec81",
+  "contract_version": "1.0.0",
+  "created_at": "2026-07-18T05:16:58.487634+00:00",
+  "domain_id": "sumo_transfer_v1",
+  "evidence_schema_version": "1.0.0",
+  "file_hashes": {
+    "config.snapshot.json": "7be3da5f05d42a71dd6ca5c33027297e5037168ca9ebb170e6cadba87f587502",
+    "decisions.jsonl": "400f1ee2cd73acd522950ba822b43cbc82294e8f543e904393f256d834f9def5",
+    "domain_manifest.json": "23f4d8a8c51ce97fd0c35877c91cdad4ab8309e5a220aa19c907e05c366fe078",
+    "fallback_events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "llm_invocations.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "metrics.csv": "bf111f1daf583bee9ba769980bf570641a4210b965c08494eae8242e7b13f1a3",
+    "register.json": "f13cb591f535f9d51d12671a3c6850d5877061bd7067b05faa053586afb2eb14",
+    "rounds.json": "3b38a09cbb568c8560d48695a0a95a3815802393cfd2918be40b0bd4f5444578"
+  },
+  "personas": {},
+  "rounds": 10,
+  "run_id": "sumo_transfer_v1-110",
+  "run_seed": 110,
+  "scenario_id": "grid3x3_dense_v1"
+}

@@ -204,11 +204,132 @@ replay_run (full fresh rerun from round 1 using the recorded action
     saveState/loadState) reproduces the original applied metrics/branches
 ```
 
-## 9. Claim boundary (to be finalised only if Sec. 8 succeeds)
+**Result (smoke stage, `bdb5750`): all 6 gates pass** -- see
+`paper2_evidence/p2a_sumo_level1_smoke/README.md`. Not yet sufficient on
+its own for a Candidate B integration claim; see Sec. 10-14 for the
+confirmatory study this result is upgraded to before that decision.
 
-Would support: frozen SimContract contracts and evidence interfaces can
-wrap an external, non-co-designed simulator without common-core
-modification, for one minimal controllable scenario, on this machine. Would
-not establish: realistic traffic behaviour, calibration validity, scaling
-to a real network, or checkpoint-continuation fidelity beyond what Sec. 4a
-already discloses.
+## 9. Claim boundary and precise footprint wording
+
+**Do not write** "zero common-core files changed" -- the actual result is:
+
+```text
+contracts/  changed   0
+engine/     changed   0
+analysis/   changed   0
+evidence/   changed   0
+composition root changed   1 file / 12 lines
+```
+
+The correct, more credible sentence: *"No frozen contract, engine,
+evidence, replay, or generic-analysis implementation was modified.
+Integration required one 12-line composition-root registration change
+using the same existing seam as the built-in domains."* `composition.py`
+is the project's own pre-existing, sanctioned per-domain registration seam
+(ADR 0001/0005) -- `energy_market_v1` and `epidemic_policy_v1` each
+required the identically-shaped addition when they were added.
+
+Would support: the sentence above, for one minimal controllable scenario,
+on this machine. Would not establish: realistic traffic behaviour,
+calibration validity, scaling to a real network, or checkpoint-continuation
+fidelity beyond what Sec. 4a already discloses.
+
+## 10. Confirmatory matrix design
+
+Not a large traffic experiment. One synthetic network (Sec. 5) x two
+demand configurations (`grid3x3_moderate_v1`, 20 vehicles/60s;
+`grid3x3_dense_v1`, 60 vehicles/60s -- same `netgenerate` network, two
+`randomTrips.py --period` settings, both fully reproducible commands in
+`scenarios/grid3x3_v1/GENERATION.md`) x three deterministic conditions x
+10 paired seeds = **60 canonical runs**, 10 rounds x 5 simulated seconds
+each (inside the probe's verified exact-match window).
+
+**Conditions: `rule`, `fixed_valid_intervention_A` (force phase 2 every
+round), `fixed_valid_intervention_B` (force phase 1 every round) -- not
+`top_score`.** `preview()` is a disclosed approximation (Sec. 8, returns
+the constant last-observed metric regardless of candidate); `top_score`
+ranks candidates by their preview, which would be degenerate here and
+would manufacture a fair-execution claim `preview()` cannot support. Two
+fixed, legal, deterministic interventions give clearly distinguishable,
+trustworthy conditions without depending on preview at all.
+
+Seeds vary SUMO's own `--seed` (car-following/insertion-jitter model);
+the demand file itself is fixed per `scenario_id`, not regenerated per
+seed -- matching how `energy_market_v1`/`epidemic_policy_v1` hold scenario
+definitions fixed and vary only the run seed.
+
+**Correction after a first confirmatory pass (phases 1/3, not itself
+reported as final).** The first choice of fixed interventions was phase 1
+vs. phase 3. Both produced bit-identical `waiting_time` across every one
+of the 10 paired seeds, in both demand configurations -- not a bug.
+`net.xml`'s `tlLogic` (source-inspected, not assumed) defines four phases:
+`0` NS-green (42s), `1` NS-yellow (3s), `2` EW-green (42s), `3` EW-yellow
+(3s). Phases 1 and 3 are both short, all-restrictive transition phases;
+locking either one for a full round blocks the junction equivalently,
+regardless of which approach's yellow it nominally is. This made phases 1
+and 3 a degenerate pair for demonstrating "distinguishable legal
+interventions" -- structurally analogous to A2's own STATE_FIELDS
+correction (a field that looked plausible until source-inspection showed
+it carried no distinguishing information). **Corrected** to phase 2
+(EW-priority -- meaningfully asymmetric to `rule`'s NS-priority phase 0)
+and phase 1 (all-stop transitional -- meaningfully distinct from both).
+The confirmatory matrix in Sec. 10-14 uses the corrected pair; the
+degenerate first pass is not reported as evidence.
+
+## 11. Per-run verification checklist
+
+Every one of the 60 runs must satisfy all of:
+
+```text
+fresh execution succeeds (no exception)
+bundle verification passes (verify_bundle: content_hash_ok, files_ok)
+full replay from round 1 succeeds (replay_bundle: .equivalent)
+recorded actions reproduce evidence (0 mismatches)
+generic analyzer succeeds (report generated)
+no orphan SUMO process remains after this run's explicit cleanup
+configuration/input hashes resolve (net.xml + routes file + seed + condition digest)
+```
+
+Aggregate report: run-level replay pass rate, evidence mismatch count,
+process-cleanup failure count (checked externally via `pgrep -f sumo`
+before/after the whole matrix, not just per-run), contract/compliance pass
+rate, scenario/configuration identity, bundle size and wall-clock time per
+run, adapter files/LOC, composition-root change size, and disclosed
+exceptions.
+
+## 12. Explicit cleanup discipline
+
+`__del__` (Sec. 8's smoke stage) is a safety net, not the primary
+mechanism -- CPython does not guarantee its timing across all execution
+paths, and a confirmatory claim of zero leaked processes needs a
+deterministic guarantee. `SumoTransferAdapter.close()` is an
+adapter-owned, non-contract method (adding it does not modify
+`SimulationAdapter`); the confirmatory runner constructs the adapter and
+`SessionRunner` directly -- mirroring `Application.run_session()`'s own
+construction path, the same technique `experiments/overhead/
+phase_overhead.py`'s `_plain_equivalent_run()` already uses for a
+different reason -- specifically so it can hold a reference to call
+`adapter.close()` in a `finally` block around both the original run and
+the replay rerun.
+
+## 13. Confirmatory stop rule (in addition to Sec. 7)
+
+Stop and do not create a Candidate B integration if any of:
+
+- replay mismatch rate is greater than 0 on any of the 60 runs;
+- any leaked SUMO process is detected after the full matrix completes;
+- reliable cleanup requires anything beyond the adapter-owned `close()`
+  method;
+- a fair controller comparison would require relying on the disclosed
+  `preview()` approximation (this is exactly why Sec. 10 uses fixed
+  interventions instead of `top_score`).
+
+## 14. Candidate B decision rule
+
+Integrate a compact external-transfer subsection into Paper 2A
+(RQ2A.6) if and only if: all 60 runs complete, replay/verification pass
+rate is complete, the generic analyzer works unchanged, no frozen layer is
+modified, the composition change remains the declared 12-line seam, zero
+processes are leaked, and the result fits the page budget without cutting
+A1/A2/overhead. Otherwise: keep the confirmatory result as a standalone
+feasibility artifact and submit Candidate A unchanged.

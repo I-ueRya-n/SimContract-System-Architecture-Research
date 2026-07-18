@@ -38,6 +38,6 @@ MANIFEST = DomainManifest(
     action_schema_ids={"traffic_authority": "sumo_phase_v1"},
     metric_catalog_id="sumo_metrics_v1",
     observation_policy_id="sumo_observation_v1",
-    scenario_ids=("grid3x3_v1",),
+    scenario_ids=("grid3x3_moderate_v1", "grid3x3_dense_v1"),
     upstream=UPSTREAM,
 )

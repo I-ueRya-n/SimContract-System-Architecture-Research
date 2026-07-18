@@ -1,0 +1,382 @@
+[
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 0.0
+      },
+      "authoritative": {
+        "waiting_time": 0.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 1,
+    "round_seed": 7349676648540230727,
+    "system_metrics": {
+      "waiting_time": 0.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 0.0
+      },
+      "authoritative": {
+        "waiting_time": 0.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 2,
+    "round_seed": 12778335570605123611,
+    "system_metrics": {
+      "waiting_time": 0.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 4.0
+      },
+      "authoritative": {
+        "waiting_time": 0.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 3,
+    "round_seed": 16776554769069719634,
+    "system_metrics": {
+      "waiting_time": 4.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 14.0
+      },
+      "authoritative": {
+        "waiting_time": 5.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 4,
+    "round_seed": 18239975491033726066,
+    "system_metrics": {
+      "waiting_time": 14.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 27.0
+      },
+      "authoritative": {
+        "waiting_time": 13.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 5,
+    "round_seed": 11401257913778135276,
+    "system_metrics": {
+      "waiting_time": 27.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 49.0
+      },
+      "authoritative": {
+        "waiting_time": 25.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 6,
+    "round_seed": 7863354893306934473,
+    "system_metrics": {
+      "waiting_time": 49.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 91.0
+      },
+      "authoritative": {
+        "waiting_time": 51.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 7,
+    "round_seed": 9496682475610334250,
+    "system_metrics": {
+      "waiting_time": 91.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 130.0
+      },
+      "authoritative": {
+        "waiting_time": 72.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 8,
+    "round_seed": 12013055922704121827,
+    "system_metrics": {
+      "waiting_time": 130.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 173.0
+      },
+      "authoritative": {
+        "waiting_time": 18.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 9,
+    "round_seed": 5689552845721070506,
+    "system_metrics": {
+      "waiting_time": 173.0
+    }
+  },
+  {
+    "branches": {
+      "applied": {
+        "waiting_time": 261.0
+      },
+      "authoritative": {
+        "waiting_time": 37.0
+      }
+    },
+    "exogenous_digest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "resolution": {
+      "accepted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      },
+      "completed": {},
+      "completion_reasons": {},
+      "rejected": {},
+      "sources": {
+        "traffic_authority_1": "fixed_valid_intervention_A"
+      },
+      "submitted": {
+        "traffic_authority_1": "f186fea27b247ada5cd6cd7f2a0439cd879b7ca52cc48e4f4211315eaaf12f67"
+      }
+    },
+    "resolved_actions": {
+      "traffic_authority_1": {
+        "fields": {
+          "phase": 2
+        },
+        "role": "traffic_authority"
+      }
+    },
+    "round_no": 10,
+    "round_seed": 9806096454765241891,
+    "system_metrics": {
+      "waiting_time": 261.0
+    }
+  }
+]

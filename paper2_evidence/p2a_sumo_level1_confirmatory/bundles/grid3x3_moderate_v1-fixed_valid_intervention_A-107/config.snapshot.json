@@ -1,0 +1,10 @@
+{
+  "candidate_count": 8,
+  "conditions": {
+    "traffic_authority_1": "fixed_valid_intervention_A"
+  },
+  "personas": {},
+  "rounds": 10,
+  "run_seed": 107,
+  "scenario_id": "grid3x3_moderate_v1"
+}

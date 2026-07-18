@@ -1,0 +1,14 @@
+{
+  "total_runs": 60,
+  "expected_runs": 60,
+  "run_level_replay_pass_rate": 1.0,
+  "evidence_mismatch_count": 0,
+  "process_cleanup_failure_count": 0,
+  "contract_compliance_pass_rate": 1.0,
+  "generic_analyzer_pass_rate": 1.0,
+  "sumo_processes_before": 2,
+  "sumo_processes_after": 2,
+  "total_bundle_bytes": 1458376,
+  "mean_wall_s_per_run": 12.564640268267006,
+  "all_gates_pass": true
+}

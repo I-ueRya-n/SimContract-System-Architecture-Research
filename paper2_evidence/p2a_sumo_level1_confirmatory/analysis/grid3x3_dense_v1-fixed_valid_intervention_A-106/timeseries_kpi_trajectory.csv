@@ -1,0 +1,11 @@
+run_id,domain,round,metric,value
+sumo_transfer_v1-106,sumo_transfer_v1,1,waiting_time,0.0
+sumo_transfer_v1-106,sumo_transfer_v1,2,waiting_time,0.0
+sumo_transfer_v1-106,sumo_transfer_v1,3,waiting_time,2.0
+sumo_transfer_v1-106,sumo_transfer_v1,4,waiting_time,10.0
+sumo_transfer_v1-106,sumo_transfer_v1,5,waiting_time,26.0
+sumo_transfer_v1-106,sumo_transfer_v1,6,waiting_time,42.0
+sumo_transfer_v1-106,sumo_transfer_v1,7,waiting_time,71.0
+sumo_transfer_v1-106,sumo_transfer_v1,8,waiting_time,121.0
+sumo_transfer_v1-106,sumo_transfer_v1,9,waiting_time,182.0
+sumo_transfer_v1-106,sumo_transfer_v1,10,waiting_time,239.0

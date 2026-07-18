@@ -46,7 +46,10 @@ from .manifest import ADAPTER_VERSION, DOMAIN_ID, MANIFEST, ROLES
 _HERE = Path(__file__).parent
 _SCENARIO_DIR = _HERE / "scenarios" / "grid3x3_v1"
 _NET = str(_SCENARIO_DIR / "net.xml")
-_ROUTES = str(_SCENARIO_DIR / "routes.rou.xml")
+_ROUTES_BY_SCENARIO = {
+    "grid3x3_moderate_v1": str(_SCENARIO_DIR / "routes_moderate.rou.xml"),
+    "grid3x3_dense_v1": str(_SCENARIO_DIR / "routes_dense.rou.xml"),
+}
 _TLS = "B1"
 _SLOT = "traffic_authority_1"
 ROUND_SECONDS = 5  # inside the probe's verified exact-match window (protocol Sec. 4/6)
@@ -79,9 +82,9 @@ def _waiting_time(conn) -> float:
     return float(sum(conn.vehicle.getWaitingTime(v) for v in conn.vehicle.getIDList()))
 
 
-def _start_args(seed: int, load_state: str | None = None) -> list[str]:
-    args = [_sumo_binary(), "-n", _NET, "-r", _ROUTES, "--seed", str(seed),
-            "--no-step-log", "true", "--no-warnings", "true"]
+def _start_args(scenario_id: str, seed: int, load_state: str | None = None) -> list[str]:
+    args = [_sumo_binary(), "-n", _NET, "-r", _ROUTES_BY_SCENARIO[scenario_id],
+            "--seed", str(seed), "--no-step-log", "true", "--no-warnings", "true"]
     if load_state:
         args += ["--load-state", load_state]
     return args
@@ -112,10 +115,10 @@ class SumoTransferAdapter:
 
     # ------------------------------------------------------------------
     def initial_state(self, scenario_id: str, seed: int) -> dict:
-        if scenario_id != "grid3x3_v1":
+        if scenario_id not in _ROUTES_BY_SCENARIO:
             raise KeyError(f"unknown scenario {scenario_id!r}")
         self._label = f"sumo_transfer_{uuid.uuid4().hex}"
-        traci.start(_start_args(seed), label=self._label)
+        traci.start(_start_args(scenario_id, seed), label=self._label)
         self._started = True
         return {"round": 0, "scenario_id": scenario_id, "seed": seed}
 
@@ -173,7 +176,8 @@ class SumoTransferAdapter:
         ckpt = f"/tmp/{self._label}_round{state['round']}.sumo"
         conn.simulation.saveState(ckpt)
         auth_label = f"{self._label}_auth_{state['round']}"
-        traci.start(_start_args(state["seed"], load_state=ckpt), label=auth_label)
+        traci.start(_start_args(state["scenario_id"], state["seed"], load_state=ckpt),
+                   label=auth_label)
         auth_conn = traci.getConnection(auth_label)
         auth_conn.trafficlight.setPhase(_TLS, int(default.fields["phase"]))
         auth_conn.trafficlight.setPhaseDuration(_TLS, ROUND_SECONDS + 1)
@@ -225,14 +229,24 @@ class SumoTransferAdapter:
         return self._defaults
 
     # ------------------------------------------------------------------
-    def __del__(self) -> None:
-        # SimulationAdapter has no explicit teardown hook -- every existing
-        # domain is a pure function with nothing to release. That is a real
-        # architectural gap this adapter exposes (disclosed in the
-        # protocol), worked around here via object finalization rather than
-        # a common-core change.
+    def close(self) -> None:
+        """Adapter-owned explicit lifecycle method -- not part of
+        ``SimulationAdapter`` (adding it does not modify the frozen
+        contract; the protocol just does not require it to exist).
+        ``SimulationAdapter`` has no teardown hook -- every existing domain
+        is a pure function with nothing to release, which is a real
+        architectural gap this adapter exposes. Callers that need
+        deterministic cleanup (e.g. a confirmatory matrix that must prove
+        zero leaked SUMO processes) should call this explicitly in a
+        ``finally`` block rather than rely on ``__del__``, whose timing
+        CPython does not guarantee across all execution paths."""
         if getattr(self, "_started", False):
             try:
                 traci.getConnection(self._label).close()
             except Exception:
                 pass
+            self._started = False
+
+    def __del__(self) -> None:
+        # Safety net only, not the primary cleanup mechanism -- see close().
+        self.close()
