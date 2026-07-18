@@ -1,0 +1,209 @@
+{
+  "cells": 32,
+  "records": 7680,
+  "regime_prevalence": {
+    "exact": 0.5,
+    "approximate": 0.15,
+    "divergent": 0.35
+  },
+  "abs_ae_median_by_horizon_nonexact": {
+    "1": 0.9,
+    "3": 0.4091,
+    "5": 0.2952
+  },
+  "sign_disagreement_rate": 0.1167,
+  "ranking_disagreement_rate": 0.0122,
+  "boundary_map_regime_share_by_factor_level": {
+    "rho": {
+      "lo": {
+        "exact": 0.5,
+        "approximate": 0.286,
+        "divergent": 0.214
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.014,
+        "divergent": 0.486
+      }
+    },
+    "phi": {
+      "lo": {
+        "exact": 0.5,
+        "approximate": 0.171,
+        "divergent": 0.329
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.129,
+        "divergent": 0.371
+      }
+    },
+    "irrev": {
+      "lo": {
+        "exact": 0.5,
+        "approximate": 0.132,
+        "divergent": 0.368
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.168,
+        "divergent": 0.332
+      }
+    },
+    "w_x": {
+      "lo": {
+        "exact": 1.0,
+        "approximate": 0.0,
+        "divergent": 0.0
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.3,
+        "divergent": 0.7
+      }
+    },
+    "sigma": {
+      "lo": {
+        "exact": 0.5,
+        "approximate": 0.141,
+        "divergent": 0.359
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.159,
+        "divergent": 0.341
+      }
+    },
+    "timing": {
+      "lo": {
+        "exact": 0.5,
+        "approximate": 0.161,
+        "divergent": 0.339
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.139,
+        "divergent": 0.361
+      }
+    },
+    "magnitude": {
+      "lo": {
+        "exact": 0.5,
+        "approximate": 0.163,
+        "divergent": 0.337
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.137,
+        "divergent": 0.363
+      }
+    }
+  },
+  "boundary_map_conditional_on_delayed_cost": {
+    "rho": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.571,
+        "divergent": 0.429
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.029,
+        "divergent": 0.971
+      }
+    },
+    "phi": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.342,
+        "divergent": 0.658
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.258,
+        "divergent": 0.742
+      }
+    },
+    "irrev": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.263,
+        "divergent": 0.737
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.337,
+        "divergent": 0.663
+      }
+    },
+    "w_x": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.0,
+        "divergent": 0.0
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.3,
+        "divergent": 0.7
+      }
+    },
+    "sigma": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.281,
+        "divergent": 0.719
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.319,
+        "divergent": 0.681
+      }
+    },
+    "timing": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.322,
+        "divergent": 0.678
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.278,
+        "divergent": 0.722
+      }
+    },
+    "magnitude": {
+      "lo": {
+        "exact": 0.0,
+        "approximate": 0.326,
+        "divergent": 0.674
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.274,
+        "divergent": 0.726
+      }
+    }
+  },
+  "tolerance_sensitivity": {
+    "0.05": {
+      "exact": 0.5,
+      "approximate": 0.124,
+      "divergent": 0.376
+    },
+    "0.1": {
+      "exact": 0.5,
+      "approximate": 0.15,
+      "divergent": 0.35
+    },
+    "0.2": {
+      "exact": 0.5,
+      "approximate": 0.181,
+      "divergent": 0.319
+    }
+  },
+  "mode": "confirmatory",
+  "seeds": 40,
+  "design": "2^(7-2)_resolution_IV_frac_factorial",
+  "software_commit": "6886ad574fbd21ad80b1b67567cf4e0933de9851"
+}

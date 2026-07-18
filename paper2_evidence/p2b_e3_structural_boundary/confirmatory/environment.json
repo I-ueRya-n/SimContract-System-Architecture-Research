@@ -1,0 +1,52 @@
+{
+  "software_commit": "6886ad574fbd21ad80b1b67567cf4e0933de9851",
+  "mode": "confirmatory",
+  "cells": 32,
+  "seeds": 40,
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "factors": [
+    "rho",
+    "phi",
+    "irrev",
+    "w_x",
+    "sigma",
+    "timing",
+    "magnitude"
+  ],
+  "levels": {
+    "rho": {
+      "lo": 0.2,
+      "hi": 0.9
+    },
+    "phi": {
+      "lo": 0.0,
+      "hi": 0.6
+    },
+    "irrev": {
+      "lo": "reversible",
+      "hi": "lockin"
+    },
+    "w_x": {
+      "lo": 0.0,
+      "hi": 1.0
+    },
+    "sigma": {
+      "lo": 0.3,
+      "hi": 1.5
+    },
+    "timing": {
+      "lo": 2,
+      "hi": 5
+    },
+    "magnitude": {
+      "lo": "small",
+      "hi": "large"
+    }
+  },
+  "tolerance": 0.05,
+  "design": "2^(7-2)_resolution_IV_frac_factorial"
+}

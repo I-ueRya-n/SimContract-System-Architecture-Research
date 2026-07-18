@@ -1,0 +1,106 @@
+{
+  "cells": 11,
+  "records": 990,
+  "regime_prevalence": {
+    "exact": 0.727,
+    "approximate": 0.061,
+    "divergent": 0.212
+  },
+  "abs_ae_median_by_horizon_nonexact": {
+    "1": 2.3572,
+    "3": 1.9123,
+    "5": 1.5491
+  },
+  "sign_disagreement_rate": 0.0937,
+  "ranking_disagreement_rate": 0.0,
+  "boundary_map_regime_share_by_factor_level": {
+    "rho": {
+      "lo": {
+        "exact": 0.875,
+        "approximate": 0.083,
+        "divergent": 0.042
+      },
+      "hi": {
+        "exact": 0.333,
+        "approximate": 0.0,
+        "divergent": 0.667
+      }
+    },
+    "phi": {
+      "lo": {
+        "exact": 0.75,
+        "approximate": 0.083,
+        "divergent": 0.167
+      },
+      "hi": {
+        "exact": 0.667,
+        "approximate": 0.0,
+        "divergent": 0.333
+      }
+    },
+    "irrev": {
+      "lo": {
+        "exact": 0.75,
+        "approximate": 0.083,
+        "divergent": 0.167
+      },
+      "hi": {
+        "exact": 0.667,
+        "approximate": 0.0,
+        "divergent": 0.333
+      }
+    },
+    "w_x": {
+      "lo": {
+        "exact": 1.0,
+        "approximate": 0.0,
+        "divergent": 0.0
+      },
+      "hi": {
+        "exact": 0.0,
+        "approximate": 0.222,
+        "divergent": 0.778
+      }
+    },
+    "sigma": {
+      "lo": {
+        "exact": 0.75,
+        "approximate": 0.083,
+        "divergent": 0.167
+      },
+      "hi": {
+        "exact": 0.667,
+        "approximate": 0.0,
+        "divergent": 0.333
+      }
+    },
+    "timing": {
+      "lo": {
+        "exact": 0.875,
+        "approximate": 0.083,
+        "divergent": 0.042
+      },
+      "hi": {
+        "exact": 0.333,
+        "approximate": 0.0,
+        "divergent": 0.667
+      }
+    },
+    "magnitude": {
+      "lo": {
+        "exact": 0.778,
+        "approximate": 0.074,
+        "divergent": 0.148
+      },
+      "hi": {
+        "exact": 0.5,
+        "approximate": 0.0,
+        "divergent": 0.5
+      }
+    }
+  },
+  "mode": "pilot",
+  "seeds": 15,
+  "design": "corner_screening",
+  "software_commit": "6886ad574fbd21ad80b1b67567cf4e0933de9851"
+}
