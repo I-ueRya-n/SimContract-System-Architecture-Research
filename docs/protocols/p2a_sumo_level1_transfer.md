@@ -90,25 +90,59 @@ Finding: **yes, exactly.** Three repeats of reload-then-continue with no
 forced action: `[26.0, 26.0, 26.0]`. Three repeats with a forced phase:
 `[127.0, 127.0, 127.0]`. Bit-identical every time.
 
-## 4a. What this means for feasibility
+## 4a. What this means for feasibility -- and a correction
 
-SimContract's contract does not require a checkpoint-based continuation to
-match some hypothetical uninterrupted alternate execution (Q1) -- no
-existing domain is asked to prove that either. It requires that, given a
-state, `step()` deterministically reproduces the same outcome for the same
-action and exogenous input (Q3), and that submitted actions have a real,
-attributable effect (Q2). Both hold. **Q1's finding is not a blocker; it is
-a disclosed boundary condition**, structurally analogous to A2's
-`energy_market_v1` finding that some carried state is written but never
-mechanistically read: a specific, source-traceable (or in this case,
-checkpoint-mechanism-traceable) limitation, reported rather than hidden.
+An earlier version of this section overstated Q3's finding as "`step()` is
+deterministic given a state," stated without qualification. That is too
+strong. What Q3 actually established is narrower:
 
-**Consequence for the adapter design (Sec. 5):** `state` is defined *as* the
-saved-checkpoint file (path + content hash), never as "whatever a
-continuous run would have produced." `initial_state()` takes its checkpoint
-immediately after network load, before any stepping -- so there is no
-"continuous ground truth" for later states to be compared against, and Q1's
-divergence mechanism never enters any claim this adapter makes.
+```text
+checkpoint reload repeatability
+    != complete checkpoint fidelity
+    != uninterrupted-run equivalence
+```
+
+Repeated reloads of the *same* saved-state artifact reproduce identical
+results (Q3, holds). But because reload diverges from uninterrupted
+execution after ~5 seconds (Q1), the saved checkpoint may not contain the
+complete internal state needed to represent SUMO's continuous trajectory
+exactly. Q3's repeatability is a fact about the checkpoint file, not proof
+that the checkpoint is a complete state oracle.
+
+This does not stop SUMO Level 1: the plan permits replay limitations to be
+disclosed, and Level 1 is testing external architecture transfer, not
+perfect checkpoint restoration.
+
+**Consequence for the adapter design (Sec. 5, revised):** `saveState`/
+`loadState` was repeatable across identical reloads but did not remain
+equivalent to an uninterrupted execution after approximately five
+simulated seconds. The checkpoint is therefore **not treated as a complete
+scientific-state oracle**. The Level-1 adapter uses **uninterrupted
+execution as the authoritative run semantics** for the trajectory that
+actually continues (the "applied" path); verification reruns from the
+initial configuration using the recorded action schedule (exactly what
+`engine/replay_executor.py`'s existing `replay_bundle()` already does for
+every domain -- a fresh `SessionRunner.run()` from round 1, not a mid-run
+reload), rather than treating `saveState` as an exact replay oracle.
+`saveState`/`loadState` is retained only as a bounded, local device for
+computing the single-round authoritative (default-action) counterfactual
+alongside the continuing applied trajectory -- never as the mechanism that
+carries the real run forward, and never as a multi-round continuation
+oracle. The most-likely mechanism for Q1's divergence (the traffic light's
+phase-elapsed timer not surviving `saveState`) is stated as a **plausible
+cause, not a source-verified one** -- unlike A1/A2's structural findings,
+this has not been traced into SUMO's own source.
+
+Superseded text, kept for the record rather than silently deleted: ~~`state`
+is defined *as* the saved-checkpoint file (path + content hash), never as
+"whatever a continuous run would have produced." `initial_state()` takes
+its checkpoint immediately after network load, before any stepping -- so
+there is no "continuous ground truth" for later states to be compared
+against, and Q1's divergence mechanism never enters any claim this adapter
+makes.~~ This treated the checkpoint as load-bearing for the adapter's core
+state representation across the whole run, which is exactly the framing
+the correction above replaces: the checkpoint is a local, bounded device,
+not the state.
 
 ## 5. Minimal scenario (not a city digital twin)
 
@@ -127,10 +161,14 @@ divergence mechanism never enters any claim this adapter makes.
 
 ## 6. GO decision (from the probe above)
 
-**GO.** All three feasibility questions were answerable, the action channel
-is real and strong, checkpoint-based stepping is exactly reproducible, and
-the one disclosed limitation (Q1) does not enter the adapter's actual
-contract. Proceeding to a minimal adapter implementation
+**GO, qualified.** All three feasibility questions were answerable and the
+action channel is real and strong (Q2). Q3 shows checkpoint reload is
+*repeatable*, not that it is a complete state oracle -- see the correction
+in Sec. 4a. The adapter design responds to this directly: uninterrupted
+execution is the authoritative run semantics for the trajectory that
+actually continues; `saveState`/`loadState` is demoted to a bounded, local
+device for the single-round authoritative-branch counterfactual, never the
+carrier of the real run. Proceeding to a minimal adapter implementation
 (`domains/sumo_transfer_v1/`) under the stop rules in Sec. 7.
 
 ## 7. Stop rules (unchanged from the plan; restated here as the frozen list)
@@ -161,7 +199,9 @@ one deterministic scenario runs through SessionRunner unmodified
 a BundleView-readable evidence bundle is produced
 BundleView.load, verify_bundle, replay_run consume it with zero changes
 integration-effort measured: adapter-specific files/LOC vs. common-core diff
-replay: passed, or the exact limitation disclosed (per Sec. 4a expectation)
+replay_run (full fresh rerun from round 1 using the recorded action
+    schedule, per engine/replay_executor.py -- never a mid-run
+    saveState/loadState) reproduces the original applied metrics/branches
 ```
 
 ## 9. Claim boundary (to be finalised only if Sec. 8 succeeds)

@@ -1,0 +1,41 @@
+{
+  "gates": [
+    {
+      "gate": "registered_via_sanctioned_seam",
+      "pass": true,
+      "detail": "sumo_transfer_v1 present in AdapterRegistry.aliases()"
+    },
+    {
+      "gate": "starts_and_terminates_cleanly",
+      "pass": true,
+      "detail": "3-round rule-condition run completed, bundle=/tmp/tmpz2k_24vu/run_a"
+    },
+    {
+      "gate": "distinguishable_authoritative_vs_applied",
+      "pass": true,
+      "detail": "random_valid, 10 rounds: authoritative=[0.0, 0.0, 0.0, 0.0, 3.0, 8.0, 2.0, 15.0, 20.0, 35.0] applied=[0.0, 0.0, 0.0, 0.0, 3.0, 0.0, 6.0, 18.0, 20.0, 36.0]"
+    },
+    {
+      "gate": "replay_run_reproduces_evidence",
+      "pass": true,
+      "detail": "rounds_compared=3 equal_rounds=3 mismatches=[]"
+    },
+    {
+      "gate": "verify_bundle_unmodified",
+      "pass": true,
+      "detail": "content_hash_ok=True files_ok=True"
+    },
+    {
+      "gate": "generic_analyzer_unmodified",
+      "pass": true,
+      "detail": "report=/tmp/tmpz2k_24vu/analysis/report.md"
+    }
+  ],
+  "all_gates_pass": true,
+  "software_commit": "c3be3adced659097e634d8f75a16bb1868ea2da7",
+  "metrics_by_round": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

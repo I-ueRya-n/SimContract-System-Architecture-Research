@@ -55,6 +55,15 @@ def create_registry() -> AdapterRegistry:
         registry.register("epidemic_policy_v1", EpidemicPolicyAdapter, origin="builtin")
     except ImportError:  # pragma: no cover - domain not yet present
         pass
+    try:
+        # Paper 2A RQ2A.6 (conditional): external architecture-transfer
+        # probe, not designed for SimContract. See
+        # docs/protocols/p2a_sumo_level1_transfer.md.
+        from simcontract.domains.sumo_transfer_v1 import SumoTransferAdapter
+        registry.register("sumo_transfer_v1", SumoTransferAdapter,
+                          origin="third_party_open_source")
+    except ImportError:  # pragma: no cover - optional dependency (SUMO) absent
+        pass
 
     # External entry-point discovery stays dormant in Phase 1 (ADR 0005).
     return registry
@@ -70,6 +79,9 @@ def domain_assets(alias: str):
         return d.schema(), d.observation(), d.catalog(), d.weights_for
     if alias == "epidemic_policy_v1":
         from simcontract.domains import epidemic_policy as d
+        return d.schema(), d.observation(), d.catalog(), d.weights_for
+    if alias == "sumo_transfer_v1":
+        from simcontract.domains import sumo_transfer_v1 as d
         return d.schema(), d.observation(), d.catalog(), d.weights_for
     raise KeyError(f"unknown domain alias {alias!r}")
 

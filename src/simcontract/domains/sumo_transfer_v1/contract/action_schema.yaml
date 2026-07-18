@@ -1,0 +1,2 @@
+traffic_authority:
+  phase: { type: choice, choices: [0, 1, 2, 3] }
