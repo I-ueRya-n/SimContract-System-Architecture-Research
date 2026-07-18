@@ -36,11 +36,16 @@ exogenous schedule cancels in every difference, which is the whole point):
     Delta_MT_{i,H}    = (b_i-b_d) - w_x*(rho^H+rho^{H-1}) * (l_i-l_d)  # matched-history
     AE_MT_{i,H}       = | Delta_MT - Delta_CL | = w_x * rho^H * |l_i-l_d|
 
-AE is exactly zero iff rho=0 (memoryless), w_x=0 (no delayed cost), or
-l_i=l_d (no historical divergence). This script simulates the model
+AE is exactly zero iff  w_x=0  OR  rho^H=0  OR  l_i=l_d; over the study's
+parameter domain (w_x>=0, 0<=rho<=1, H>=1) rho^H=0 means rho=0, so the
+disjuncts read as no delayed cost, memoryless dynamics, or no historical
+divergence. This script simulates the model
 round-by-round AND evaluates the closed forms, and asserts they are equal
-to floating tolerance -- the code is the machine-checkable proof of the
-hand computation, not a separate approximation of it.
+to floating tolerance -- the implementation provides machine-checkable
+verification of the closed-form derivation and reproduces all hand-computed
+values within 1e-9. The proof of the result is the algebraic derivation
+(protocol section 3); the code verifies the implementation agrees with it,
+it does not itself constitute the proof.
 
 Usage: python experiments/paper2b/e0_micro_counterexample.py
 """

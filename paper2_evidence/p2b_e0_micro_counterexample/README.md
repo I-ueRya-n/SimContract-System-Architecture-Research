@@ -1,7 +1,7 @@
 # Paper 2B-E0 — minimal hand-computable counterexample
 
 Protocol: `docs/protocols/p2b_e0_micro_counterexample.md` v1.0 (SHA-256
-prefix `1454b252076cafcb`). Script:
+prefix `2865e75da2abeacb`). Script:
 `experiments/paper2b/e0_micro_counterexample.py`. Regression test:
 `tests/unit/test_p2b_e0_micro_counterexample.py` (7 tests, all pass).
 
@@ -19,16 +19,20 @@ historical contrast (MT) can depart from a cloned-state continuation (CL):
 | R3 sign reversal | rho=0.9, w_x=1.0 | +0.300 | −2.130 | 2.430 | CL: intervention helps; MT: it hurts |
 | R4 ranking reversal | rho=0.8, w_x=0.5 | A +1.800 / E +1.600 | A +0.840 / E +1.280 | — | CL prefers aggressive; MT prefers efficient |
 
-The simulator reproduces every closed-form value to 1e-9, so the code is a
-machine-checkable proof of the hand computation in protocol §4 (which gives
-the full round-by-round table for R3), not a separate approximation.
+The simulator reproduces every closed-form value to 1e-9: the
+implementation provides machine-checkable verification of the closed-form
+derivation (protocol §3) and reproduces all hand-computed values (protocol
+§4 gives the full round-by-round table for R3). The proof is the algebraic
+derivation; the code verifies the implementation agrees with it.
 
 ## Why it matters
 
 The attribution error has an exact closed form,
-`AE_MT = w_x * rho^H * |load_i - load_d|`, which is **zero iff** the model is
-memoryless (`rho=0`), has no delayed cost (`w_x=0`), or the compared
-branches share the same pre-intervention history (`load_i = load_d`). This
+`AE_MT = w_x * rho^H * |load_i - load_d|`, which is **zero iff**
+`w_x = 0` **or** `rho^H = 0` **or** `load_i = load_d`; over this study's
+domain (`w_x >= 0`, `0 <= rho <= 1`, `H >= 1`) that reads as no delayed
+cost, memoryless dynamics (`rho = 0`), or no historical-state divergence.
+This
 is the formal statement of Paper 2B's thesis: identical exogenous randomness
 is necessary but not sufficient; once pre-intervention endogenous states
 diverge, MT and CL are different estimands. The energy/epidemic A2 result

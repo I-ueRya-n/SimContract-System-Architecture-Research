@@ -4,5 +4,5 @@
   "experiment": "paper2b_e0_micro_counterexample",
   "python": "stdlib only, no deps",
   "protocol": "docs/protocols/p2b_e0_micro_counterexample.md",
-  "protocol_sha256_prefix": "1454b252076cafcb"
+  "protocol_sha256_prefix": "2865e75da2abeacb"
 }

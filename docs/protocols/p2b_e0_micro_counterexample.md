@@ -87,10 +87,18 @@ Delta_MT_{i,H}  = db - w_x*(rho^H + rho^{H-1}) * dl        # matched-schedule hi
 AE_MT_{i,H}     = | Delta_MT - Delta_CL | = w_x * rho^H * |dl|
 ```
 
-`AE_MT` is exactly zero iff `rho=0` (memoryless), `w_x=0` (no delayed cost),
-or `dl=0` (no historical divergence). The shared exogenous schedule cancels
-in every difference; it never appears in a closed form. This is the formal
-content of "same noise, different question."
+The exact statement is
+
+```text
+AE_MT_{i,H} = 0   <=>   w_x = 0   OR   rho^H = 0   OR   dl = 0
+```
+
+Over the parameter domain of this study --- `w_x >= 0`, `0 <= rho <= 1`,
+`H >= 1` integer --- `rho^H = 0` holds exactly when `rho = 0`, so the three
+disjuncts read as: no delayed-cost weighting (`w_x=0`); memoryless dynamics
+(`rho=0`); or no historical-state divergence (`dl=0`). The shared exogenous
+schedule cancels in every difference and never appears in a closed form.
+This is the formal content of "same noise, different question."
 
 ## 4. The four regimes (hand-calculated)
 
