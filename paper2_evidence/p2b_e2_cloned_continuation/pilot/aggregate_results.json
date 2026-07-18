@@ -1,0 +1,41 @@
+{
+  "mode": "pilot",
+  "cells": 180,
+  "hard_gates_pass": true,
+  "gate_failures": [],
+  "by_domain": {
+    "energy_market_v1": {
+      "cells": 90,
+      "raw_ae_max": 0.0,
+      "raw_ae_all_zero": true,
+      "ae_normalized_median": 0.0,
+      "ae_normalized_max": 0.0,
+      "ae_normalized_by_horizon_median": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "sign_disagreement_rate": 0.0
+    },
+    "epidemic_policy_v1": {
+      "cells": 90,
+      "raw_ae_max": 23517.420000000002,
+      "raw_ae_all_zero": false,
+      "ae_normalized_median": 0.25474693394758136,
+      "ae_normalized_max": 1.9979971109972199,
+      "ae_normalized_by_horizon_median": {
+        "1": 0.19921558861980943,
+        "3": 0.27666064869576046,
+        "5": 0.3451179225710539
+      },
+      "sign_disagreement_rate": 0.1029082774049217
+    }
+  },
+  "pooled_ae_normalized_median": 0.0,
+  "pooled_ae_normalized_max": 1.9979971109972199,
+  "pooled_note": "pooled median is dominated by the structurally-zero domain; see by_domain for the path-dependent result",
+  "sign_disagreement_rate": 0.07590759075907591,
+  "ranking_disagreement_rate": 0.1111111111111111,
+  "within_tolerance_fraction": 0.6736111111111112,
+  "software_commit": "d199e654034d984968abf3abe6677ef3384cff89"
+}
