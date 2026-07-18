@@ -1,0 +1,73 @@
+{
+  "mode": "heldout",
+  "manifests_intact": 80,
+  "records": 720,
+  "scores": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_verdict_class_accuracy": 1.0,
+    "false_positive_rate_on_intact": 0.0,
+    "unsupported_detection_accuracy": null,
+    "counts": {
+      "tp": 560,
+      "fp": 0,
+      "fn": 0,
+      "tn": 160,
+      "intact": 80,
+      "unsupported": 0
+    }
+  },
+  "per_family": {
+    "ho_continuation_policy_hash_differs": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_divergence_before_decision": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_inconsistent_lineage": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_metric_unit_changed": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_mixed_model_versions": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_resampled_declared_matched": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_schedule_covers_H_minus_1": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "ho_shared_branch_id": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    }
+  },
+  "checker_schema_version": "p2b-audit-manifest/1.0",
+  "software_commit": "7220c7bf6822873e87805d33199066852b4eb8f2"
+}

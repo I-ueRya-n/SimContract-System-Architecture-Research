@@ -1,0 +1,720 @@
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "cloned_local_h_step", "supported": "cloned_local_h_step", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "matched_history_contrast", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "one_step_local", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "intact", "expected": "PASS", "verdict": "PASS", "declared": "resampled_contrast", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "schedule_covers_4_rounds_needs_5"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "cloned_local_h_step", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "matched_history_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "continuation_policy_differs_between_branches"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "matched_history_contrast", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "schedule_covers_4_rounds_needs_1"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "one_step_local", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "one_step_local", "reason": "inconsistent_combined_lineage"}
+{"family": "ho_schedule_covers_H_minus_1", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_continuation_policy_hash_differs", "expected": "PASS", "verdict": "PASS", "supported": "resampled_contrast", "reason": "all_mandatory_identities_present_and_consistent"}
+{"family": "ho_divergence_before_decision", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "branch_divergence_earlier_than_declared_decision"}
+{"family": "ho_shared_branch_id", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "factual_and_alternative_share_branch_id"}
+{"family": "ho_metric_unit_changed", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "metric_catalogue_differs_between_branches"}
+{"family": "ho_mixed_model_versions", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "model_identity_differs_between_branches"}
+{"family": "ho_resampled_declared_matched", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "matched_claim_with_resampled_schedule"}
+{"family": "ho_inconsistent_lineage", "expected": "FAIL", "verdict": "FAIL", "supported": "resampled_contrast", "reason": "inconsistent_combined_lineage"}

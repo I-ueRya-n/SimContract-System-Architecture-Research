@@ -1,0 +1,67 @@
+{
+  "mode": "pilot",
+  "manifests_intact": 80,
+  "records": 640,
+  "scores": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_verdict_class_accuracy": 1.0,
+    "false_positive_rate_on_intact": 0.0,
+    "unsupported_detection_accuracy": 1.0,
+    "counts": {
+      "tp": 240,
+      "fp": 0,
+      "fn": 0,
+      "tn": 240,
+      "intact": 80,
+      "unsupported": 160
+    }
+  },
+  "per_family": {
+    "dev_drop_continuation_policy": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "dev_drop_shared_checkpoint": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "dev_missing_recommended_provenance": {
+      "expected": "WARN",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "dev_predecision_mismatch": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "dev_resampled_flag": {
+      "expected": "FAIL",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "dev_unknown_schema": {
+      "expected": "UNSUPPORTED",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    },
+    "dev_unknown_type": {
+      "expected": "UNSUPPORTED",
+      "n": 80,
+      "correct": 80,
+      "accuracy": 1.0
+    }
+  },
+  "checker_schema_version": "p2b-audit-manifest/1.0",
+  "software_commit": "7220c7bf6822873e87805d33199066852b4eb8f2"
+}
