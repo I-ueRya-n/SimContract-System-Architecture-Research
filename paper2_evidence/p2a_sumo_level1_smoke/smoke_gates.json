@@ -8,7 +8,7 @@
     {
       "gate": "starts_and_terminates_cleanly",
       "pass": true,
-      "detail": "3-round rule-condition run completed, bundle=/tmp/tmpz2k_24vu/run_a"
+      "detail": "3-round rule-condition run completed, bundle=/tmp/tmpcv1dd0ok/run_a"
     },
     {
       "gate": "distinguishable_authoritative_vs_applied",
@@ -28,11 +28,11 @@
     {
       "gate": "generic_analyzer_unmodified",
       "pass": true,
-      "detail": "report=/tmp/tmpz2k_24vu/analysis/report.md"
+      "detail": "report=/tmp/tmpcv1dd0ok/analysis/report.md"
     }
   ],
   "all_gates_pass": true,
-  "software_commit": "c3be3adced659097e634d8f75a16bb1868ea2da7",
+  "software_commit": "406954f995a4c87799e1abc4e1d1d142f4aa5c60",
   "metrics_by_round": [
     0.0,
     0.0,
