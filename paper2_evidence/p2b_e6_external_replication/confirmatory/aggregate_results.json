@@ -1,0 +1,24 @@
+{
+  "mode": "confirmatory",
+  "estimand_cells": 480,
+  "clone_reconstruction_ok_all": true,
+  "ae_norm_median": 0.1073,
+  "ae_norm_max": 1.0952,
+  "ae_norm_by_horizon": {
+    "1": 0.1429,
+    "3": 0.1122,
+    "5": 0.0878
+  },
+  "sign_disagreement_rate": 0.4398,
+  "top1_ranking_disagreement_rate_nontied": 0.4,
+  "ranking_eligible_nontied": 120,
+  "ranking_tied_excluded": 0,
+  "external_boundary": "external_divergent",
+  "layer3_checker": {
+    "cases": 96,
+    "status_accuracy": 1.0,
+    "false_positive_rate_on_intact": 0.0,
+    "negative_case_detection": 1.0
+  },
+  "software_commit": "f391005689de448e97d6fd3197cd7b7506e41988"
+}

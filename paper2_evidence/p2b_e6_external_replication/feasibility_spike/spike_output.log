@@ -1,0 +1,14 @@
+=== Gate 1: two independent replays of the same history reach the same pre-state ===
+pre-decision digest A == B: True  (fa8762c32a7d / fa8762c32a7d)
+
+=== Gate 2: two no-intervention continuations from t are bit-identical ===
+no-intervention continuation waiting time: 258.0 == 258.0: True
+
+=== Gate 3: repeating the reconstruction reproduces the result ===
+repeats: [258.0, 258.0, 258.0]  all_equal=True
+
+=== Gate 4: a different intervention at t changes the outcome (CL action channel) ===
+default=258.0  intervention(phase2)=164.0  differ=True
+
+=== Gate 5: MT default-history reaches a DIFFERENT pre-state than factual ===
+factual-history pre-state != default-history pre-state: True
