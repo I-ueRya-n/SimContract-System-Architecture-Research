@@ -1,6 +1,6 @@
 [project]
 name = "simcontract"
-version = "0.3.0"
+version = "0.3.1"
 description = "Validation-aware, simulator-authoritative framework for reproducible, model-replaceable multi-stakeholder simulation with governed AI participation"
 authors = [{ name = "Ryan Lin" }]
 license = { text = "MIT" }
