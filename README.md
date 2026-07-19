@@ -120,6 +120,15 @@ domains · `composition.py` is the single wiring exception, imported only by
 entry points. Core layers carry zero domain vocabulary (token-leakage test).
 See `docs/dependency-rules.md` and `tests/dependency/`.
 
+## Using and extending
+
+Who this is for and how to reuse it: `docs/who-should-use-this.md` ·
+`docs/positioning.md` (vs. modelling frameworks like Mesa/GAMA) ·
+`docs/adoption-pathways.md` (reproduction → configuration → extension → model
+integration) · `docs/adapter-checklist.md` (bring your own model) ·
+`examples/analyzer_extension/` (a bundle-only analyzer) ·
+`reproduction/` (independent-reproduction protocol and status).
+
 ## Documentation
 
 `docs/spec.md` (normative) · `docs/architecture.md` ·
