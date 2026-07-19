@@ -1,0 +1,82 @@
+# Machine-readable status of independent reproductions and the automated
+# cold-start machine-actionability check. This file (in the repo and the
+# release/DOI) is the authoritative record; it is not maintained anywhere else.
+
+artifact:
+  name: SimContract
+  reproduced_release: v0.3.0
+  release_commit: c3654d8
+  zenodo_doi: 10.5281/zenodo.21358450
+  source_archive_sha256: 20174f5851e8c33d9be29726673ab5f33053bd03b791d62fc06eb255ae5f2bff
+  expected_content_hash: dd73a35091a5fb609cea12fb8b84fa4858d7cbf87d0c4469765d672a3b0be7bc
+  benchmark: energy_market_v1 / baseline_v1 / seed 73 / 5 rounds / all=rule
+
+human_reproductions:
+  - id: Gin
+    os: macOS 26.5.1 (Apple M2)
+    python: "3.12.7"
+    date: 2026-07-17
+    tests: 60/60
+    content_hash: match
+    replay: 5/5 equivalent
+    files_ok: true
+    consent_to_publish: true
+    status: pass
+  - id: Therese
+    os: Linux Ubuntu 22.04 (WSL2)
+    python: "3.13.5"
+    date: 2026-07-19
+    tests: 60/60
+    content_hash: match
+    replay: 5/5 equivalent
+    files_ok: true
+    consent_to_publish: true
+    status: pass
+  - id: SL
+    os: Windows 11 25H2 (MinGW/MSYS2 Python)
+    python: "3.12.9"
+    date: 2026-07-19
+    tests: 59/60
+    content_hash: match
+    replay: 5/5 equivalent
+    files_ok: false
+    consent_to_publish: true
+    status: semantic_pass_byte_integrity_fail
+    notes: >
+      Canonical content hash and replay reproduced exactly; one test
+      (test_verify_intact_bundle) failed and files_ok was false because of
+      platform newline translation (see known_issue newline-byte-integrity).
+      Minor environment deviation: the MinGW Python created a Unix-style
+      .venv/bin layout, requiring an activation-path adjustment.
+
+automated_cold_start_check:
+  type: context-isolated cold-start agent-executed machine-actionability check
+  agent_model: claude-opus-4-8
+  agent_harness: Claude Code subagent (Claude Agent SDK)
+  environment: Linux WSL2 / x86_64 / Python 3.10.12 (same host across trials)
+  trials: 3
+  status: pass            # 3/3
+  per_trial_content_hash: match
+  per_trial_files_ok: true
+  finding: >
+    The README five-minute reproduction runs pytest immediately after
+    `pip install -e .`, but pytest ships in the [dev] extra; all three trials
+    self-recovered from pyproject.toml. Documentation fix targeted for v0.3.x.
+  boundary: >
+    Not a human reproducer; evidence of documentation machine-actionability
+    under one model-and-harness configuration only, not human usability,
+    general agent compatibility, or community adoption.
+
+known_issue:
+  id: newline-byte-integrity
+  summary: >
+    v0.3.0 evidence writers used text-mode writes; on platforms that rewrite
+    newlines the on-disk bytes (CRLF; CSV CRCRLF) differed from the recorded
+    per-file hashes (LF), so files_ok failed. Canonical content_hash and
+    replay were unaffected.
+  discovered_by: SL (independent Windows reproduction of v0.3.0)
+  affects: v0.3.0 byte-level per-file verification on newline-translating platforms
+  fixed_in: v0.3.1
+  fix: writers emit canonical UTF-8 bytes and hash exactly the bytes written
+  remediation_rerun:
+    windows: pending      # rerun the final v0.3.1 archive on Windows
