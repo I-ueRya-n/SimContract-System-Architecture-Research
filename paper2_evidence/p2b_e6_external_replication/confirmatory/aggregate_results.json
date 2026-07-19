@@ -20,5 +20,5 @@
     "false_positive_rate_on_intact": 0.0,
     "negative_case_detection": 1.0
   },
-  "software_commit": "f391005689de448e97d6fd3197cd7b7506e41988"
+  "software_commit": "83adbf5acde525341144e70e825dd72f4f70cb6c"
 }
