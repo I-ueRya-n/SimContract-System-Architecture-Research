@@ -1,6 +1,6 @@
 # Governance
 
-SimContract is a research artifact maintained by its author, **Ryan Lin**
+SimContract is a research artifact maintained by its author, **Yu-Wei Ryan Lin**
 (ORCID 0009-0001-9698-6999), who is currently the sole maintainer and
 decision-maker for the canonical project.
 

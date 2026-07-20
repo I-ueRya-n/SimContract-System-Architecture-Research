@@ -7,7 +7,7 @@ LLM-assisted controllers pass through the same two-tier validation and
 execution path; every run produces a hashed, replayable evidence bundle
 consumed by swappable offline analyzers.
 
-**Author:** Ryan Lin (ORCID 0009-0001-9698-6999) · MIT License · see `CITATION.cff`
+**Author:** Yu-Wei Ryan Lin (ORCID 0009-0001-9698-6999) · MIT License · see `CITATION.cff`
 
 **Cite this artifact (v0.3.1):** archived at Zenodo, DOI
 [10.5281/zenodo.21447303](https://doi.org/10.5281/zenodo.21447303). Use the
@@ -16,7 +16,7 @@ a concept DOI resolving to the latest version. See `CITATION.cff`.
 
 ```bibtex
 @software{lin_simcontract_2026,
-  author  = {Lin, Ryan},
+  author  = {Lin, Yu-Wei Ryan},
   title   = {{SimContract: A Validation-Aware and Simulator-Authoritative Framework
              for Reproducible, Model-Replaceable Multi-Stakeholder Simulation
              with Governed AI Participation}},

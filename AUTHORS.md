@@ -2,10 +2,10 @@
 
 SimContract is developed and maintained by:
 
-- **Ryan Lin** (Yu-Wei Ryan Lin) — original author, sole maintainer, and
+- **Yu-Wei Ryan Lin** — original author, sole maintainer, and
   copyright holder. ORCID [0009-0001-9698-6999](https://orcid.org/0009-0001-9698-6999).
 
-Copyright (c) 2026 Ryan Lin. Licensed under the MIT License (see `LICENSE`).
+Copyright (c) 2026 Yu-Wei Ryan Lin. Licensed under the MIT License (see `LICENSE`).
 
 ## Contributors
 

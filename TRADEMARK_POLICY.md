@@ -9,7 +9,7 @@ the MIT License.
 ## You may
 
 - State factually that your work **uses** or is **built on** SimContract, e.g.
-  "built on SimContract, originally developed by Ryan Lin
+  "built on SimContract, originally developed by Yu-Wei Ryan Lin
   (DOI 10.5281/zenodo.21447303)."
 - Redistribute or fork the code under the MIT terms, retaining the required
   copyright, permission, and warranty notices.
@@ -30,7 +30,7 @@ You may modify and fork the code, but you must retain the existing copyright and
 license notices (`LICENSE`, `NOTICE`) and must not present the pre-existing
 implementation as wholly your own original work. A fair description is, for
 example, "This project uses/extends SimContract, originally developed by
-Ryan Lin," rather than a claim of sole original authorship of the framework.
+Yu-Wei Ryan Lin," rather than a claim of sole original authorship of the framework.
 
 ## Contact
 
