@@ -14,6 +14,21 @@ consumed by swappable offline analyzers.
 version DOI above for the exact release cited in the paper; Zenodo also mints
 a concept DOI resolving to the latest version. See `CITATION.cff`.
 
+```bibtex
+@software{lin_simcontract_2026,
+  author  = {Lin, Ryan},
+  title   = {{SimContract: A Validation-Aware and Simulator-Authoritative Framework
+             for Reproducible, Model-Replaceable Multi-Stakeholder Simulation
+             with Governed AI Participation}},
+  version = {0.3.1},
+  year    = {2026},
+  doi     = {10.5281/zenodo.21447303},
+  url     = {https://doi.org/10.5281/zenodo.21447303},
+  license = {MIT}
+}
+```
+
+
 ## Claim boundary
 
 SimContract's research domains (`energy_market_v1`, `epidemic_policy_v1`) are

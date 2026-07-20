@@ -1,0 +1,16 @@
+SimContract
+Copyright (c) 2026 Ryan Lin (Yu-Wei Ryan Lin), ORCID 0009-0001-9698-6999.
+
+This software is licensed under the MIT License; see the LICENSE file for the
+full terms. Redistributions, in source or binary form, must retain the above
+copyright notice, the MIT permission notice, and the warranty disclaimer.
+
+Attribution and citation:
+  If you use SimContract in academic or published work, please cite it. A
+  machine-readable citation is provided in CITATION.cff, and a recommended
+  BibTeX entry is in README.md.
+
+Name and branding:
+  "SimContract" is the name of this project as maintained by the author. The
+  MIT License grants rights to the code; it does not grant rights to the name,
+  to imply official status, or to imply endorsement. See TRADEMARK_POLICY.md.
