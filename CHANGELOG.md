@@ -20,19 +20,19 @@ assurance releases.
   v0.3.0, so the frozen `energy_baseline_v1_seed73` benchmark still verifies
   and reproduces content hash `dd73a350…` unchanged.
 
-  This defect was found by an independent third-party Windows reproduction of
-  v0.3.0 (see `reproduction/`), which reproduced the canonical content hash and
-  replay exactly while exposing the byte-level mismatch.
+  The defect surfaced during cross-platform (Windows) testing, where the
+  canonical content hash and replay reproduced exactly while byte-level per-file
+  verification exposed the mismatch.
 
 ### Added
 - Regression tests (`tests/replay/test_newline_serialization.py`) locking the
   invariant that the recorded per-file hash equals the SHA-256 of the exact
   on-disk bytes, that canonical evidence files carry no platform newline
   translation, and that `metrics.csv` never gains a doubled carriage return.
-- Cross-platform CI (`.github/workflows/ci.yml`): unit tests and a
-  reproduction smoke check (content hash + `files_ok` + replay) on
-  Ubuntu, macOS, and **Windows**, plus a wheel-install smoke on Ubuntu and
-  Windows.
+- A CI workflow config (`.github/workflows/ci.yml`) defining install, tests, a
+  reproduction smoke check (content hash + `files_ok` + replay), and a
+  wheel-install job for Ubuntu, macOS, and Windows. Provided for whoever enables
+  Actions; not yet exercised on hosted runners.
 - `scripts/reproduction_smoke.py`: regenerates the frozen benchmark and asserts
   content-hash match, `files_ok`, and replay equivalence; exits non-zero on any
   mismatch.

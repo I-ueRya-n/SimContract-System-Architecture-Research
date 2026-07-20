@@ -1,4 +1,4 @@
-# SimContract v0.3.0 — Independent Reproduction Report
+# SimContract v0.3.1 — Independent Reproduction Report
 
 ## 1. Reproducer declaration
 
@@ -32,7 +32,7 @@ I confirm that I did not modify SimContract source files, configuration files, b
 | Clean virtual environment created | Pass / Fail | |
 | Non-editable installation completed | Pass / Fail | |
 | Automated tests | Pass / Fail | |
-| Expected `60 passed` obtained | Yes / No | |
+| Expected `66 passed` obtained | Yes / No | |
 | Installed domains listed | Pass / Fail | |
 | Deterministic benchmark completed | Pass / Fail | |
 | Produced content hash | — | |
@@ -56,7 +56,7 @@ I confirm that I did not modify SimContract source files, configuration files, b
 
 ## 5. Overall result
 
-The documented SimContract v0.3.0 deterministic workflow was reproduced:
+The documented SimContract v0.3.1 deterministic workflow was reproduced:
 
 **Yes / Partially / No**
 

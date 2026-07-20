@@ -1,38 +1,43 @@
-# SimContract v0.3.0 — Independent Reproduction Protocol
+# SimContract v0.3.1 — Independent Reproduction Protocol
 
-**Protocol version:** 1.0
-**Protocol date:** 2026-07-16 (fixed and published before any reproduction is run)
-**Target software:** SimContract v0.3.0 — Zenodo DOI 10.5281/zenodo.21358450; Git tag `v0.3.0` (commit `c3654d862cf6647d806cadc72a5ae42ecf2cd533`); source archive SHA-256 `20174f5851e8c33d9be29726673ab5f33053bd03b791d62fc06eb255ae5f2bff`.
+**Protocol version:** 1.1
+**Protocol date:** 2026-07-20 (fixed and published before any v0.3.1 reproduction is run)
+**Target software:** SimContract v0.3.1 — archived at Zenodo (use the
+version-specific DOI shown on the record) and tagged `v0.3.1` on GitHub. Obtain
+the release yourself and verify its integrity against the checksum published on
+the release page (Step 2); the exact archive checksum is not embedded in this
+document because this document ships inside the archive.
 **Note:** internet access is required for the installation step (pip downloads the build backend and the test dependency).
 
 ## Purpose
 
-This protocol checks whether a non-contributor can independently reproduce the documented SimContract v0.3.0 deterministic workflow in a clean Python environment.
+This protocol checks whether a non-contributor can independently reproduce the documented SimContract v0.3.1 deterministic workflow in a clean Python environment.
 
 This is an independent reproduction check, not a usability study, user study, community-adoption claim, or validation of the demonstration domains as real-world forecasts.
 
 ## Obtaining the software (download it yourself)
 
-For your own security, please do **not** run a zip file handed to you by the author. Obtain the frozen v0.3.0 release yourself from one of the two public, integrity-checked sources below. The author supplies only documents (this protocol and the report template), never executable material.
+For your own security, please do **not** run a zip file handed to you by the author. Obtain the frozen v0.3.1 release yourself from one of the two public, integrity-checked sources below. The author supplies only documents (this protocol and the report template), never executable material.
 
-**Option A — Zenodo (archived source zip).** Open the archived record and download `simcontract-0.3.0-source.zip`:
+**Option A — Zenodo (archived source zip).** Open the archived record for
+v0.3.1 and download `simcontract-0.3.1-source.zip`:
 
 ```text
-https://doi.org/10.5281/zenodo.21358450
+https://doi.org/<v0.3.1 version DOI shown on the Zenodo record>
 ```
 
-**Option B — GitHub (clone the tagged commit).** Clone the public repository and check out the `v0.3.0` tag:
+**Option B — GitHub (clone the tagged commit).** Clone the public repository and check out the `v0.3.1` tag:
 
 ```text
 https://github.com/I-ueRya-n/SimContract-System-Architecture-Research
 ```
 
-Use whichever you trust; both resolve to the same frozen v0.3.0 source. Verify integrity in Step 2.
+Use whichever you trust; both resolve to the same frozen v0.3.1 source. Verify integrity in Step 2.
 
 Documents supplied by the author (no code):
 
 - this protocol
-- `SimContract_v0.3.0_Reproduction_Report_Template.md`
+- `SimContract_v0.3.1_Reproduction_Report_Template.md`
 
 ## Reproducer requirements
 
@@ -47,13 +52,14 @@ No GPU, API key, Docker, external dataset, or machine-learning expertise is requ
 
 ## How your report will be used (please read before you start)
 
-Your completed report and logs are **intended to be published** as part of the reproduction evidence for SimContract v0.3.0. They may appear in a public GitHub issue, in an archived evidence package (Zenodo), and/or as supplementary material accompanying a research paper.
+Your completed report and logs are **intended to be published** as part of the reproduction evidence for SimContract v0.3.1. They may appear in a public GitHub issue, in an archived evidence package (Zenodo), and/or as supplementary material accompanying a research paper.
 
 Before you begin, please note:
 
 - **You may use a pseudonym.** In the report, the identifier can be your initials, a GitHub handle, or any identifier you choose. Your legal name is not required, and withholding it does not weaken the evidence — what matters is that you are not a contributor.
 - **Optional fields.** Country/time zone and computer/hardware are optional and may be left blank. Operating system and Python version are the only environment details actually needed, because they evidence portability.
 - **Relationship disclosure is required and will be public.** Whether you know the author personally, and whether you contributed to SimContract, must be answered honestly. Disclosing a personal connection is expected and does not invalidate the check; concealing one would.
+- **Redact your own identifiers.** Before returning logs, remove your operating-system username and local file paths (for example, replace them with `[user]` / `[workdir]`); they are not needed and evidence nothing.
 - **Private transit is fine.** If you send the ZIP to the author before publication, you may password-protect or encrypt it, or use any private channel you prefer. The final evidence is nevertheless intended to be public.
 - **You may withdraw or request redaction** at any time before the evidence is archived or published.
 
@@ -64,7 +70,7 @@ By returning a completed report you consent to its publication as described abov
 Return one ZIP containing only:
 
 ```text
-SimContract-v0.3.0-reproduction-[id]-[YYYY-MM-DD]/
+SimContract-v0.3.1-reproduction-[id]-[YYYY-MM-DD]/
 ├── reproduction-report.md
 ├── terminal-session.txt
 └── benchmark-reproduction/
@@ -78,7 +84,7 @@ screenshots/
 
 `reproduction-report.md` must use the supplied report template.
 
-`terminal-session.txt` should contain the commands and complete outputs from the installation, test, domains, run, verify, replay, environment, and package-version steps. Separate log files are not required.
+`terminal-session.txt` should contain the commands and complete outputs from the installation, test, domains, run, verify, replay, environment, and package-version steps. Separate log files are not required. Redact your username and local paths before returning it.
 
 ---
 
@@ -101,34 +107,26 @@ Copy both commands and outputs into `terminal-session.txt`.
 
 ## 2. Verify integrity of what you downloaded
 
-**If you used Option A (Zenodo zip),** confirm the archive SHA-256 equals:
+**If you used Option A (Zenodo zip),** compute the archive SHA-256 and confirm
+it equals the value published on the v0.3.1 Zenodo record:
 
-```text
-20174f5851e8c33d9be29726673ab5f33053bd03b791d62fc06eb255ae5f2bff
-```
+- Windows PowerShell: `Get-FileHash .\simcontract-0.3.1-source.zip -Algorithm SHA256`
+- macOS: `shasum -a 256 simcontract-0.3.1-source.zip`
+- Linux: `sha256sum simcontract-0.3.1-source.zip`
 
-- Windows PowerShell: `Get-FileHash .\simcontract-0.3.0-source.zip -Algorithm SHA256`
-- macOS: `shasum -a 256 simcontract-0.3.0-source.zip`
-- Linux: `sha256sum simcontract-0.3.0-source.zip`
-
-**If you used Option B (GitHub clone),** check out the tag and confirm the commit:
+**If you used Option B (GitHub clone),** check out the tag and confirm the
+commit matches the one shown for the `v0.3.1` release:
 
 ```bash
-git checkout v0.3.0
+git checkout v0.3.1
 git rev-parse HEAD
-```
-
-The commit must equal:
-
-```text
-c3654d862cf6647d806cadc72a5ae42ecf2cd533
 ```
 
 Record the result in `terminal-session.txt`. Report any mismatch before continuing.
 
 ## 3. Enter the frozen source directory
 
-**Option A (Zenodo zip):** extract `simcontract-0.3.0-source.zip` and enter the extracted `simcontract-0.3.0` directory.
+**Option A (Zenodo zip):** extract `simcontract-0.3.1-source.zip` and enter the extracted `simcontract-0.3.1` directory.
 
 **Option B (GitHub clone):** you are already at the repository root (it contains `pyproject.toml`); stay there.
 
@@ -184,7 +182,7 @@ python -m pytest -q
 Expected result:
 
 ```text
-60 passed
+66 passed
 ```
 
 Record the exact result and elapsed time.
@@ -253,7 +251,8 @@ Expected conditions include:
 "files_ok": true
 ```
 
-Preserve the complete output.
+Preserve the complete output. (On Windows, `files_ok: true` is the specific
+behaviour v0.3.1 corrects relative to v0.3.0.)
 
 ## 11. Replay the recorded decisions
 
@@ -304,7 +303,7 @@ Fill in every relevant field. Record:
 Create:
 
 ```text
-SimContract-v0.3.0-reproduction-[id]-[YYYY-MM-DD].zip
+SimContract-v0.3.1-reproduction-[id]-[YYYY-MM-DD].zip
 ```
 
 It should contain:
@@ -321,6 +320,6 @@ Screenshots are optional and should be included only when they clarify an error 
 
 One successful report supports only the following type of statement:
 
-> An independent non-contributor reproduced the documented SimContract v0.3.0 deterministic workflow in a clean environment.
+> An independent non-contributor reproduced the documented SimContract v0.3.1 deterministic workflow in a clean environment.
 
 It does not establish usability, community adoption, universal cross-platform portability, clinical validity, or real-world forecasting validity.
