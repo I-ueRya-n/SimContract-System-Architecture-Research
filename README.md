@@ -9,8 +9,8 @@ consumed by swappable offline analyzers.
 
 **Author:** Ryan Lin (ORCID 0009-0001-9698-6999) · MIT License · see `CITATION.cff`
 
-**Cite this artifact (v0.3.0):** archived at Zenodo, DOI
-[10.5281/zenodo.21358450](https://doi.org/10.5281/zenodo.21358450). Use the
+**Cite this artifact (v0.3.1):** archived at Zenodo, DOI
+[10.5281/zenodo.21447303](https://doi.org/10.5281/zenodo.21447303). Use the
 version DOI above for the exact release cited in the paper; Zenodo also mints
 a concept DOI resolving to the latest version. See `CITATION.cff`.
 

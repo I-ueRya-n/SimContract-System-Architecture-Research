@@ -2,12 +2,16 @@
 
 **Protocol version:** 1.1
 **Protocol date:** 2026-07-20 (fixed and published before any v0.3.1 reproduction is run)
-**Target software:** SimContract v0.3.1 — archived at Zenodo (use the
-version-specific DOI shown on the record) and tagged `v0.3.1` on GitHub. Obtain
-the release yourself and verify its integrity against the checksum published on
-the release page (Step 2); the exact archive checksum is not embedded in this
-document because this document ships inside the archive.
+**Target software:** SimContract v0.3.1 (Git tag `v0.3.1`, commit `8e96163`),
+archived at Zenodo under the version-specific DOI below. Obtain the release
+yourself and verify its integrity in Step 2.
 **Note:** internet access is required for the installation step (pip downloads the build backend and the test dependency).
+
+## Evaluated release
+
+- **Version:** SimContract v0.3.1
+- **Version-specific DOI:** [10.5281/zenodo.21447303](https://doi.org/10.5281/zenodo.21447303)
+- **Published source archive SHA-256** (`simcontract-0.3.1-source.zip`): `83d8fca97bf21d7fffeb85428922e8ca30d8b69d48ef20083ea31ad8c23f54a8`
 
 ## Purpose
 
@@ -23,7 +27,7 @@ For your own security, please do **not** run a zip file handed to you by the aut
 v0.3.1 and download `simcontract-0.3.1-source.zip`:
 
 ```text
-https://doi.org/<v0.3.1 version DOI shown on the Zenodo record>
+https://doi.org/10.5281/zenodo.21447303
 ```
 
 **Option B — GitHub (clone the tagged commit).** Clone the public repository and check out the `v0.3.1` tag:
@@ -108,7 +112,11 @@ Copy both commands and outputs into `terminal-session.txt`.
 ## 2. Verify integrity of what you downloaded
 
 **If you used Option A (Zenodo zip),** compute the archive SHA-256 and confirm
-it equals the value published on the v0.3.1 Zenodo record:
+it equals the published value:
+
+```text
+83d8fca97bf21d7fffeb85428922e8ca30d8b69d48ef20083ea31ad8c23f54a8
+```
 
 - Windows PowerShell: `Get-FileHash .\simcontract-0.3.1-source.zip -Algorithm SHA256`
 - macOS: `shasum -a 256 simcontract-0.3.1-source.zip`

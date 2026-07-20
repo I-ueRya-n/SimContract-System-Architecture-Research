@@ -1,5 +1,10 @@
 # SimContract v0.3.1 — Independent Reproduction Report
 
+**Evaluated artifact (fixed — do not change):**
+- Version: SimContract v0.3.1
+- Software DOI: `10.5281/zenodo.21447303`
+- Source archive SHA-256: `83d8fca97bf21d7fffeb85428922e8ca30d8b69d48ef20083ea31ad8c23f54a8`
+
 ## 1. Reproducer declaration
 
 > This report is intended to be published (see the protocol section *How your report will be used*). You may use a pseudonym, initials, or a handle as your identifier, and you may leave optional fields blank.
